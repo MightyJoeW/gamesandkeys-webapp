@@ -1,8 +1,8 @@
+require("dotenv").config();
 const express = require("express");
 const { json } = require("body-parser");
 const cors = require("cors");
 const massive = require("massive");
-require("dotenv").config();
 
 //IMPORT CONTROLLERS
 
