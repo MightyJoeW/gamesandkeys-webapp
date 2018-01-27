@@ -7,7 +7,10 @@ class NotFound extends Component {
       <div className="notFound-title">
         <p className="notFound-row1"> 404 </p>
         <p className="notFound-row2">Not Found</p>
-        <img src="http://www.magic-emoji.com/emoji/images/1317_emoji_iphone_thinking_face.png" />
+        <img
+          src="http://www.magic-emoji.com/emoji/images/1317_emoji_iphone_thinking_face.png"
+          alt="Sad Face emoticon"
+        />
         <p className="notFound-row3">
           The page you are looking for doesn't exist.
           <Link className="notFound-link" to="/dashboard">
