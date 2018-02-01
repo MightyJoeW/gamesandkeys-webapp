@@ -1,0 +1,11 @@
+.nav-wrapper {
+  background: #fff;
+  color: #353535;
+  grid-column: 1 / -1;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 1fr);
+  align-items: center;
+}
