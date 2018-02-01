@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-h1 {
+.landing-title {
   font-size: 6em;
   color: white;
   margin: 0 0;
@@ -71,7 +71,7 @@ h1 {
   text-shadow: 2px 2px 5px black;
 }
 
-p {
+.landing-subtitle {
   color: white;
   font-size: 2em;
   margin: 0 0;

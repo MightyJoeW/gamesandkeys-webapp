@@ -33,8 +33,10 @@ export default class Landing extends Component {
     return (
       <div className="landing">
         <div className="landing-info">
-          <h1>Games and Keys</h1>
-          <p>Video Game Piano Tutorials, Sheet Music, & Midi Files</p>
+          <h1 className="landing-title">Games and Keys</h1>
+          <p className="landing-subtitle">
+            Video Game Piano Tutorials, Sheet Music, & Midi Files
+          </p>
           <br />
           <div className="button-front">
             {this.state.name === "" ? (

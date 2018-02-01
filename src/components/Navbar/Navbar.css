@@ -1,0 +1,42 @@
+.nav-wrapper {
+  background: #fff;
+  color: #353535;
+  grid-column: 1 / -1;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, 1fr);
+  grid-template-rows: 60px;
+  align-items: center;
+}
+
+.nav-right {
+  display: none;
+}
+
+.nav-button {
+  grid-column: span 2;
+  border-radius: 500px;
+  border: 0;
+  padding: 10px;
+}
+
+@media (min-width: 406px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .nav-right {
+    display: block;
+  }
+
+  .nav-button {
+    display: none;
+  }
+}
