@@ -5,9 +5,9 @@ const Navbar = () => (
   <div className="nav-wrapper">
     <div className="nav">
       <div>Logo</div>
-      <div className="nav-right">About</div>
-      <div>Downloads</div>
+      <div className="nav-right">Downloads</div>
       <div>Requests</div>
+      <div>About</div>
     </div>
   </div>
 );

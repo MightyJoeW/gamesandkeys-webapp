@@ -3,9 +3,16 @@ import router from "../../router";
 // import SideNav from "../SideNav/SideNav";
 import "./App.css";
 
+import Navbar from "../Navbar/Navbar";
+
 class App extends Component {
   render() {
-    return <div>{router}</div>;
+    return (
+      <div>
+        <Navbar />
+        {router}
+      </div>
+    );
   }
 }
 

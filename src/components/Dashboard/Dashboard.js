@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./Dashboard.css";
-import Navbar from "../Navbar/Navbar";
+
+// COMPONENTS
 
 class Dashboard extends Component {
   render() {
     return (
       <div>
         <div className="container">
-          <Navbar />
           <content>Tutorial List</content>
           <section>Info</section>
           <footer>
