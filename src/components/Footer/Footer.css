@@ -1,0 +1,26 @@
+.footer-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr repeat(4, 1fr);
+  background: #efeff5;
+  color: #606064;
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1em;
+}
+
+@media (min-width: 406px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .footer-wrapper {
+    grid-template-columns: 2fr repeat(4, 1fr);
+  }
+}
