@@ -16,17 +16,6 @@ section {
   padding: 1em;
 }
 
-footer {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 2fr repeat(4, 1fr);
-  background: #efeff5;
-  color: #606064;
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 1em;
-}
-
 @media (min-width: 406px) {
 }
 
