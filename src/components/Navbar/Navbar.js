@@ -42,11 +42,7 @@ const Navbar = () => (
           Help
         </Link>
       </div>
-      <div className="nav-right">
-        <Link to="/logout" style={{ textDecoration: "none", color: "black" }}>
-          Logout
-        </Link>
-      </div>
+      <div className="nav-right">Logout</div>
       <IconMenu
         className="navButton"
         iconButtonElement={
