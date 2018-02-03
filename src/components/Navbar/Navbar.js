@@ -37,6 +37,16 @@ const Navbar = () => (
           About
         </Link>
       </div>
+      <div className="nav-right">
+        <Link to="/help" style={{ textDecoration: "none", color: "black" }}>
+          Help
+        </Link>
+      </div>
+      <div className="nav-right">
+        <Link to="/logout" style={{ textDecoration: "none", color: "black" }}>
+          Logout
+        </Link>
+      </div>
       <IconMenu
         className="navButton"
         iconButtonElement={
@@ -51,7 +61,7 @@ const Navbar = () => (
         <MenuItem primaryText="Requests" />
         <MenuItem primaryText="About" />
         <MenuItem primaryText="Help" />
-        <MenuItem primaryText="Sign out" />
+        <MenuItem primaryText="Logout" />
       </IconMenu>
     </div>
   </div>

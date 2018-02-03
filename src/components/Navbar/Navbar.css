@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.nav-home {
+  padding-left: 2em;
+}
+
 .nav-right {
   display: none;
 }
@@ -26,7 +30,12 @@
 
 @media (min-width: 992px) {
   .nav {
-    grid-template-columns: 5fr repeat(3, 1fr);
+    grid-template-columns: 5fr repeat(5, 1fr);
+    place-items: center;
+  }
+
+  .nav-home {
+    justify-self: start;
   }
 
   .nav-right {
