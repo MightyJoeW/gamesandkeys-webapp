@@ -1,7 +1,12 @@
 import React from "react";
 import "./Navbar.css";
-
 import { Link } from "react-router-dom";
+
+//MATERIAL-UI ICON MENU
+import IconMenu from "material-ui/IconMenu";
+import MenuItem from "material-ui/MenuItem";
+import IconButton from "material-ui/IconButton";
+import MoreVertIcon from "material-ui/svg-icons/navigation/more-vert";
 
 const Navbar = () => (
   <div className="nav-wrapper">
@@ -32,9 +37,22 @@ const Navbar = () => (
           About
         </Link>
       </div>
-      <button className="nav-button" type="button">
-        Menu
-      </button>
+      <IconMenu
+        className="navButton"
+        iconButtonElement={
+          <IconButton>
+            <MoreVertIcon />
+          </IconButton>
+        }
+        anchorOrigin={{ horizontal: "left", vertical: "top" }}
+        targetOrigin={{ horizontal: "left", vertical: "top" }}
+      >
+        <MenuItem primaryText="Downloads" />
+        <MenuItem primaryText="Requests" />
+        <MenuItem primaryText="About" />
+        <MenuItem primaryText="Help" />
+        <MenuItem primaryText="Sign out" />
+      </IconMenu>
     </div>
   </div>
 );
