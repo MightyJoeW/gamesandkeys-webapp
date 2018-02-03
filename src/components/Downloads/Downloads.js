@@ -2,7 +2,7 @@ import React from "react";
 
 const Downloads = () => (
   <div>
-    <h1> Downloads </h1>
+    <h1 className="views-title"> Downloads </h1>
   </div>
 );
 

@@ -3,6 +3,10 @@ body {
   margin: 0 auto;
 }
 
+.views-title {
+  text-align: center;
+}
+
 .app-wrapper {
   height: 100vh;
   display: grid;

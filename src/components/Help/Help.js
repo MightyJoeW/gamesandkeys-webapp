@@ -2,7 +2,7 @@ import React from "react";
 
 const Help = () => (
   <div>
-    <h1> Help </h1>
+    <h1 className="views-title"> Help </h1>
   </div>
 );
 
