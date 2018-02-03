@@ -6,20 +6,17 @@
 
 .nav {
   display: grid;
-  grid-template-columns: 5fr repeat(3, 1fr);
+  grid-template-columns: 7fr 1fr;
   grid-template-rows: 60px;
   align-items: center;
 }
 
-.nav-right {
-  display: none;
+.nav-home {
+  padding-left: 2em;
 }
 
-.nav-button {
-  grid-column: span 2;
-  border-radius: 500px;
-  border: 0;
-  padding: 10px;
+.nav-right {
+  display: none;
 }
 
 @media (min-width: 406px) {
@@ -32,11 +29,20 @@
 }
 
 @media (min-width: 992px) {
+  .nav {
+    grid-template-columns: 5fr repeat(5, 1fr);
+    place-items: center;
+  }
+
+  .nav-home {
+    justify-self: start;
+  }
+
   .nav-right {
     display: block;
   }
 
-  .nav-button {
-    display: none;
+  .navButton {
+    display: none !important;
   }
 }
