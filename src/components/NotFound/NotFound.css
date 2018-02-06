@@ -1,30 +1,27 @@
-.notFound-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.notFound__title {
+  display: grid;
+  grid-template-rows: 100px 150px 1fr 1fr;
+  justify-items: center;
+  /* align-items: center; */
 }
 
-.notfound-img {
+.notFound__img {
   width: 200px;
   height: 200px;
-  margin-top: -3%;
 }
 
-.notFound-row1 {
-  font-size: 80px;
+.notFound__row--top {
+  font-size: 5em;
   font-weight: bold;
 }
-.notFound-row2 {
-  font-size: 60px;
-  margin-top: -5%;
+.notFound__row--second {
+  font-size: 4em;
 }
 
-.notFound-row3 {
-  font-size: 30px;
+.notFound__row--bottom {
+  font-size: 1.5em;
+  text-align: center;
 }
-
-.notFound-link {
+.notFound__link {
   text-decoration: none;
 }

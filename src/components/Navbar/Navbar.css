@@ -11,11 +11,11 @@
   align-items: center;
 }
 
-.nav-home {
+.nav__item--home {
   padding-left: 2em;
 }
 
-.nav-right {
+.nav__item--right {
   display: none;
 }
 
@@ -34,15 +34,15 @@
     place-items: center;
   }
 
-  .nav-home {
+  .nav__item--home {
     justify-self: start;
   }
 
-  .nav-right {
+  .nav__item--right {
     display: block;
   }
 
-  .navButton {
+  .button__icon {
     display: none !important;
   }
 }

@@ -11,7 +11,7 @@ import MoreVertIcon from "material-ui/svg-icons/navigation/more-vert";
 const Navbar = () => (
   <div className="nav-wrapper">
     <div className="nav">
-      <div className="nav-home">
+      <div className="nav__item nav__item--home">
         <Link
           to="/dashboard"
           style={{ textDecoration: "none", color: "black" }}
@@ -19,7 +19,7 @@ const Navbar = () => (
           Home
         </Link>
       </div>
-      <div className="nav-right">
+      <div className="nav__item nav__item--right">
         <Link
           to="/downloads"
           style={{ textDecoration: "none", color: "black" }}
@@ -27,24 +27,24 @@ const Navbar = () => (
           Downloads
         </Link>
       </div>
-      <div className="nav-right">
+      <div className="nav__item nav__item--right">
         <Link to="/requests" style={{ textDecoration: "none", color: "black" }}>
           Requests
         </Link>
       </div>
-      <div className="nav-right">
+      <div className="nav__item nav__item--right">
         <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
           About
         </Link>
       </div>
-      <div className="nav-right">
+      <div className="nav__item nav__item--right">
         <Link to="/help" style={{ textDecoration: "none", color: "black" }}>
           Help
         </Link>
       </div>
-      <div className="nav-right">Logout</div>
+      <div className="nav__item nav__item--right">Logout</div>
       <IconMenu
-        className="navButton"
+        className="button button__icon"
         iconButtonElement={
           <IconButton>
             <MoreVertIcon />

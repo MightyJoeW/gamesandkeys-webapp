@@ -2,13 +2,13 @@ body {
   background: #f5f5fa;
 }
 
-.container {
+.dashboard-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 
-content {
+.tutorial-wrapper {
   padding: 1em;
 }
 
@@ -23,7 +23,7 @@ section {
 }
 
 @media (min-width: 768px) {
-  .container {
+  .dashboard-wrapper {
     grid-template-columns: 2fr 1fr;
   }
 }

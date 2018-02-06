@@ -7,9 +7,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <content>Tutorial List</content>
-          <section>Info</section>
+        <div className="dashboard-wrapper">
+          <section className="tutorial-wrapper">Tutorial List</section>
+          <section className="info-wrapper">Info</section>
         </div>
       </div>
     );
