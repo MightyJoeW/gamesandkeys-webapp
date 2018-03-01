@@ -3,12 +3,12 @@ import { Route, Switch } from "react-router-dom";
 
 //COMPONENTS
 import Landing from "./components/Landing/Landing";
-import Dashboard from "./components/Dashboard/Dashboard";
-import Downloads from "./components/Downloads/Downloads";
-import Requests from "./components/Requests/Requests";
-import About from "./components/About/About";
-import Help from "./components/Help/Help";
-import NotFound from "./components/NotFound/NotFound";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Downloads from "./pages/Downloads/Downloads";
+import Requests from "./pages/Requests/Requests";
+import About from "./pages/About/About";
+import Help from "./pages/Help/Help";
+import NotFound from "./pages/NotFound/NotFound";
 
 export default (
   <Switch>
