@@ -1,24 +1,30 @@
+// External Dependencies
 import React from "react";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-//MATERIAL-UI ICON MENU
-import IconMenu from "material-ui/IconMenu";
-import MenuItem from "material-ui/MenuItem";
+// Internal Dependencies
+import "./Navbar.css";
 import IconButton from "material-ui/IconButton";
-import MoreVertIcon from "material-ui/svg-icons/navigation/more-vert";
+import GametitleAutosuggest from "../SearchFields/GameTitle"
 
+//MATERIAL-UI ICON MENU
+// import IconMenu from "material-ui/IconMenu";
+// import MenuItem from "material-ui/MenuItem";
+// import MoreVertIcon from "material-ui/svg-icons/navigation/more-vert";
+
+// Component Definition
 const Navbar = () => (
   <div className="nav-wrapper">
     <div className="nav">
       <div className="nav__item nav__item--home">
         <Link
-          to="/dashboard"
+          to="/"
           style={{ textDecoration: "none", color: "black" }}
         >
           Home
         </Link>
       </div>
+      <GametitleAutosuggest />
       <div className="nav__item nav__item--right">
         <Link
           to="/downloads"
@@ -43,7 +49,7 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="nav__item nav__item--right">Logout</div>
-      <IconMenu
+      {/*<IconMenu
         className="button button__icon"
         iconButtonElement={
           <IconButton>
@@ -58,7 +64,7 @@ const Navbar = () => (
         <MenuItem primaryText="About" />
         <MenuItem primaryText="Help" />
         <MenuItem primaryText="Logout" />
-      </IconMenu>
+      </IconMenu>*/}
     </div>
   </div>
 );

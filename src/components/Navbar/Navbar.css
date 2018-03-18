@@ -30,7 +30,7 @@
 
 @media (min-width: 992px) {
   .nav {
-    grid-template-columns: 5fr repeat(5, 1fr);
+    grid-template-columns: 5fr 3fr repeat(6, 1fr);
     place-items: center;
   }
 

@@ -12,8 +12,7 @@ import NotFound from "./pages/NotFound/NotFound";
 
 export default (
   <Switch>
-    <Route exact path="/" component={Landing} />
-    <Route path="/dashboard" component={Dashboard} />
+    <Route exact path="/" component={Dashboard} />
     <Route path="/downloads" component={Downloads} />
     <Route path="/requests" component={Requests} />
     <Route path="/about" component={About} />
