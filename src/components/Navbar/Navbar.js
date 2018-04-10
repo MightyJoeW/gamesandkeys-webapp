@@ -1,77 +1,60 @@
-// External Dependencies
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import AppBar from 'material-ui/AppBar';
+import Toolbar from 'material-ui/Toolbar';
+import Typography from 'material-ui/Typography';
+import SearchIcon from '@material-ui/icons/Search';
+import QuestionIcon from '@material-ui/icons/QuestionAnswer';
 
-// Internal Dependencies
-import './Navbar.css';
-// import IconButton from 'material-ui/IconButton';
-import GametitleAutosuggest from '../SearchFields/GameTitle'
+import NavTabs from './NavTabs';
 
-//MATERIAL-UI ICON MENU
-// import IconMenu from 'material-ui/IconMenu';
-// import MenuItem from 'material-ui/MenuItem';
-// import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  flex: {
+    flex: 1,
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20,
+  },
+};
 
-const wrapper = {
-  background: '#fff',
-  color: '#353535',
-  gridColumn: '1 / -1'
+const iconStyles = {
+  padding: '0 8px',
+  cursor: 'pointer'
 }
-// Component Definition
-const Navbar = () => (
-  <div style={wrapper}>
-    <div className='nav'>
-      <div className='nav__item nav__item--home'>
-        <Link
-          to='/'
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
-          Home
-        </Link>
-      </div>
-      <GametitleAutosuggest />
-      <div className='nav__item nav__item--right'>
-        <Link
-          to='/downloads'
-          style={{ textDecoration: 'none', color: 'black' }}
-        >
-          Downloads
-        </Link>
-      </div>
-      <div className='nav__item nav__item--right'>
-        <Link to='/requests' style={{ textDecoration: 'none', color: 'black' }}>
-          Requests
-        </Link>
-      </div>
-      <div className='nav__item nav__item--right'>
-        <Link to='/about' style={{ textDecoration: 'none', color: 'black' }}>
-          About
-        </Link>
-      </div>
-      <div className='nav__item nav__item--right'>
-        <Link to='/help' style={{ textDecoration: 'none', color: 'black' }}>
-          Help
-        </Link>
-      </div>
-      <div className='nav__item nav__item--right'>Logout</div>
-      {/*<IconMenu
-        className='button button__icon'
-        iconButtonElement={
-          <IconButton>
-            <MoreVertIcon />
-          </IconButton>
-        }
-        anchorOrigin={{ horizontal: 'left', vertical: 'top' }}
-        targetOrigin={{ horizontal: 'left', vertical: 'top' }}
-      >
-        <MenuItem primaryText='Downloads' />
-        <MenuItem primaryText='Requests' />
-        <MenuItem primaryText='About' />
-        <MenuItem primaryText='Help' />
-        <MenuItem primaryText='Logout' />
-      </IconMenu>*/}
-    </div>
-  </div>
-);
 
-export default Navbar;
+const navTabStyles = {
+}
+
+function ButtonAppBar(props) {
+  const { classes } = props;
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography
+            style={{ cursor: 'pointer' }}
+            variant="title"
+            color="inherit"
+            className={classes.flex}
+          >
+            Games and Keys
+          </Typography>
+          <NavTabs style={navTabStyles} />
+          <QuestionIcon style={iconStyles} />
+          <SearchIcon style={iconStyles} />
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
+}
+
+ButtonAppBar.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(ButtonAppBar);

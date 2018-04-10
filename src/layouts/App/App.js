@@ -5,11 +5,10 @@ import './App.css';
 
 // Internal Dependencies
 import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
 
 // Local Variables
 const styles = {
-  fontFamily: 'arial',
+  fontFamily: 'ariel',
   height: '100vh',
   display: 'grid',
   gridTemplateRows: '1fr 8fr 2fr'
@@ -22,7 +21,6 @@ class App extends Component {
       <div style={styles}>
         <Navbar />
         {router}
-        <Footer />
       </div>
     );
   }

@@ -23,9 +23,6 @@ section {
 }
 
 @media (min-width: 768px) {
-  .dashboard-wrapper {
-    grid-template-columns: 2fr 1fr;
-  }
 }
 
 @media (min-width: 992px) {

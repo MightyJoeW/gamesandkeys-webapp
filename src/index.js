@@ -1,7 +1,6 @@
 // External Dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -11,9 +10,7 @@ import App from './layouts/App/App';
 ReactDOM.render(
   <div>
     <Router>
-      <MuiThemeProvider>
-        <App />
-      </MuiThemeProvider>
+      <App />
     </Router>
   </div>,
   document.getElementById('root')

@@ -12,7 +12,6 @@ class Dashboard extends Component {
       <div>
         <div className='dashboard-wrapper'>
           <List />
-          <section className='info-wrapper'>Info</section>
         </div>
       </div>
     );
