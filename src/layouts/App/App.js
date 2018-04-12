@@ -1,10 +1,10 @@
 // External Dependencies
 import React, { Component } from 'react';
-import router from '../../router';
-import './App.css';
+import CssBaseline from 'material-ui/CssBaseline';
 
 // Internal Dependencies
 import Navbar from '../../components/Navbar/Navbar';
+import router from '../../router';
 
 // Local Variables
 const styles = {
@@ -19,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div style={styles}>
+        <CssBaseline />
         <Navbar />
         {router}
       </div>
