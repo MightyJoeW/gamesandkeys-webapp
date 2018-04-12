@@ -4,11 +4,11 @@ import { Route, Switch } from 'react-router-dom';
 
 // Internal Dependencies
 // import Landing from './components/Landing/Landing';
-import Dashboard from './pages/Dashboard/Dashboard';
-import Downloads from './pages/Downloads/Downloads';
+import Dashboard from './pages/Dashboard';
+import Downloads from './pages/Downloads';
 import Requests from './pages/Requests/Requests';
-import About from './pages/About/About';
-import Help from './pages/Help/Help';
+import About from './pages/About';
+import Help from './pages/Help';
 import NotFound from './pages/NotFound/NotFound';
 
 export default (

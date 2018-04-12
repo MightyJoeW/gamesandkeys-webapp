@@ -1,18 +1,22 @@
 // External Dependencies
 import React, { Component } from 'react';
-import './Dashboard.css';
 
 // Internal Dependencies
-import List from '../../components/List/List';
+import List from '../components/List/List';
+
+// Local Variables
+const wrapper = {
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  justifyItems: 'center'
+}
 
 // Component Definition
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <div className='dashboard-wrapper'>
-          <List />
-        </div>
+      <div style={wrapper}>
+        <List />
       </div>
     );
   }
