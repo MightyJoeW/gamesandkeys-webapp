@@ -5,6 +5,12 @@ import React from 'react';
 import './Requests.css';
 
 // Local Variables
+const formWrapper = {
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  placeItems: 'center',
+  fontSize: '1.4em'
+}
 const styles = {
   textAlign: 'center'
 }
@@ -13,7 +19,7 @@ const styles = {
 const Requests = () => (
   <div style={styles}>
     <h1> Requests </h1>
-    <form className='form-wrapper'>
+    <form style={formWrapper}>
       <label className='form__labels'>Song Title:</label>
       <input className='form__inputs' type='text' name='name' required />
 

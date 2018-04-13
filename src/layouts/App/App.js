@@ -7,7 +7,12 @@ import Navbar from '../../components/Navbar/Navbar';
 import router from '../../router';
 
 // Local Variables
+const navbarStyles = {
+  marginRight: 60
+}
+
 const styles = {
+  backgroundColor: '3f3f3f',
   fontFamily: 'ariel',
   height: '100vh',
   display: 'grid',
@@ -20,7 +25,7 @@ class App extends Component {
     return (
       <div style={styles}>
         <CssBaseline />
-        <Navbar />
+        <Navbar style={navbarStyles} />
         {router}
       </div>
     );
