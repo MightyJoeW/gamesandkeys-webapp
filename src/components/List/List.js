@@ -1,3 +1,4 @@
+// External Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
@@ -5,9 +6,17 @@ import Card, { CardActions, CardContent } from 'material-ui/Card';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 
+// Internal Dependencies
+import preload from '../../services/db.json'
+
+const container = {
+
+}
+
 const styles = {
   card: {
-    minWidth: 275,
+    cursor: 'pointer',
+    minWidth: 275
   },
   bullet: {
     display: 'inline-block',
@@ -28,27 +37,36 @@ function SimpleCard(props) {
   // const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div>
-      <Card className={classes.card}>
-        <CardContent>
-          <Typography className={classes.title} color="textSecondary">
-            Games and Keys
+    <div style={container}>
+      {preload.games.map(game => (
+        <Card
+          key={game.name}
+          game={game}
+          className={classes.card}>
+          <CardContent>
+            <Typography className={classes.title} color="textSecondary">
+              Games and Keys
           </Typography>
-          <Typography variant="headline" component="h2">
-            Tutorial List
+            <img
+              alt={game.name}
+              src={game.backgroundImageURL}
+            />
+            <Typography variant="headline" component="h2">
+              {game.name}
+            </Typography>
+            <Typography className={classes.pos} color="textSecondary">
+              {`Original Composer: ${game.info.originalComposer}`}
+            </Typography>
+            <Typography component="p">
+              cards for each game tutorials will be <br />
+              displayed across the dashboard
           </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            under construction
-          </Typography>
-          <Typography component="p">
-            cards for each game tutorials will be <br />
-            displayed across the dashboard
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Downloads</Button>
-        </CardActions>
-      </Card>
+          </CardContent>
+          <CardActions>
+            <Button size="small">Downloads</Button>
+          </CardActions>
+        </Card>
+      ))}
     </div>
   );
 }
