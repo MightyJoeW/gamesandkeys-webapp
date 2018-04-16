@@ -16,7 +16,8 @@ const container = {
 const styles = {
   card: {
     cursor: 'pointer',
-    minWidth: 275
+    minWidth: 275,
+    textAlign: 'center'
   },
   bullet: {
     display: 'inline-block',
@@ -50,6 +51,7 @@ function SimpleCard(props) {
             <img
               alt={game.name}
               src={game.backgroundImageURL}
+              style={{ width: 400 }}
             />
             <Typography variant="headline" component="h2">
               {game.name}
@@ -58,8 +60,8 @@ function SimpleCard(props) {
               {`Original Composer: ${game.info.originalComposer}`}
             </Typography>
             <Typography component="p">
-              cards for each game tutorials will be <br />
-              displayed across the dashboard
+              Link to Sheet Music <br />
+              Link to Midi File
           </Typography>
           </CardContent>
           <CardActions>
