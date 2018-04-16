@@ -56,9 +56,9 @@ function SimpleCard(props) {
             <Typography variant="headline" component="h2">
               {game.name}
             </Typography>
-            <Typography className={classes.pos} color="textSecondary">
-              {`Original Composer: ${game.info.originalComposer}`}
-            </Typography>
+            {/*<Typography className={classes.pos} color="textSecondary">
+              {`Original Composer(s): ${game.info.originalComposer}`}
+      </Typography> */}
             <Typography component="p">
               Link to Sheet Music <br />
               Link to Midi File
