@@ -10,11 +10,15 @@ import Typography from 'material-ui/Typography';
 import preload from '../../services/db.json'
 
 const container = {
-  display: 'flex'
+  display: 'grid',
+  gridGap: '1em',
+  gridTemplateColumns: 'repeat(4, 1fr)',
+  marginTop: 20
 }
 
 const styles = {
   card: {
+    margin: '0 5px',
     minWidth: 275,
     textAlign: 'center'
   },
@@ -50,7 +54,7 @@ function SimpleCard(props) {
             <img
               alt={game.name}
               src={game.backgroundImageURL}
-              style={{ width: 400 }}
+              style={{ width: '100%' }}
             />
             <Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
               {game.name}
