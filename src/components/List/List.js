@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Card, { CardActions, CardContent } from 'material-ui/Card';
-import Button from 'material-ui/Button';
+import SimpleDialog from '../Dialog/Dialog';
 import Typography from 'material-ui/Typography';
 
 // Internal Dependencies
@@ -68,7 +68,7 @@ function SimpleCard(props) {
     </Typography> */}
           </CardContent>
           <CardActions>
-            <Button size='small' style={{ margin: '0 auto' }}>Downloads</Button>
+            <SimpleDialog style={{ margin: '0 auto' }} />
           </CardActions>
         </Card>
       ))}
