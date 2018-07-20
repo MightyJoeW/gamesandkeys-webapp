@@ -1,6 +1,6 @@
 // External Dependencies
 import React, { Component } from 'react';
-import CssBaseline from 'material-ui/CssBaseline';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 // Internal Dependencies
 import Navbar from '../../components/Navbar/Navbar';
