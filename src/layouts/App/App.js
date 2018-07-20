@@ -19,7 +19,8 @@ const styles = {
   fontFamily: 'ariel',
   height: '100vh',
   display: 'grid',
-  gridTemplateRows: '1fr 8fr 2fr'
+  gridTemplateRows: '1fr 8fr 2fr',
+  width: '100vw',
 }
 
 // Component Definition

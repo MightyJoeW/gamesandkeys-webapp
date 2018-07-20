@@ -6,7 +6,7 @@ class NotFound extends Component {
   render() {
     return (
       <div className="notFound__title">
-        {/* <p className="notFound__row notFound__row--top"> 404 </p>
+        <p className="notFound__row notFound__row--top"> 404 </p>
         <p className="notFound__row notFound__row--second">Not Found</p>
         <img
           class="notFound__img"
@@ -18,7 +18,7 @@ class NotFound extends Component {
           <Link className="notFound__link" to="/dashboard">
             &nbsp;Return to Dashboard
           </Link>.
-        </p> */}
+        </p>
       </div>
     );
   }

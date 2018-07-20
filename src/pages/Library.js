@@ -3,7 +3,7 @@ import React from 'react';
 
 // Local Variables
 const styles = {
-  textAlign: 'center'
+  textAlign: 'center',
 }
 
 // Component Definition
