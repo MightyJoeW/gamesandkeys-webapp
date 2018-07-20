@@ -1,83 +1,86 @@
-// External Dependencies
+//External Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import MusicIcon from '@material-ui/icons/MusicNote';
 
-// Internal Dependencies
-import preload from '../../services/db.json';
+// Local Dependencies
+import ListItems from './ListItems.js'
 
-const styles = {
-  card: {
-    margin: '0 5px',
-    minWidth: 275,
-    textAlign: 'center'
-  },
-  container: {
-    display: 'grid',
-    gridGap: '1em',
-    gridTemplateColumns: 'repeat(4, 1fr)',
-    marginTop: 20
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    marginBottom: 16,
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-};
-
-function SimpleCard(props) {
-  const { classes } = props;
-  // const bull = <span className={classes.bullet}>•</span>;
-
-  return (
-    <div style={styles.container}>
-      {preload.games.map(game => (
-        <Card
-          className={classes.card}
-          key={game.name}
-          game={game}
-        >
-          <CardContent>
-            <img
-              alt={game.name}
-              src={game.backgroundImageURL}
-              style={{ width: '100%' }}
-            />
-            <Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
-              {game.name}
-            </Typography>
-            {/*<Typography className={classes.pos} color="textSecondary">
-              {`Original Composer(s): ${game.info.originalComposer}`}
-      </Typography> */}
-            {/*<Typography component="p">
-              Link to Sheet Music <br />
-              Link to Midi File
-    </Typography> */}
-          </CardContent>
-          <CardActions>
-            <Button size="small">Downloads</Button>
-          </CardActions>
-        </Card>
-      ))
-      }
-    </ div>
-  );
+function TabContainer(props) {
+    return (
+        <Typography component="div" style={{ padding: 8 * 3 }}>
+            {props.children}
+        </Typography>
+    );
 }
 
-SimpleCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+TabContainer.propTypes = {
+    children: PropTypes.node.isRequired,
 };
 
-export default withStyles(styles)(SimpleCard);
+const styles = theme => ({
+    root: {
+        flexGrow: 1,
+        width: '100%',
+        backgroundColor: theme.palette.background.paper,
+    },
+});
+
+// Component Definition
+class List extends React.Component {
+    state = {
+        value: 0,
+    };
+
+    handleChange = (event, value) => {
+        this.setState({ value });
+    };
+
+    render() {
+        const { classes } = this.props;
+        const { value } = this.state;
+
+        return (
+            <div className={classes.root}>
+                <AppBar position="static" color="default">
+                    <Tabs
+                        value={value}
+                        onChange={this.handleChange}
+                        indicatorColor="primary"
+                        textColor="primary"
+                        scrollable
+                        scrollButtons="auto"
+                    >
+                        <Tab label="1001 Spikes" icon={<MusicIcon/>}/>
+                        <Tab label="Beyond Two Souls" icon={<MusicIcon />} />
+                        <Tab label="Item Three" />
+                        <Tab label="Item Four" />
+                        <Tab label="Item Five" />
+                        <Tab label="Item Six" />
+                        <Tab label="Item Seven" />
+                    </Tabs>
+                </AppBar>
+                {value === 0 && <TabContainer>Item One</TabContainer>}
+                {value === 1 && <TabContainer>Item Two</TabContainer>}
+                {value === 2 && <TabContainer>Item Three</TabContainer>}
+                {value === 3 && <TabContainer>Item Four</TabContainer>}
+                {value === 4 && <TabContainer>Item Five</TabContainer>}
+                {value === 5 && <TabContainer>Item Six</TabContainer>}
+                {value === 6 && <TabContainer>Item Seven</TabContainer>}
+            </div>
+        );
+    }
+}
+
+List.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(List);

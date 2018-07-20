@@ -2,13 +2,13 @@
 import React, { Component } from 'react';
 
 // Internal Dependencies
-import List from '../components/List/List';
+import ListItems from '../components/List/ListItems';
 
 // Local Variables
 const wrapper = {
   display: 'grid',
   gridTemplateColumns: '1fr',
-  justifyItems: 'center'
+  justifyItems: 'center',
 }
 
 // Component Definition
@@ -16,7 +16,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div style={wrapper}>
-        <List />
+        <ListItems />
       </div>
     );
   }
