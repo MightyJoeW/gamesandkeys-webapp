@@ -8,7 +8,7 @@ import List from '../components/List/List';
 const wrapper = {
   display: 'grid',
   gridTemplateColumns: '1fr',
-  justifyItems: 'center'
+  justifyItems: 'center',
 }
 
 // Component Definition

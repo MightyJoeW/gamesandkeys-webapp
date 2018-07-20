@@ -7,10 +7,10 @@ const styles = {
 }
 
 // Component Definition
-const Downloads = () => (
+const Library = () => (
   <div style={styles}>
-    <h1> Downloads </h1>
+    <h1> Library </h1>
   </div>
 );
 
-export default Downloads;
+export default Library;
