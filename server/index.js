@@ -1,8 +1,6 @@
 require("dotenv").config();
 const express = require("express");
 const { json } = require("body-parser");
-const cors = require("cors");
-const massive = require("massive");
 
 //IMPORT CONTROLLERS
 
@@ -13,7 +11,6 @@ const app = express();
 
 //INITIALIZE SESSION
 app.use(json());
-app.use(cors());
 
 //CONNECT TO DATABASE
 
