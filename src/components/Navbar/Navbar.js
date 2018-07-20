@@ -16,13 +16,16 @@ import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
+// Local Dependencies
+import NavTabs from './NavTabs';
+
 // Local Variables
 const styles = {
   root: {
     flexGrow: 1,
   },
   flex: {
-    flexGrow: 1,
+    // flexGrow: 1,
   },
   logo: {
     marginLeft: -12,
@@ -66,13 +69,14 @@ class Navbar extends React.Component {
           />
         </FormGroup>
         <AppBar position="static" color="primary" elevation="0">
-          <Toolbar>
+          <Toolbar style={{display: "flex", justifyContent: "center"}}>
             <IconButton className={classes.logo} color="inherit" aria-label="Logo">
               <MusicIcon />
             </IconButton>
             <Typography variant="title" color="inherit" className={classes.flex}>
               {siteTitle}
             </Typography>
+            <NavTabs />
             {auth && (
               <div>
                 <IconButton
