@@ -1,26 +1,27 @@
 // External Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Card, { CardActions, CardContent } from 'material-ui/Card';
-import SimpleDialog from '../Dialog/Dialog';
-import Typography from 'material-ui/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 // Internal Dependencies
-import preload from '../../services/db.json'
-
-const container = {
-  display: 'grid',
-  gridGap: '1em',
-  gridTemplateColumns: 'repeat(4, 1fr)',
-  marginTop: 20
-}
+import preload from '../../services/db.json';
 
 const styles = {
   card: {
     margin: '0 5px',
     minWidth: 275,
     textAlign: 'center'
+  },
+  container: {
+    display: 'grid',
+    gridGap: '1em',
+    gridTemplateColumns: 'repeat(4, 1fr)',
+    marginTop: 20
   },
   bullet: {
     display: 'inline-block',
@@ -41,16 +42,14 @@ function SimpleCard(props) {
   // const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div style={container}>
+    <div style={styles.container}>
       {preload.games.map(game => (
         <Card
+          className={classes.card}
           key={game.name}
           game={game}
-          className={classes.card}>
+        >
           <CardContent>
-            {/* <Typography className={classes.title} color="textSecondary">
-              Games and Keys
-      </Typography> */}
             <img
               alt={game.name}
               src={game.backgroundImageURL}
@@ -68,11 +67,12 @@ function SimpleCard(props) {
     </Typography> */}
           </CardContent>
           <CardActions>
-            <SimpleDialog style={{ margin: '0 auto' }} />
+            <Button size="small">Downloads</Button>
           </CardActions>
         </Card>
-      ))}
-    </div>
+      ))
+      }
+    </ div>
   );
 }
 
