@@ -29,7 +29,6 @@ const styles = {
   },
   logo: {
     marginLeft: -12,
-    marginRight: 20,
   },
 };
 
@@ -60,16 +59,16 @@ class Navbar extends React.Component {
 
     return (
       <div className={classes.root}>
-        <FormGroup>
+        {/*<FormGroup>
           <FormControlLabel
             control={
               <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
             }
             label={auth ? 'Logout' : 'Login'}
           />
-        </FormGroup>
+          </FormGroup> */}
         <AppBar position="static" color="primary" elevation="0">
-          <Toolbar style={{display: "flex", justifyContent: "center"}}>
+          <Toolbar style={{ display: "flex", justifyContent: "center" }}>
             <IconButton className={classes.logo} color="inherit" aria-label="Logo">
               <MusicIcon />
             </IconButton>
