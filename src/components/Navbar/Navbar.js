@@ -10,9 +10,9 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
+// import Switch from '@material-ui/core/Switch';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
@@ -67,7 +67,7 @@ class Navbar extends React.Component {
             label={auth ? 'Logout' : 'Login'}
           />
           </FormGroup> */}
-        <AppBar position="static" color="primary" elevation="0">
+        <AppBar position="static" color="primary" elevation={0}>
           <Toolbar style={{ display: "flex", justifyContent: "center" }}>
             <IconButton className={classes.logo} color="inherit" aria-label="Logo">
               <MusicIcon />

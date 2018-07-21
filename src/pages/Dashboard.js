@@ -7,8 +7,6 @@ import ListItems from '../components/List/ListItems';
 // Local Variables
 const wrapper = {
   display: 'grid',
-  gridTemplateColumns: '1fr',
-  justifyItems: 'center',
 }
 
 // Component Definition

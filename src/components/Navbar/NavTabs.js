@@ -40,7 +40,7 @@ class NavTabs extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position="static" elevation="0">
+                <AppBar position="static" elevation={0}>
                     <Tabs value={value} onChange={this.handleChange} centered>
                         <Tab label="Library" />
                         <Tab label="Home" />

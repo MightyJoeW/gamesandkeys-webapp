@@ -75,7 +75,7 @@ function ListItems(props) {
         </Card>
       ))
       }
-    </ div>
+    </div>
   );
 }
 
