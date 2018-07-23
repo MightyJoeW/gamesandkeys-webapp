@@ -1,6 +1,6 @@
 # GamesAndKeys.com
 
-[GamesAndKeys](http://www.gamesandkeys.com/) is a website that provides users with free video game piano tutorials, sheet music, and midi files.<br />
+GamesAndKeys is a website that provides users with free video game piano tutorials, sheet music, and midi files.<br />
 <i>* New site still in development. GamesAndKeys.com currently goes to the old blogger version.</i>
 
 ## Features
@@ -13,7 +13,7 @@
 ## Usage
 
 ### Logging in to `Games and Keys`
-
+#### (These are future steps. GamesAndKeys.com currently goes to old site)
 To login, visit [GamesAndKeys.com](http://www.gamesandkeys.com) and click the login button. You will be redirected to the Google login. After successfully logging in, you will be redirected to the `Games and Keys` dashboard.
 
 ### Submitting a Request
