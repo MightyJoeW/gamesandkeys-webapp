@@ -1,8 +1,9 @@
 // External Dependencies
 import firebase from 'firebase';
+import apiKey from './apiKey'
 
 var config = {
-  apiKey: "AIzaSyDqt3aZWrd0l2YzWmwy1oEMn4mWWPa3I74",
+  apiKey: apiKey,
   authDomain: "gamesandkeys-webapp.firebaseapp.com",
   databaseURL: "https://gamesandkeys-webapp.firebaseio.com",
   projectId: "gamesandkeys-webapp",
