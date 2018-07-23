@@ -24,66 +24,65 @@ function Library(props) {
   return (
     <div className={classes.root}>
       <List component="nav">
-        <ListItem button divider>
-          <Link to="/1001-spikes">1001 Spikes</Link>
+        <ListItem button divider component="a" href="/1001-spikes">
+          <ListItemText primary="1001 Spikes" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/beyond-two-souls">Beyond Two Souls</Link>
+        <ListItem button divider component="a" href="/beyond-two-souls">
+          <ListItemText primary="Beyond Two Souls" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/brothers">Brothers: A Tale of Two Sons</Link>
+        <ListItem button divider component="a" href="/brothers">
+          <ListItemText primary="Brothers: A Tale of Two Sons" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/catherine">Catherine</Link>
+        <ListItem button divider component="a" href="/catherine">
+          <ListItemText primary="Catherine" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/chroma">Chroma</Link>
+        <ListItem button divider component="a" href="/chroma">
+          <ListItemText primary="Chroma" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/grand-theft-auto">Grand Theft Auto</Link>
+        <ListItem button divider component="a" href="/grand-theft-auto">
+          <ListItemText primary="Grand Theft Auto" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/infamous">inFAMOUS</Link>
+        <ListItem button divider component="a" href="/infamous">
+          <ListItemText primary="inFAMOUS" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/life-is-strange'">Life Is Strange
-</Link>
+        <ListItem button divider component="a" href="/life-is-strange">
+          <ListItemText primary="Life Is Strange" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/minecraft">Minecraft</Link>
+        <ListItem button divider component="a" href="/minecraft">
+          <ListItemText primary="Minecraft" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/nba-street">NBA Street</Link>
+        <ListItem button divider component="a" href="/nba-street">
+          <ListItemText primary="NBA Street" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/playstation-commercials">Playstation Commercials</Link>
+        <ListItem button divider component="a" href="/playstation-commercials">
+          <ListItemText primary="Playstation Commercials" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/pokemon">Pokemon</Link>
+        <ListItem button divider component="a" href="/pokemon">
+          <ListItemText primary="Pokemon" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/resident-evil">Resident Evil</Link>
+        <ListItem button divider component="a" href="/resident-evil">
+          <ListItemText primary="Resident Evil" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/the-last-of-us">The Last of Us</Link>
+        <ListItem button divider component="a" href="/the-last-of-us">
+          <ListItemText primary="The Last of Us" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/the-walking-dead-game">The Walking Dead Game</Link>
+        <ListItem button divider component="a" href="/the-walking-dead-game">
+          <ListItemText primary="The Last of Us" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/thomas-was-alone">Thomas Was Alone</Link>
+        <ListItem button divider component="a" href="/thomas-was-alone">
+          <ListItemText primary="Thomas Was Alone" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/transistor">Transistor</Link>
+        <ListItem button divider component="a" href="/transistor">
+          <ListItemText primary="Transistor" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/uncharted">Uncharted 3</Link>
+        <ListItem button divider component="a" href="/uncharted">
+          <ListItemText primary="Uncharted" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/mashups">Video Game Piano Mashups</Link>
+        <ListItem button divider component="a" href="/mashups">
+          <ListItemText primary="Video Game Piano Mashups" />
         </ListItem>
-        <ListItem button divider>
-          <Link to="/bobs-burgers">Bob's Burgers</Link>
+        <ListItem button divider component="a" href="/bobs-burgers">
+          <ListItemText primary="Bob's Burgers" />
         </ListItem>
 
       </List>

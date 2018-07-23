@@ -24,8 +24,8 @@ const styles = {
   root: {
     flexGrow: 1,
   },
-  flex: {
-    // flexGrow: 1,
+  siteTitle: {
+    textDecoration: 'none',
   },
   logo: {
     marginLeft: -12,
@@ -69,10 +69,22 @@ class Navbar extends React.Component {
           </FormGroup> */}
         <AppBar position="static" color="primary" elevation={0}>
           <Toolbar style={{ display: "flex", justifyContent: "center" }}>
-            <IconButton className={classes.logo} color="inherit" aria-label="Logo">
+            <IconButton
+              aria-label="Logo"
+              className={classes.logo}
+              color="inherit"
+              component="a"
+              href="/"
+            >
               <MusicIcon />
             </IconButton>
-            <Typography variant="title" color="inherit" className={classes.flex}>
+            <Typography
+              className={classes.siteTitle}
+              color="inherit"
+              component="a"
+              href="/"
+              variant="title"
+            >
               {siteTitle}
             </Typography>
             <NavTabs />
