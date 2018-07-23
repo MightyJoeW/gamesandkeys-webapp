@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -40,11 +41,11 @@ class NavTabs extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position="static" elevation="0">
+                <AppBar position="static" elevation={0}>
                     <Tabs value={value} onChange={this.handleChange} centered>
-                        <Tab label="Library" />
-                        <Tab label="Home" />
-                        <Tab label="Requests" href="#basic-tabs" />
+                        <Tab label="Library" href="/library" />
+                        <Tab label="Home" href="/" />
+                        <Tab label="Requests" href="/requests" />
                     </Tabs>
                 </AppBar>
             </div>

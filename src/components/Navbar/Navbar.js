@@ -10,9 +10,9 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
+// import Switch from '@material-ui/core/Switch';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
@@ -24,12 +24,11 @@ const styles = {
   root: {
     flexGrow: 1,
   },
-  flex: {
-    // flexGrow: 1,
+  siteTitle: {
+    textDecoration: 'none',
   },
   logo: {
     marginLeft: -12,
-    marginRight: 20,
   },
 };
 
@@ -60,20 +59,32 @@ class Navbar extends React.Component {
 
     return (
       <div className={classes.root}>
-        <FormGroup>
+        {/*<FormGroup>
           <FormControlLabel
             control={
               <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
             }
             label={auth ? 'Logout' : 'Login'}
           />
-        </FormGroup>
-        <AppBar position="static" color="primary" elevation="0">
-          <Toolbar style={{display: "flex", justifyContent: "center"}}>
-            <IconButton className={classes.logo} color="inherit" aria-label="Logo">
+          </FormGroup> */}
+        <AppBar position="static" color="primary" elevation={0}>
+          <Toolbar style={{ display: "flex", justifyContent: "center" }}>
+            <IconButton
+              aria-label="Logo"
+              className={classes.logo}
+              color="inherit"
+              component="a"
+              href="/"
+            >
               <MusicIcon />
             </IconButton>
-            <Typography variant="title" color="inherit" className={classes.flex}>
+            <Typography
+              className={classes.siteTitle}
+              color="inherit"
+              component="a"
+              href="/"
+              variant="title"
+            >
               {siteTitle}
             </Typography>
             <NavTabs />
