@@ -38,6 +38,7 @@ import Uncharted from './pages/Tutorials/Uncharted';
 export default (
   <Switch>
     <Route exact path='/' component={Dashboard} />
+    <Route path='/help' component={Help} />
     <Route path='/library' component={Library} />
     <Route path='/requests' component={Requests} />
     <Route path='/about' component={About} />

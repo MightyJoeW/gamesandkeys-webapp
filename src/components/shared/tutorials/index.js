@@ -38,7 +38,7 @@ class DialogForm extends React.Component {
 
         return (
             <Dialog onClose={this.handleClose} aria-labelledby="simple-dialog-title" {...other}>
-                <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
+                <DialogTitle id="simple-dialog-title">Downloads</DialogTitle>
                 <div>
                     <List>
                         {emails.map(email => (
@@ -74,7 +74,7 @@ DialogForm.propTypes = {
 
 const DialogFormWrapped = withStyles(styles)(DialogForm);
 
-class DialogFormDemo extends React.Component {
+class DialogDownloads extends React.Component {
     state = {
         open: false,
         selectedValue: emails[1],
@@ -95,7 +95,7 @@ class DialogFormDemo extends React.Component {
             <div>
                 <Typography variant="subheading">Selected: {this.state.selectedValue}</Typography>
                 <br />
-                <Button onClick={this.handleClickOpen}>Open simple dialog</Button>
+                <Button onClick={this.handleClickOpen}>Downloads</Button>
                 <DialogFormWrapped
                     selectedValue={this.state.selectedValue}
                     open={this.state.open}
@@ -106,4 +106,4 @@ class DialogFormDemo extends React.Component {
     }
 }
 
-export default DialogFormDemo;
+export default DialogDownloads;
