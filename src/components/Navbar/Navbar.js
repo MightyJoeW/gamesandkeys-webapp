@@ -113,7 +113,7 @@ class Navbar extends React.Component {
                   onClose={this.handleClose}
                 >
                   <MenuItem onClick={this.handleClose}>My Account</MenuItem>
-                  <MenuItem onClick={this.handleClose}>My Logout</MenuItem>
+                  <MenuItem onClick={this.handleClose}>Logout</MenuItem>
                 </Menu>
               </div>
             )}

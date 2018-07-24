@@ -13,9 +13,9 @@ import About from './pages/About';
 import Help from './pages/Help';
 import NotFound from './pages/NotFound/NotFound';
 
-// Tutorial Pages
+// Tutorial Main Pages
 import Spikes from './pages/Tutorials/1001Spikes';
-import Beyond from './pages/Tutorials/BeyondTwoSouls';
+import Beyond from './pages/Tutorials/BeyondTwoSouls/index';
 import Bobs from './pages/Tutorials/BobsBurgers';
 import Brothers from './pages/Tutorials/Brothers';
 import Catherine from './pages/Tutorials/Catherine';
@@ -35,6 +35,9 @@ import ThomasWasAlone from './pages/Tutorials/ThomasWasAlone';
 import Transistor from './pages/Tutorials/Transistor';
 import Uncharted from './pages/Tutorials/Uncharted';
 
+// Individual Tutorial Routes
+import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/Beyond-Childhood';
+
 export default (
   <Switch>
     <Route exact path='/' component={Dashboard} />
@@ -44,6 +47,7 @@ export default (
     <Route path='/about' component={About} />
     <Route path='/1001-spikes' component={Spikes} />
     <Route path='/beyond-two-souls' component={Beyond} />
+    <Route path='/beyond-childhood-memories' component={BeyondChildhood} />
     <Route path='/bobs-burgers' component={Bobs} />
     <Route path='/brothers' component={Brothers} />
     <Route path='/catherine' component={Catherine} />
