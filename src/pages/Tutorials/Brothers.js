@@ -2,8 +2,7 @@
 import React from 'react';
 
 // Internal Dependencies
-import Dialog from '../../components/Shared/Tutorials/Dialog';
-import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
+import TutorialContainer from '../../components/shared/Tutorials/TutorialContainer';
 
 const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 
@@ -11,8 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 const Brothers = () => (
   <div>
     <p>Brothers</p>
-    <VideoPlayer videoUrl={videoUrl} />
-    <Dialog />
+    <TutorialContainer videoUrl={videoUrl} />
   </div>
 )
 
