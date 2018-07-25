@@ -9,8 +9,10 @@ const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 // Component Definition
 const Brothers = () => (
   <div>
-    <p>Brothers</p>
-    <TutorialContainer videoUrl={videoUrl} />
+    <TutorialContainer
+      name="Brothers"
+      videoUrl={videoUrl}
+    />
   </div>
 )
 

@@ -18,21 +18,21 @@ const styles = theme => ({
     },
 });
 
-function Spikes(props) {
+function Chroma(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
             <List component="nav">
-                <ListItem button divider component="a" href="/1001-spikes-main-theme">
-                    <ListItemText primary="1001 Spikes" />
+                <ListItem button divider component="a" href="/chroma-trailer-theme">
+                    <ListItemText primary="Chroma - Announce trailer theme" />
                 </ListItem>
             </List>
         </div>
     );
 }
 
-Spikes.propTypes = {
+Chroma.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Spikes);
+export default withStyles(styles)(Chroma);

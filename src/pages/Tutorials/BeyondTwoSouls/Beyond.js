@@ -9,8 +9,10 @@ const videoUrl = 'https://www.youtube.com/embed/B_jnltymaTg';
 // Component Definition
 const Beyond = () => (
   <div>
-    <p>Beyond Two Souls: Main Theme</p>
-    <TutorialContainer videoUrl={videoUrl} />
+    <TutorialContainer
+      name="Beyond Two Souls: Main Theme"
+      videoUrl={videoUrl}
+    />
   </div>
 )
 

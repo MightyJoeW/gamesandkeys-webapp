@@ -18,21 +18,21 @@ const styles = theme => ({
     },
 });
 
-function Spikes(props) {
+function Mashups(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
             <List component="nav">
-                <ListItem button divider component="a" href="/1001-spikes-main-theme">
-                    <ListItemText primary="1001 Spikes" />
+                <ListItem button divider component="a" href="/the-last-of-uncharted">
+                    <ListItemText primary="The Last of Uncharted (Piano Mashup)" />
                 </ListItem>
             </List>
         </div>
     );
 }
 
-Spikes.propTypes = {
+Mashups.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Spikes);
+export default withStyles(styles)(Mashups);

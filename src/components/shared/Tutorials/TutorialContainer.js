@@ -25,6 +25,7 @@ function TutorialContainer(props) {
   return (
     <div>
       <Paper className={classes.root} elevation={1}>
+        {props.name}
         <VideoPlayer videoUrl={videoUrl} />
         <Dialog />
       </Paper>

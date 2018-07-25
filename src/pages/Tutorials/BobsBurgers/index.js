@@ -18,21 +18,21 @@ const styles = theme => ({
     },
 });
 
-function Spikes(props) {
+function BobsBurgers(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
             <List component="nav">
-                <ListItem button divider component="a" href="/1001-spikes-main-theme">
-                    <ListItemText primary="1001 Spikes" />
+                <ListItem button divider component="a" href="/oil-spill">
+                    <ListItemText primary="Bobs Burgers" />
                 </ListItem>
             </List>
         </div>
     );
 }
 
-Spikes.propTypes = {
+BobsBurgers.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Spikes);
+export default withStyles(styles)(BobsBurgers);

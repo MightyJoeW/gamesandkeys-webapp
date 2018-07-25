@@ -26,13 +26,13 @@ function BeyondTwoSouls(props) {
         <ListItem button divider component="a" href="/beyond">
           <ListItemText primary="Beyond" />
         </ListItem>
-        <ListItem button divider component="a" href="/beyond-childhood-memories">
+        <ListItem button divider component="a" href="/childhood-memories">
           <ListItemText primary="Childhood Memories" />
         </ListItem>
-        <ListItem button divider component="a" href="/beyond-trailer">
+        <ListItem button divider component="a" href="/beyond-e3-trailer">
           <ListItemText primary="E3 Trailer (End Piano Theme)" />
         </ListItem>
-        <ListItem button divider component="a" href="/beyond-my-imaginary-friend">
+        <ListItem button divider component="a" href="/my-imaginary-friend">
           <ListItemText primary="My Imaginary Friend" />
         </ListItem>
       </List>
