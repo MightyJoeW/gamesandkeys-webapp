@@ -18,24 +18,30 @@ const styles = theme => ({
   },
 });
 
-function Beyond(props) {
+function BeyondTwoSouls(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
       <List component="nav">
+        <ListItem button divider component="a" href="/beyond">
+          <ListItemText primary="Beyond" />
+        </ListItem>
         <ListItem button divider component="a" href="/beyond-childhood-memories">
           <ListItemText primary="Childhood Memories" />
         </ListItem>
-        <ListItem button divider component="a" href="/beyond-two-souls">
+        <ListItem button divider component="a" href="/beyond-trailer">
           <ListItemText primary="E3 Trailer (End Piano Theme)" />
+        </ListItem>
+        <ListItem button divider component="a" href="/beyond-my-imaginary-friend">
+          <ListItemText primary="My Imaginary Friend" />
         </ListItem>
       </List>
     </div>
   );
 }
 
-Beyond.propTypes = {
+BeyondTwoSouls.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Beyond);
+export default withStyles(styles)(BeyondTwoSouls);

@@ -14,7 +14,7 @@ const VideoPlayer = (props) => {
         src={url}
         style={{ margin: '0 auto' }}
         title="Game Title"
-        width="640"
+        width="100%"
       >
       </iframe>
     </div>

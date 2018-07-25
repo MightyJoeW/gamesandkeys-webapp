@@ -4,14 +4,14 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/Ll8wJKBpZ8o';
+const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 
 // Component Definition
-const BeyondTrailer = () => (
+const BeyondFriend = () => (
   <div>
-    <p>E3 Trailer (End Pinao Theme)</p>
+    <p>My Imaginary Friend</p>
     <TutorialContainer videoUrl={videoUrl} />
   </div>
 )
 
-export default BeyondTrailer;
+export default BeyondFriend;

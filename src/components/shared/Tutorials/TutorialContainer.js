@@ -11,8 +11,10 @@ import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
+    margin: '0 auto',
     paddingBottom: theme.spacing.unit * 2,
+    paddingTop: theme.spacing.unit * 2,
+    width: '50%',
   },
 });
 

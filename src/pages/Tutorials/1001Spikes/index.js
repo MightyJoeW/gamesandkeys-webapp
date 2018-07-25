@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Internal Dependencies
-import TutorialContainer from '../../components/shared/Tutorials/TutorialContainer';
+import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
 const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
 
