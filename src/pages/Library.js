@@ -1,12 +1,16 @@
+//External Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
+
+//Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-// import DownloadIcon from '@material-ui/icons/SaveAlt';
+// import DownloadIcon from '@material-ui/icons/CloudDownload';
 
+//Local Variables
 const styles = theme => ({
   root: {
     width: '100%',
@@ -16,13 +20,20 @@ const styles = theme => ({
   },
 });
 
+const listItemStyles = {
+  color: 'red',
+}
+
 function Library(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
       <List component="nav">
         <ListItem button divider component="a" href="/1001-spikes">
-          <ListItemText primary="1001 Spikes" />
+          {/* <ListItemIcon>
+            <DownloadIcon />
+        </ListItemIcon> */}
+          <ListItemText style={listItemStyles} primary="1001 Spikes" />
         </ListItem>
         <ListItem button divider component="a" href="/beyond-two-souls">
           <ListItemText primary="Beyond Two Souls" />
@@ -81,7 +92,6 @@ function Library(props) {
         <ListItem button divider component="a" href="/bobs-burgers">
           <ListItemText primary="Bob's Burgers" />
         </ListItem>
-
       </List>
     </div>
   );

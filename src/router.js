@@ -13,11 +13,14 @@ import About from './pages/About';
 import Help from './pages/Help';
 import NotFound from './pages/NotFound/NotFound';
 
-// Tutorial Pages
-import Spikes from './pages/Tutorials/1001Spikes';
-import Beyond from './pages/Tutorials/BeyondTwoSouls';
+// Tutorial Main Pages
+import Spikes from './pages/Tutorials/1001Spikes/index';
+import Beyond from './pages/Tutorials/BeyondTwoSouls/Beyond';
+import BeyondFriend from './pages/Tutorials/BeyondTwoSouls/Beyond-Friend';
+import BeyondTwoSouls from './pages/Tutorials/BeyondTwoSouls/index';
+import BeyondTrailer from './pages/Tutorials/BeyondTwoSouls/Beyond-Trailer';
 import Bobs from './pages/Tutorials/BobsBurgers';
-import Brothers from './pages/Tutorials/Brothers';
+import Brothers from './pages/Tutorials/Brothers/Brothers';
 import Catherine from './pages/Tutorials/Catherine';
 import Chroma from './pages/Tutorials/Chroma';
 import GrandTheftAuto from './pages/Tutorials/GrandTheftAuto';
@@ -35,6 +38,9 @@ import ThomasWasAlone from './pages/Tutorials/ThomasWasAlone';
 import Transistor from './pages/Tutorials/Transistor';
 import Uncharted from './pages/Tutorials/Uncharted';
 
+// Individual Tutorial Routes
+import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/Beyond-Childhood';
+
 export default (
   <Switch>
     <Route exact path='/' component={Dashboard} />
@@ -43,7 +49,11 @@ export default (
     <Route path='/requests' component={Requests} />
     <Route path='/about' component={About} />
     <Route path='/1001-spikes' component={Spikes} />
-    <Route path='/beyond-two-souls' component={Beyond} />
+    <Route path='/beyond' component={Beyond} />
+    <Route path='/beyond-my-imaginary-friend' component={BeyondFriend} />
+    <Route path='/beyond-two-souls' component={BeyondTwoSouls} />
+    <Route path='/beyond-childhood-memories' component={BeyondChildhood} />
+    <Route path='/beyond-trailer' component={BeyondTrailer} />
     <Route path='/bobs-burgers' component={Bobs} />
     <Route path='/brothers' component={Brothers} />
     <Route path='/catherine' component={Catherine} />
