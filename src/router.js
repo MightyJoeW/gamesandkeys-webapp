@@ -15,18 +15,15 @@ import NotFound from './pages/NotFound/NotFound';
 
 // Tutorial Main Pages
 import Spikes from './pages/Tutorials/1001Spikes/index';
-import Beyond from './pages/Tutorials/BeyondTwoSouls/Beyond';
-import BeyondFriend from './pages/Tutorials/BeyondTwoSouls/Beyond-Friend';
 import BeyondTwoSouls from './pages/Tutorials/BeyondTwoSouls/index';
-import BeyondTrailer from './pages/Tutorials/BeyondTwoSouls/Beyond-Trailer';
-import Bobs from './pages/Tutorials/BobsBurgers';
-import Brothers from './pages/Tutorials/Brothers/Brothers';
-import Catherine from './pages/Tutorials/Catherine';
-import Chroma from './pages/Tutorials/Chroma';
-import GrandTheftAuto from './pages/Tutorials/GrandTheftAuto';
-import Infamous from './pages/Tutorials/Infamous';
-import LifeIsStrange from './pages/Tutorials/LifeIsStrange';
-import Mashups from './pages/Tutorials/Mashups';
+import BobsBurgers from './pages/Tutorials/BobsBurgers/index';
+import Brothers from './pages/Tutorials/Brothers/index';
+import Catherine from './pages/Tutorials/Catherine/index';
+import Chroma from './pages/Tutorials/Chroma/index';
+import GrandTheftAuto from './pages/Tutorials/GrandTheftAuto/index';
+import Infamous from './pages/Tutorials/Infamous/index';
+import LifeIsStrange from './pages/Tutorials/LifeIsStrange/index';
+import Mashups from './pages/Tutorials/Mashups/index';
 import Minecraft from './pages/Tutorials/Minecraft';
 import NbaStreet from './pages/Tutorials/NbaStreet';
 import PlaystationCommercials from './pages/Tutorials/PlaystationCommercials';
@@ -39,7 +36,19 @@ import Transistor from './pages/Tutorials/Transistor';
 import Uncharted from './pages/Tutorials/Uncharted';
 
 // Individual Tutorial Routes
-import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/Beyond-Childhood';
+import SpikesTheme from './pages/Tutorials/1001Spikes/spikes';
+import Beyond from './pages/Tutorials/BeyondTwoSouls/beyond';
+import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/beyond-childhood';
+import BeyondFriend from './pages/Tutorials/BeyondTwoSouls/beyond-friend';
+import BeyondTrailer from './pages/Tutorials/BeyondTwoSouls/beyond-trailer';
+import OilSpill from './pages/Tutorials/BobsBurgers/oil-spill';
+import BrothersTheme from './pages/Tutorials/Brothers/brothers';
+import CatherineStraySheep from './pages/Tutorials/Catherine/stray-sheep';
+import ChromaTheme from './pages/Tutorials/Chroma/chroma';
+import GrandTheftAutoTrailer from './pages/Tutorials/GrandTheftAuto/gtav-trailer-theme';
+import SecondSon from './pages/Tutorials/Infamous/second-son';
+import PianoFire from './pages/Tutorials/LifeIsStrange/piano-fire';
+import LastofUncharted from './pages/Tutorials/Mashups/the-last-of-uncharted';
 
 export default (
   <Switch>
@@ -49,19 +58,28 @@ export default (
     <Route path='/requests' component={Requests} />
     <Route path='/about' component={About} />
     <Route path='/1001-spikes' component={Spikes} />
+    <Route path='/1001-spikes-main-theme' component={SpikesTheme} />
     <Route path='/beyond' component={Beyond} />
-    <Route path='/beyond-my-imaginary-friend' component={BeyondFriend} />
+    <Route path='/my-imaginary-friend' component={BeyondFriend} />
     <Route path='/beyond-two-souls' component={BeyondTwoSouls} />
-    <Route path='/beyond-childhood-memories' component={BeyondChildhood} />
-    <Route path='/beyond-trailer' component={BeyondTrailer} />
-    <Route path='/bobs-burgers' component={Bobs} />
+    <Route path='/childhood-memories' component={BeyondChildhood} />
+    <Route path='/beyond-e3-trailer' component={BeyondTrailer} />
+    <Route path='/bobs-burgers' component={BobsBurgers} />
+    <Route path='/oil-spill' component={OilSpill} />
     <Route path='/brothers' component={Brothers} />
+    <Route path='/brothers-main-theme' component={BrothersTheme} />
+    <Route path='/stray-sheep' component={CatherineStraySheep} />
     <Route path='/catherine' component={Catherine} />
     <Route path='/chroma' component={Chroma} />
+    <Route path='/chroma-trailer-theme' component={ChromaTheme} />
     <Route path='/grand-theft-auto' component={GrandTheftAuto} />
+    <Route path='/gtav-trailer-theme' component={GrandTheftAutoTrailer} />
     <Route path='/infamous' component={Infamous} />
+    <Route path='/second-son' component={SecondSon} />
     <Route path='/life-is-strange' component={LifeIsStrange} />
+    <Route path='/piano-fire' component={PianoFire} />
     <Route path='/mashups' component={Mashups} />
+    <Route path='/the-last-of-uncharted' component={LastofUncharted} />
     <Route path='/minecraft' component={Minecraft} />
     <Route path='/nba-street' component={NbaStreet} />
     <Route path='/playstation-commercials' component={PlaystationCommercials} />

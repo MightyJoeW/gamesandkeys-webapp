@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+const videoUrl = 'https://www.youtube.com/embed/kPzFk_mytr0';
 
 // Component Definition
-const BeyondChildhood = () => (
+const PianoFire = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
+      name="Piano Fire"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default BeyondChildhood;
+export default PianoFire;

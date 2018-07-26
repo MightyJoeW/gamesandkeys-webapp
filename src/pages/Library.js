@@ -75,7 +75,7 @@ function Library(props) {
           <ListItemText primary="The Last of Us" />
         </ListItem>
         <ListItem button divider component="a" href="/the-walking-dead-game">
-          <ListItemText primary="The Last of Us" />
+          <ListItemText primary="The Walking Dead Game" />
         </ListItem>
         <ListItem button divider component="a" href="/thomas-was-alone">
           <ListItemText primary="Thomas Was Alone" />

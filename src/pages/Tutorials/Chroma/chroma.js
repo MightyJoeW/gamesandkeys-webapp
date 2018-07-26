@@ -4,16 +4,15 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+const videoUrl = 'https://www.youtube.com/embed/HnAu8DBAZmk';
 
 // Component Definition
-const BeyondChildhood = () => (
+const Chroma = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
-      videoUrl={videoUrl}
-    />
+      name="Chroma - announce trailer theme"
+      videoUrl={videoUrl} />
   </div>
 )
 
-export default BeyondChildhood;
+export default Chroma;

@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+const videoUrl = 'https://www.youtube.com/embed/EfawmKPbi-E';
 
 // Component Definition
-const BeyondChildhood = () => (
+const TheLastofUncharted = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
+      name="The Last of Uncharted"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default BeyondChildhood;
+export default TheLastofUncharted;

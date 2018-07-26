@@ -4,16 +4,15 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+const videoUrl = 'https://www.youtube.com/embed/zfYB0tzjOyk';
 
 // Component Definition
-const BeyondChildhood = () => (
+const StraySheep = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
-      videoUrl={videoUrl}
-    />
+      name="Stray Sheep"
+      videoUrl={videoUrl} />
   </div>
 )
 
-export default BeyondChildhood;
+export default StraySheep;

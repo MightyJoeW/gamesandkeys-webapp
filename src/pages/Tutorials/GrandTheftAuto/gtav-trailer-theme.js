@@ -4,16 +4,15 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+const videoUrl = 'https://www.youtube.com/embed/xDAtuAotJuo';
 
 // Component Definition
-const BeyondChildhood = () => (
+const GrandTheftAuto = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
-      videoUrl={videoUrl}
-    />
+      name="Trailer Theme (Ogdens Nut Gone Flake)"
+      videoUrl={videoUrl} />
   </div>
 )
 
-export default BeyondChildhood;
+export default GrandTheftAuto;
