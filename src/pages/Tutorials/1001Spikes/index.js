@@ -19,12 +19,13 @@ const styles = theme => ({
 });
 
 function Spikes(props) {
-    const { classes } = props;
+    const { classes, name } = props;
     return (
         <div className={classes.root}>
+            <div>{name}</div>
             <List component="nav">
                 <ListItem button divider component="a" href="/1001-spikes-main-theme">
-                    <ListItemText primary="1001 Spikes" />
+                    <ListItemText primary="1001 Spikes Main Theme" />
                 </ListItem>
             </List>
         </div>

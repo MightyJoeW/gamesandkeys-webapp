@@ -24,9 +24,9 @@ import GrandTheftAuto from './pages/Tutorials/GrandTheftAuto/index';
 import Infamous from './pages/Tutorials/Infamous/index';
 import LifeIsStrange from './pages/Tutorials/LifeIsStrange/index';
 import Mashups from './pages/Tutorials/Mashups/index';
-import Minecraft from './pages/Tutorials/Minecraft';
-import NbaStreet from './pages/Tutorials/NbaStreet';
-import PlaystationCommercials from './pages/Tutorials/PlaystationCommercials';
+import Minecraft from './pages/Tutorials/Minecraft/index';
+import NbaStreet from './pages/Tutorials/NbaStreet/index';
+import PlaystationCommercials from './pages/Tutorials/PlaystationCommercials/index';
 import Pokemon from './pages/Tutorials/Pokemon';
 import ResidentEvil from './pages/Tutorials/ResidentEvil';
 import TheLastOfUs from './pages/Tutorials/TheLastOfUs';
@@ -38,9 +38,9 @@ import Uncharted from './pages/Tutorials/Uncharted';
 // Individual Tutorial Routes
 import SpikesTheme from './pages/Tutorials/1001Spikes/spikes';
 import Beyond from './pages/Tutorials/BeyondTwoSouls/beyond';
-import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/beyond-childhood';
-import BeyondFriend from './pages/Tutorials/BeyondTwoSouls/beyond-friend';
-import BeyondTrailer from './pages/Tutorials/BeyondTwoSouls/beyond-trailer';
+import BeyondChildhood from './pages/Tutorials/BeyondTwoSouls/childhood-memories';
+import BeyondFriend from './pages/Tutorials/BeyondTwoSouls/my-imaginary-friend';
+import BeyondTrailer from './pages/Tutorials/BeyondTwoSouls/e3-trailer';
 import OilSpill from './pages/Tutorials/BobsBurgers/oil-spill';
 import BrothersTheme from './pages/Tutorials/Brothers/brothers';
 import CatherineStraySheep from './pages/Tutorials/Catherine/stray-sheep';
@@ -49,6 +49,11 @@ import GrandTheftAutoTrailer from './pages/Tutorials/GrandTheftAuto/gtav-trailer
 import SecondSon from './pages/Tutorials/Infamous/second-son';
 import PianoFire from './pages/Tutorials/LifeIsStrange/piano-fire';
 import LastofUncharted from './pages/Tutorials/Mashups/the-last-of-uncharted';
+import Ki from './pages/Tutorials/Minecraft/ki';
+import DeadVoxel from './pages/Tutorials/Minecraft/dead-voxel';
+import MoogCity2 from './pages/Tutorials/Minecraft/moog-city-2';
+import RideWitMe from './pages/Tutorials/NbaStreet/ride-wit-me';
+import PerfectDay from './pages/Tutorials/PlaystationCommercials/perfect-day';
 
 export default (
   <Switch>
@@ -81,8 +86,13 @@ export default (
     <Route path='/mashups' component={Mashups} />
     <Route path='/the-last-of-uncharted' component={LastofUncharted} />
     <Route path='/minecraft' component={Minecraft} />
+    <Route path='/ki' component={Ki} />
+    <Route path='/dead-voxel' component={DeadVoxel} />
+    <Route path='/moog-city-2' component={MoogCity2} />
     <Route path='/nba-street' component={NbaStreet} />
+    <Route path='/ride-wit-me' component={RideWitMe} />
     <Route path='/playstation-commercials' component={PlaystationCommercials} />
+    <Route path='/perfect-day' component={PerfectDay} />
     <Route path='/pokemon' component={Pokemon} />
     <Route path='/resident-evil' component={ResidentEvil} />
     <Route path='/the-last-of-us' component={TheLastOfUs} />

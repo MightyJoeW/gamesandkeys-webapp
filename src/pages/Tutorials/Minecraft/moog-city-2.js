@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
+const videoUrl = 'https://www.youtube.com/embed/ESPJGXs_tDU';
 
 // Component Definition
-const Brothers = () => (
+const MoogCity2 = () => (
   <div>
     <TutorialContainer
-      name="Winged Hope"
+      name="Moog City 2"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Brothers;
+export default MoogCity2;

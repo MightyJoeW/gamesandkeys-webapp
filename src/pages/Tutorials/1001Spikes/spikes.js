@@ -7,10 +7,10 @@ import TutorialContainer from '../../../components/shared/Tutorials/TutorialCont
 const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
 
 // Component Definition
-const Spikes = (props) => (
+const Spikes = () => (
   <div>
     <TutorialContainer
-      name="1001 Spikes"
+      name="1001 Spikes Main Theme"
       videoUrl={videoUrl}
     />
   </div>

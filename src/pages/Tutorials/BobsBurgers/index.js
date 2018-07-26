@@ -24,7 +24,7 @@ function BobsBurgers(props) {
         <div className={classes.root}>
             <List component="nav">
                 <ListItem button divider component="a" href="/oil-spill">
-                    <ListItemText primary="Bobs Burgers" />
+                    <ListItemText primary="Oil Spill" />
                 </ListItem>
             </List>
         </div>

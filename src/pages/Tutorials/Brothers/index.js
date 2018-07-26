@@ -24,7 +24,7 @@ function Brothers(props) {
         <div className={classes.root}>
             <List component="nav">
                 <ListItem button divider component="a" href="/brothers-main-theme">
-                    <ListItemText primary="Brothers" />
+                    <ListItemText primary="Winged Hope" />
                 </ListItem>
             </List>
         </div>

@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
+const videoUrl = 'https://www.youtube.com/embed/T92IROWXd4w';
 
 // Component Definition
-const Brothers = () => (
+const Ki = () => (
   <div>
     <TutorialContainer
-      name="Winged Hope"
+      name="Ki"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Brothers;
+export default Ki;
