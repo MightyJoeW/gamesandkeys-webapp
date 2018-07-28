@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 //Internal Dependencies
-import ListDisplay from '../../../components/shared/Tutorials/ListDisplay';
+import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //Local Variables
 const styles = theme => ({
