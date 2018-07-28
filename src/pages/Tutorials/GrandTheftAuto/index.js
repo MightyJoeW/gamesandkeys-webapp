@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 
 //Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+
+
+//Internal Dependencies
+import ListDisplay from '../../../components/shared/Tutorials/ListDisplay';
 
 //Local Variables
 const styles = theme => ({
@@ -18,15 +19,16 @@ const styles = theme => ({
     },
 });
 
+const songs = [
+    'grand-theft-auto-v-trailer-theme',
+];
+
+// Component Definition
 function GrandTheftAuto(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <List component="nav">
-                <ListItem button divider component="a" href="/gtav-trailer-theme">
-                    <ListItemText primary="Trailer Theme (Ogdens Nut Gone Flake)" />
-                </ListItem>
-            </List>
+            <ListDisplay songs={songs} />
         </div>
     );
 }

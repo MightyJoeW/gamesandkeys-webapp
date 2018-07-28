@@ -2,12 +2,15 @@
   display: grid;
   grid-template-rows: 100px 150px 1fr 1fr;
   justify-items: center;
-  /* align-items: center; */
+  margin-top: 60px;
 }
 
 .notFound__img {
   width: 200px;
   height: 200px;
+  background-image: url("./flushed-face.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .notFound__row--top {

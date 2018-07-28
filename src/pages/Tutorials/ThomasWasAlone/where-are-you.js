@@ -4,16 +4,17 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/B_jnltymaTg';
+// Local Variables
+const videoUrl = 'https://www.youtube.com/embed/spDdgUqgxBo';
 
 // Component Definition
-const Beyond = () => (
+const WhereAreYou = () => (
   <div>
     <TutorialContainer
-      name="Beyond Two Souls: Main Theme"
+      title='Where Are You'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Beyond;
+export default WhereAreYou;

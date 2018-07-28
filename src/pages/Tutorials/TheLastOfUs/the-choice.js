@@ -4,16 +4,17 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/Ll8wJKBpZ8o';
+// Local Variables
+const videoUrl = 'https://www.youtube.com/embed/kq8qR5kmFtM';
 
 // Component Definition
-const BeyondTrailer = () => (
+const TheChoice = () => (
   <div>
     <TutorialContainer
-      name="E3 Trailer (End Pinao Theme)"
+      title='The Choice'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default BeyondTrailer;
+export default TheChoice;

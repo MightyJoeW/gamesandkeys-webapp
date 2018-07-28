@@ -4,16 +4,17 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
+// Local Variables
+const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 
 // Component Definition
-const BeyondChildhood = () => (
+const BeyondFriend = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
+      title='My Imaginary Friend'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default BeyondChildhood;
+export default BeyondFriend;

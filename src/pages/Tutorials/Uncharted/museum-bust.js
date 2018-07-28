@@ -5,16 +5,16 @@ import React from 'react';
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
 // Local Variables
-const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
+const videoUrl = 'https://www.youtube.com/embed/juBlhF_kp4A';
 
 // Component Definition
-const Spikes = () => (
+const MuseumBust = () => (
   <div>
     <TutorialContainer
-      title='1001 Spikes Main Theme'
+      title='Museum Bust'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Spikes;
+export default MuseumBust;

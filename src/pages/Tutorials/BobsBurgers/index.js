@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 //Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+
+//Internal Dependencies
+import ListDisplay from '../../../components/shared/Tutorials/ListDisplay';
 
 //Local Variables
 const styles = theme => ({
@@ -18,15 +18,16 @@ const styles = theme => ({
     },
 });
 
+const songs = [
+    'oil-spill',
+];
+
+// Component Definition
 function BobsBurgers(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <List component="nav">
-                <ListItem button divider component="a" href="/oil-spill">
-                    <ListItemText primary="Bobs Burgers" />
-                </ListItem>
-            </List>
+            <ListDisplay songs={songs} />
         </div>
     );
 }

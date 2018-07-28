@@ -4,13 +4,14 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
+// Local Variables
 const videoUrl = 'https://www.youtube.com/embed/xDAtuAotJuo';
 
 // Component Definition
 const GrandTheftAuto = () => (
   <div>
     <TutorialContainer
-      name="Trailer Theme (Ogdens Nut Gone Flake)"
+      title='Trailer Theme (Ogdens Nut Gone Flake)'
       videoUrl={videoUrl} />
   </div>
 )

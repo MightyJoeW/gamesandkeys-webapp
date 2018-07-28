@@ -4,17 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-// Local Variables
-const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
+const videoUrl = 'https://www.youtube.com/embed/nwcKv152tfs';
 
 // Component Definition
-const Spikes = () => (
+const VanishingGraceInnocence = () => (
   <div>
     <TutorialContainer
-      title='1001 Spikes Main Theme'
+      title="Vanishing Grace (Innocence)"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Spikes;
+export default VanishingGraceInnocence;

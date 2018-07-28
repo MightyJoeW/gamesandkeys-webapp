@@ -4,16 +4,17 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
+// Local Variables
+const videoUrl = 'https://www.youtube.com/embed/Zlx37MUbq9E';
 
 // Component Definition
-const Brothers = () => (
+const LeftBehindTogether = () => (
   <div>
     <TutorialContainer
-      name="Brothers"
+      title='Left Behind (Together)'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default Brothers;
+export default LeftBehindTogether;
