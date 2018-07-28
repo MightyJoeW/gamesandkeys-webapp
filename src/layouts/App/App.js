@@ -1,6 +1,9 @@
 // External Dependencies
 import React, { Component } from 'react';
-import CssBaseline from 'material-ui/CssBaseline';
+
+// Material-UI Dependencies
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { grey } from '@material-ui/core/colors';
 
 // Internal Dependencies
 import Navbar from '../../components/Navbar/Navbar';
@@ -12,11 +15,9 @@ const navbarStyles = {
 }
 
 const styles = {
-  backgroundColor: '3f3f3f',
+  backgroundColor: grey['100'],
   fontFamily: 'ariel',
-  height: '100vh',
   display: 'grid',
-  gridTemplateRows: '1fr 8fr 2fr'
 }
 
 // Component Definition

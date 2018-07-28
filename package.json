@@ -3,30 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/icons": "^1.0.0-beta.42",
-    "apollo-boost": "^0.1.1",
+    "@material-ui/core": "^1.4.0",
+    "@material-ui/icons": "^1.1.0",
     "autosuggest-highlight": "^3.1.1",
     "axios": "^0.17.1",
-    "body-parser": "^1.18.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.2",
-    "graphql": "^0.13.1",
-    "massive": "^4.6.3",
-    "material-ui": "^1.0.0-beta.41",
-    "material-ui-icons": "^1.0.0-beta.36",
-    "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-apollo": "^2.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "firebase-admin": "^5.13.0",
+    "mdi-material-ui": "^5.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
     "react-autosuggest": "^9.3.4",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
-    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0"
+    "redux-devtools-extension": "^2.13.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,8 +28,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
   "devDependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "firebase": "^5.3.0"
   }
 }

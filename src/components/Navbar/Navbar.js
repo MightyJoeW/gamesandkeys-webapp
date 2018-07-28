@@ -1,60 +1,131 @@
+// External Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import SearchIcon from '@material-ui/icons/Search';
-import QuestionIcon from '@material-ui/icons/QuestionAnswer';
 
+// Material-UI Dependencies
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MusicIcon from '@material-ui/icons/LibraryMusic';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+// import Switch from '@material-ui/core/Switch';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import FormGroup from '@material-ui/core/FormGroup';
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
+
+// Local Dependencies
 import NavTabs from './NavTabs';
 
+// Local Variables
 const styles = {
   root: {
     flexGrow: 1,
   },
-  flex: {
-    flex: 1,
+  siteTitle: {
+    textDecoration: 'none',
   },
-  menuButton: {
+  logo: {
     marginLeft: -12,
-    marginRight: 20,
   },
 };
 
-const iconStyles = {
-  padding: '0 8px',
-  cursor: 'pointer'
+const siteTitle = 'Games and Keys';
+
+class Navbar extends React.Component {
+  state = {
+    auth: true,
+    anchorEl: null,
+  };
+
+  handleChange = (event, checked) => {
+    this.setState({ auth: checked });
+  };
+
+  handleMenu = event => {
+    this.setState({ anchorEl: event.currentTarget });
+  };
+
+  handleClose = () => {
+    this.setState({ anchorEl: null });
+  };
+
+  render() {
+    const { classes } = this.props;
+    const { auth, anchorEl } = this.state;
+    const open = Boolean(anchorEl);
+
+    return (
+      <div className={classes.root}>
+        {/*<FormGroup>
+          <FormControlLabel
+            control={
+              <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
+            }
+            label={auth ? 'Logout' : 'Login'}
+          />
+          </FormGroup> */}
+        <AppBar position="static" color="primary" elevation={0}>
+          <Toolbar style={{ display: "flex", justifyContent: "center" }}>
+            <IconButton
+              aria-label="Logo"
+              className={classes.logo}
+              color="inherit"
+              component="a"
+              href="/"
+            >
+              <MusicIcon />
+            </IconButton>
+            <Typography
+              className={classes.siteTitle}
+              color="inherit"
+              component="a"
+              href="/"
+              variant="title"
+            >
+              {siteTitle}
+            </Typography>
+            <NavTabs />
+            {auth && (
+              <div>
+                <IconButton
+                  aria-owns={open ? 'menu-appbar' : null}
+                  aria-haspopup="true"
+                  onClick={this.handleMenu}
+                  color="inherit"
+                >
+                  <AccountCircle />
+                </IconButton>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorEl}
+                  anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                  }}
+                  open={open}
+                  onClose={this.handleClose}
+                >
+                  <MenuItem onClick={this.handleClose}>My Account</MenuItem>
+                  <MenuItem onClick={this.handleClose}>Logout</MenuItem>
+                </Menu>
+              </div>
+            )}
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
 }
 
-const navTabStyles = {
-}
-
-function ButtonAppBar(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography
-            style={{ cursor: 'pointer' }}
-            variant="title"
-            color="inherit"
-            className={classes.flex}
-          >
-            Games and Keys
-          </Typography>
-          <NavTabs style={navTabStyles} />
-          <QuestionIcon style={iconStyles} />
-          <SearchIcon style={iconStyles} />
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
-}
-
-ButtonAppBar.propTypes = {
+Navbar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(Navbar);

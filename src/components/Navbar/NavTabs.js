@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import AppBar from 'material-ui/AppBar';
-import Tabs, { Tab } from 'material-ui/Tabs';
-import Typography from 'material-ui/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import Typography from '@material-ui/core/Typography';
 
 function TabContainer(props) {
     return (
@@ -19,13 +20,12 @@ TabContainer.propTypes = {
 
 const styles = theme => ({
     root: {
-        // flexGrow: 1,
-        // marginTop: theme.spacing.unit * 3,
-        // backgroundColor: theme.palette.background.paper,
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.paper,
     },
 });
 
-class SimpleTabs extends React.Component {
+class NavTabs extends React.Component {
     state = {
         value: 0,
     };
@@ -40,11 +40,11 @@ class SimpleTabs extends React.Component {
 
         return (
             <div className={classes.root}>
-                <AppBar position="static">
-                    <Tabs value={value} onChange={this.handleChange}>
-                        <Tab label="Sheet Music" />
-                        <Tab label="Home" />
-                        <Tab label="Midi Files" href="#basic-tabs" />
+                <AppBar position="static" elevation={0}>
+                    <Tabs value={value} onChange={this.handleChange} centered>
+                        <Tab label="Library" href="/library" />
+                        <Tab label="Home" href="/" />
+                        <Tab label="Requests" href="/requests" />
                     </Tabs>
                 </AppBar>
             </div>
@@ -52,8 +52,8 @@ class SimpleTabs extends React.Component {
     }
 }
 
-SimpleTabs.propTypes = {
+NavTabs.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimpleTabs);
+export default withStyles(styles)(NavTabs);
