@@ -8,7 +8,7 @@ class NotFound extends Component {
       <div className="notFound__title">
         <p className="notFound__row notFound__row--top"> 404 </p>
         <p className="notFound__row notFound__row--second">Not Found</p>
-        <img
+        <div
           class="notFound__img"
         />
         <p className="notFound__row notFound__row--bottom">

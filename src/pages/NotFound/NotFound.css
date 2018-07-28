@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 100px 150px 1fr 1fr;
   justify-items: center;
-  /* align-items: center; */
+  margin-top: 60px;
 }
 
 .notFound__img {
@@ -11,7 +11,6 @@
   background-image: url("./flushed-face.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 500px; /* temp fix for hiding border */
 }
 
 .notFound__row--top {
