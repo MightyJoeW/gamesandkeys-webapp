@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/kPzFk_mytr0';
 const PianoFire = () => (
   <div>
     <TutorialContainer
-      name="Piano Fire"
+      title='Piano Fire'
       videoUrl={videoUrl}
     />
   </div>

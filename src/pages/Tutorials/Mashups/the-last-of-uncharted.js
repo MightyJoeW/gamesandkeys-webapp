@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/EfawmKPbi-E';
 const TheLastofUncharted = () => (
   <div>
     <TutorialContainer
-      name="The Last of Uncharted"
+      title='The Last of Uncharted'
       videoUrl={videoUrl}
     />
   </div>

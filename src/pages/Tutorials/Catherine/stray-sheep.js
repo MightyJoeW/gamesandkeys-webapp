@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/zfYB0tzjOyk';
 const StraySheep = () => (
   <div>
     <TutorialContainer
-      name="Stray Sheep"
+      title='Stray Sheep'
       videoUrl={videoUrl} />
   </div>
 )

@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/xF0gICE1Vcg';
 const PerfectDay = () => (
   <div>
     <TutorialContainer
-      name="Perfect Day"
+      title='Perfect Day'
       videoUrl={videoUrl}
     />
   </div>

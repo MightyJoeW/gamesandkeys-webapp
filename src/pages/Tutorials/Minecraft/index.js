@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 //Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+
+//Internal Dependencies
+import ListDisplay from '../../../components/shared/Tutorials/ListDisplay';
 
 //Local Variables
 const styles = theme => ({
@@ -18,21 +18,18 @@ const styles = theme => ({
   },
 });
 
+const songs = [
+  'dead-voxel',
+  'ki',
+  'moog-city-2',
+];
+
+// Component Definition
 function Minecraft(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <List component="nav">
-        <ListItem button divider component="a" href="/ki">
-          <ListItemText primary="Ki" />
-        </ListItem>
-        <ListItem button divider component="a" href="/dead-voxel">
-          <ListItemText primary="Dead Voxel" />
-        </ListItem>
-        <ListItem button divider component="a" href="/moog-city-2">
-          <ListItemText primary="Moog City 2" />
-        </ListItem>
-      </List>
+      <ListDisplay songs={songs} />
     </div>
   );
 }

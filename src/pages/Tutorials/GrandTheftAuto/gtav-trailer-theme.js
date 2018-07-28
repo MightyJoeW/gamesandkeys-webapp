@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/xDAtuAotJuo';
 const GrandTheftAuto = () => (
   <div>
     <TutorialContainer
-      name="Trailer Theme (Ogdens Nut Gone Flake)"
+      title='Trailer Theme (Ogdens Nut Gone Flake)'
       videoUrl={videoUrl} />
   </div>
 )

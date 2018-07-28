@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/B_jnltymaTg';
 const Beyond = () => (
   <div>
     <TutorialContainer
-      name="Beyond Two Souls: Main Theme"
+      title='Beyond Two Souls: Main Theme'
       videoUrl={videoUrl}
     />
   </div>

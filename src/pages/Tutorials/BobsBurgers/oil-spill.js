@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/0bNEkJ5JBvc';
 const OilSpill = () => (
   <div>
     <TutorialContainer
-      name="Oil Spill"
+      title='Oil Spill'
       videoUrl={videoUrl} />
   </div>
 )

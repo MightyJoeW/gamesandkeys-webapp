@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/HnAu8DBAZmk';
 const Chroma = () => (
   <div>
     <TutorialContainer
-      name="Chroma - announce trailer theme"
+      title='Chroma - announce trailer theme'
       videoUrl={videoUrl} />
   </div>
 )

@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/Ll8wJKBpZ8o';
 const BeyondTrailer = () => (
   <div>
     <TutorialContainer
-      name="E3 Trailer (End Pinao Theme)"
+      title='E3 Trailer (End Pinao Theme)'
       videoUrl={videoUrl}
     />
   </div>

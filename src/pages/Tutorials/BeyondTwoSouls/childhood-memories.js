@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
 const BeyondChildhood = () => (
   <div>
     <TutorialContainer
-      name="Childhood Memories"
+      title='Childhood Memories'
       videoUrl={videoUrl}
     />
   </div>

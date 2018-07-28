@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 const Brothers = () => (
   <div>
     <TutorialContainer
-      name="Winged Hope"
+      title='Winged Hope'
       videoUrl={videoUrl}
     />
   </div>

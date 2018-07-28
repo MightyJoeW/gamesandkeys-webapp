@@ -8,6 +8,10 @@
 .notFound__img {
   width: 200px;
   height: 200px;
+  background-image: url("./flushed-face.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 500px; /* temp fix for hiding border */
 }
 
 .notFound__row--top {

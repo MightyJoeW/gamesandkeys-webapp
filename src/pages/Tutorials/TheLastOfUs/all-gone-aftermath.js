@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/ModmUekQRvg';
+const videoUrl = 'https://www.youtube.com/embed/JnzjGqG0WQ4';
 
 // Component Definition
-const RideWitMe = () => (
+const AllGoneAftermath = () => (
   <div>
     <TutorialContainer
-      title='Ride Wit Me'
+      title='All Gone Aftermath'
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default RideWitMe;
+export default AllGoneAftermath;

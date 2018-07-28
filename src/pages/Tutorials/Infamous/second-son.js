@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/HsMitMHRHos';
 const Infamous = () => (
   <div>
     <TutorialContainer
-      name="Second Son"
+      title='Second Son'
       videoUrl={videoUrl}
     />
   </div>

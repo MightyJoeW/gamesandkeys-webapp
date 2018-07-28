@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 const BeyondFriend = () => (
   <div>
     <TutorialContainer
-      name="My Imaginary Friend"
+      title='My Imaginary Friend'
       videoUrl={videoUrl}
     />
   </div>

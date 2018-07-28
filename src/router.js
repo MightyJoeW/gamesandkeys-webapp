@@ -27,9 +27,9 @@ import Mashups from './pages/Tutorials/Mashups/index';
 import Minecraft from './pages/Tutorials/Minecraft/index';
 import NbaStreet from './pages/Tutorials/NbaStreet/index';
 import PlaystationCommercials from './pages/Tutorials/PlaystationCommercials/index';
-import Pokemon from './pages/Tutorials/Pokemon';
-import ResidentEvil from './pages/Tutorials/ResidentEvil';
-import TheLastOfUs from './pages/Tutorials/TheLastOfUs';
+import Pokemon from './pages/Tutorials/Pokemon/index';
+import ResidentEvil from './pages/Tutorials/ResidentEvil/index';
+import TheLastOfUs from './pages/Tutorials/TheLastOfUs/index';
 import TheWalkingDeadGame from './pages/Tutorials/TheWalkingDeadGame';
 import ThomasWasAlone from './pages/Tutorials/ThomasWasAlone';
 import Transistor from './pages/Tutorials/Transistor';
@@ -54,6 +54,15 @@ import DeadVoxel from './pages/Tutorials/Minecraft/dead-voxel';
 import MoogCity2 from './pages/Tutorials/Minecraft/moog-city-2';
 import RideWitMe from './pages/Tutorials/NbaStreet/ride-wit-me';
 import PerfectDay from './pages/Tutorials/PlaystationCommercials/perfect-day';
+import PokemonLeague from './pages/Tutorials/Pokemon/pokemon-league';
+import SafeHaven from './pages/Tutorials/ResidentEvil/resident-evil-0-safe-haven';
+import MenuTheme from './pages/Tutorials/ResidentEvil/revelations-menu-theme';
+import PreviousStory from './pages/Tutorials/ResidentEvil/revelations-previous-story';
+import TheLastOfUsTheme from './pages/Tutorials/TheLastOfUs/the-last-of-us-theme';
+import VanishingGraceInnocence from './pages/Tutorials/TheLastOfUs/vanishing-grace-innocence';
+import AllGoneAftermath from './pages/Tutorials/TheLastOfUs/all-gone-aftermath';
+import AllGoneNoEscape from './pages/Tutorials/TheLastOfUs/all-gone-no-escape';
+import Fleeting from './pages/Tutorials/TheLastOfUs/fleeting';
 
 export default (
   <Switch>
@@ -65,41 +74,50 @@ export default (
     <Route path='/1001-spikes' component={Spikes} />
     <Route path='/1001-spikes-main-theme' component={SpikesTheme} />
     <Route path='/beyond' component={Beyond} />
-    <Route path='/my-imaginary-friend' component={BeyondFriend} />
-    <Route path='/beyond-two-souls' component={BeyondTwoSouls} />
-    <Route path='/childhood-memories' component={BeyondChildhood} />
     <Route path='/beyond-e3-trailer' component={BeyondTrailer} />
+    <Route path='/beyond-two-souls' component={BeyondTwoSouls} />
     <Route path='/bobs-burgers' component={BobsBurgers} />
-    <Route path='/oil-spill' component={OilSpill} />
     <Route path='/brothers' component={Brothers} />
     <Route path='/brothers-main-theme' component={BrothersTheme} />
-    <Route path='/stray-sheep' component={CatherineStraySheep} />
     <Route path='/catherine' component={Catherine} />
+    <Route path='/childhood-memories' component={BeyondChildhood} />
     <Route path='/chroma' component={Chroma} />
     <Route path='/chroma-trailer-theme' component={ChromaTheme} />
-    <Route path='/grand-theft-auto' component={GrandTheftAuto} />
-    <Route path='/gtav-trailer-theme' component={GrandTheftAutoTrailer} />
-    <Route path='/infamous' component={Infamous} />
-    <Route path='/second-son' component={SecondSon} />
-    <Route path='/life-is-strange' component={LifeIsStrange} />
-    <Route path='/piano-fire' component={PianoFire} />
-    <Route path='/mashups' component={Mashups} />
-    <Route path='/the-last-of-uncharted' component={LastofUncharted} />
-    <Route path='/minecraft' component={Minecraft} />
-    <Route path='/ki' component={Ki} />
     <Route path='/dead-voxel' component={DeadVoxel} />
+    <Route path='/grand-theft-auto' component={GrandTheftAuto} />
+    <Route path='/grand-theft-auto-v-trailer-theme' component={GrandTheftAutoTrailer} />
+    <Route path='/infamous' component={Infamous} />
+    <Route path='/ki' component={Ki} />
+    <Route path='/life-is-strange' component={LifeIsStrange} />
+    <Route path='/mashups' component={Mashups} />
+    <Route path='/minecraft' component={Minecraft} />
     <Route path='/moog-city-2' component={MoogCity2} />
+    <Route path='/my-imaginary-friend' component={BeyondFriend} />
     <Route path='/nba-street' component={NbaStreet} />
-    <Route path='/ride-wit-me' component={RideWitMe} />
-    <Route path='/playstation-commercials' component={PlaystationCommercials} />
+    <Route path='/oil-spill' component={OilSpill} />
     <Route path='/perfect-day' component={PerfectDay} />
+    <Route path='/piano-fire' component={PianoFire} />
+    <Route path='/playstation-commercials' component={PlaystationCommercials} />
     <Route path='/pokemon' component={Pokemon} />
+    <Route path='/pokemon-league' component={PokemonLeague} />
     <Route path='/resident-evil' component={ResidentEvil} />
+    <Route path='/resident-evil-0-safe-haven' component={SafeHaven} />
+    <Route path='/resident-evil-revelations-menu-theme' component={MenuTheme} />
+    <Route path='/resident-evil-revelations-previous-story' component={PreviousStory} />
+    <Route path='/ride-wit-me' component={RideWitMe} />
+    <Route path='/second-son' component={SecondSon} />
+    <Route path='/stray-sheep' component={CatherineStraySheep} />
+    <Route path='/the-last-of-uncharted' component={LastofUncharted} />
     <Route path='/the-last-of-us' component={TheLastOfUs} />
+    <Route path='/the-last-of-us-theme' component={TheLastOfUsTheme} />
     <Route path='/the-walking-dead-game' component={TheWalkingDeadGame} />
     <Route path='/thomas-was-alone' component={ThomasWasAlone} />
     <Route path='/transistor' component={Transistor} />
     <Route path='/uncharted' component={Uncharted} />
+    <Route path='/vanishing-grace-innocence' component={VanishingGraceInnocence} />
+    <Route path='/all-gone-aftermath' component={AllGoneAftermath} />
+    <Route path='/all-gone-no-escape' component={AllGoneNoEscape} />
+    <Route path='/fleeting' component={Fleeting} />
     <Route path='*' component={NotFound} />
   </Switch>
 );

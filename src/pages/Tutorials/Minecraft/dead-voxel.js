@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/Xoaor-shCps';
 const DeadVoxel = () => (
   <div>
     <TutorialContainer
-      name="Dead Voxel"
+      title='Dead Voxel'
       videoUrl={videoUrl}
     />
   </div>

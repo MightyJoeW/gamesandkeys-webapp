@@ -4,16 +4,16 @@ import React from 'react';
 // Internal Dependencies
 import TutorialContainer from '../../../components/shared/Tutorials/TutorialContainer';
 
-const videoUrl = 'https://www.youtube.com/embed/ModmUekQRvg';
+const videoUrl = 'https://www.youtube.com/embed/sb2ZC5WjjrA';
 
 // Component Definition
-const RideWitMe = () => (
+const TheLastOfUsTheme = () => (
   <div>
     <TutorialContainer
-      title='Ride Wit Me'
+      title="The Last of Us"
       videoUrl={videoUrl}
     />
   </div>
 )
 
-export default RideWitMe;
+export default TheLastOfUsTheme;

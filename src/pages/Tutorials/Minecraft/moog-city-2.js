@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/ESPJGXs_tDU';
 const MoogCity2 = () => (
   <div>
     <TutorialContainer
-      name="Moog City 2"
+      title='Moog City 2'
       videoUrl={videoUrl}
     />
   </div>

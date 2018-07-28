@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
 const Spikes = () => (
   <div>
     <TutorialContainer
-      name="1001 Spikes Main Theme"
+      title='1001 Spikes Main Theme'
       videoUrl={videoUrl}
     />
   </div>
