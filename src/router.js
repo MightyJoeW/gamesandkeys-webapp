@@ -30,7 +30,7 @@ import PlaystationCommercials from './pages/Tutorials/PlaystationCommercials/ind
 import Pokemon from './pages/Tutorials/Pokemon/index';
 import ResidentEvil from './pages/Tutorials/ResidentEvil/index';
 import TheLastOfUs from './pages/Tutorials/TheLastOfUs/index';
-import TheWalkingDeadGame from './pages/Tutorials/TheWalkingDeadGame';
+import TheWalkingDeadGame from './pages/Tutorials/TheWalkingDeadGame/index';
 import ThomasWasAlone from './pages/Tutorials/ThomasWasAlone';
 import Transistor from './pages/Tutorials/Transistor';
 import Uncharted from './pages/Tutorials/Uncharted';
@@ -63,6 +63,15 @@ import VanishingGraceInnocence from './pages/Tutorials/TheLastOfUs/vanishing-gra
 import AllGoneAftermath from './pages/Tutorials/TheLastOfUs/all-gone-aftermath';
 import AllGoneNoEscape from './pages/Tutorials/TheLastOfUs/all-gone-no-escape';
 import Fleeting from './pages/Tutorials/TheLastOfUs/fleeting';
+import Home from './pages/Tutorials/TheLastOfUs/home';
+import LeftBehindTogether from './pages/Tutorials/TheLastOfUs/left-behind-together';
+import LeftBehind from './pages/Tutorials/TheLastOfUs/left-behind';
+import SaltOfTheEarth from './pages/Tutorials/TheLastOfUs/salt-of-the-earth';
+import TheChoice from './pages/Tutorials/TheLastOfUs/the-choice';
+import Goodnight from './pages/Tutorials/TheLastOfUs/the-last-of-us-goodnight';
+import ThePath from './pages/Tutorials/TheLastOfUs/the-path-a-new-beginning';
+import TheWayItWas from './pages/Tutorials/TheLastOfUs/the-way-it-was';
+import TheWalkingDeadGameTheme from './pages/Tutorials/TheWalkingDeadGame/the-walking-dead-game-main-theme';
 
 export default (
   <Switch>
@@ -110,6 +119,7 @@ export default (
     <Route path='/the-last-of-uncharted' component={LastofUncharted} />
     <Route path='/the-last-of-us' component={TheLastOfUs} />
     <Route path='/the-last-of-us-theme' component={TheLastOfUsTheme} />
+    <Route path='/the-walking-dead-game-main-theme' component={TheWalkingDeadGameTheme} />
     <Route path='/the-walking-dead-game' component={TheWalkingDeadGame} />
     <Route path='/thomas-was-alone' component={ThomasWasAlone} />
     <Route path='/transistor' component={Transistor} />
@@ -118,6 +128,14 @@ export default (
     <Route path='/all-gone-aftermath' component={AllGoneAftermath} />
     <Route path='/all-gone-no-escape' component={AllGoneNoEscape} />
     <Route path='/fleeting' component={Fleeting} />
+    <Route path='/home' component={Home} />
+    <Route path='/left-behind-together' component={LeftBehindTogether} />
+    <Route path='/left-behind' component={LeftBehind} />
+    <Route path='/salt-of-the-earth' component={SaltOfTheEarth} />
+    <Route path='/the-choice' component={TheChoice} />
+    <Route path='/the-last-of-us-goodnight' component={Goodnight} />
+    <Route path='/the-path-a-new-beginning' component={ThePath} />
+    <Route path='/the-way-it-was' component={TheWayItWas} />
     <Route path='*' component={NotFound} />
   </Switch>
 );

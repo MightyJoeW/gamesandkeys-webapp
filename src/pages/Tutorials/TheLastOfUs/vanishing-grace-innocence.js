@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/nwcKv152tfs';
 const VanishingGraceInnocence = () => (
   <div>
     <TutorialContainer
-      title="Vanishing Grace Innocence"
+      title="Vanishing Grace (Innocence)"
       videoUrl={videoUrl}
     />
   </div>

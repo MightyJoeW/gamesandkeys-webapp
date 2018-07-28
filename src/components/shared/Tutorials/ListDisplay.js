@@ -9,7 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 const ListDisplay = props => (
   <div>
     {props.songs.map(song => {
-      // Replace hyphens with empty space then title case so the songs don't look like links on the primary prop
+      // Replace hyphens with empty space then title case so the songs don't look like links on the ListItemText primary prop
       const title = song.replace(/-/g, ' ').split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
       return (
         <List component="nav">
