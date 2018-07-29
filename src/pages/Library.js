@@ -13,10 +13,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 //Local Variables
 const styles = theme => ({
   root: {
-    width: '100%',
-    margin: '0 auto',
-    maxWidth: '60%',
     backgroundColor: theme.palette.background.paper,
+    margin: '0 auto',
+    width: '60%',
   },
 });
 
