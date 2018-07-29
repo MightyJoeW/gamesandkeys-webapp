@@ -28,7 +28,7 @@ const paperStyle = {
 
 const INITIAL_STATE = {
   composer: '',
-  name: '',
+  title: '',
   url: '',
 }
 
@@ -44,14 +44,25 @@ class Requests extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange = name => e => {
+  handleChange = (title, composer, url) => e => {
     this.setState({
-      [name]: e.target.value,
+      [title]: e.target.value,
+      [composer]: e.target.value,
+      [url]: e.target.value,
     });
+    console.log(e.target.value)
   };
 
-  handleSubmit = () => {
-    console.log('Clicked Submit button');
+  handleSubmit(e) {
+    this.setState({
+      title: this.state.title,
+      composer: this.state.composer,
+      url: this.state.url,
+    })
+    e.preventDefault(e);
+    console.log(`Title: ${this.state.title}`);
+    console.log(`Composer: ${this.state.composer}`);
+    console.log(`Url: ${this.state.url}`);
   }
 
   render() {
@@ -59,16 +70,20 @@ class Requests extends Component {
 
     return (
       <Paper style={paperStyle}>
-        <form className={classes.container} noValidate autoComplete="off">
+        <form
+          className={classes.container}
+          noValidate
+          autoComplete="off"
+          onSubmit={this.handleSubmit}
+        >
           <TextField
             id="song-title"
             label="Song Title"
             placeholder="Enter Song Title"
             className={classes.textField}
             margin="normal"
-            onChange={this.handleChange('name')}
+            onChange={this.handleChange('title')}
             required
-            fullWidth
           />
           <TextField
             id="song-artist"
@@ -76,6 +91,7 @@ class Requests extends Component {
             placeholder="Optional"
             className={classes.textField}
             margin="normal"
+            onChange={this.handleChange('composer')}
           />
           <TextField
             id="song-link"
@@ -83,12 +99,14 @@ class Requests extends Component {
             placeholder="Optional"
             className={classes.textField}
             margin="normal"
+            onChange={this.handleChange('url')}
           />
           <Button
             color='primary'
-            onClick={() => this.handleSubmit()}
             variant='raised'
             style={{ width: 100 }}
+            type="submit"
+            value="Submit"
           >
             Submit
           </Button>
