@@ -1,12 +1,17 @@
 // External Dependencies
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// import axios from 'axios';
+import { connect } from 'react-redux';
 
 //Material-UI Dependencies
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
+
+// Internal Dependencies
+import { updateRequestTitle } from '../../state/reducer';
 
 //Local Variables
 const styles = theme => ({
@@ -30,6 +35,7 @@ const INITIAL_STATE = {
   composer: '',
   title: '',
   url: '',
+  submitted: false
 }
 
 // Component Definition
@@ -40,8 +46,6 @@ class Requests extends Component {
     this.state = {
       ...INITIAL_STATE
     }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = (title, composer, url) => e => {
@@ -53,13 +57,23 @@ class Requests extends Component {
     console.log(e.target.value)
   };
 
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     this.setState({
-      title: this.state.title,
-      composer: this.state.composer,
-      url: this.state.url,
+      title: '',
+      composer: '',
+      url: '',
     })
+
     e.preventDefault(e);
+
+    // axios.post('/requests', {
+    //   name: 'Joe'
+    // })
+    //   .then(res => {
+    //     console.log(res);
+    //     console.log(res.data);
+    //   })
+
     console.log(`Title: ${this.state.title}`);
     console.log(`Composer: ${this.state.composer}`);
     console.log(`Url: ${this.state.url}`);
@@ -67,6 +81,11 @@ class Requests extends Component {
 
   render() {
     const { classes } = this.props;
+    const {
+      title,
+      composer,
+      url,
+    } = this.state;
 
     return (
       <Paper style={paperStyle}>
@@ -83,6 +102,7 @@ class Requests extends Component {
             className={classes.textField}
             margin="normal"
             onChange={this.handleChange('title')}
+            value={title}
             required
           />
           <TextField
@@ -92,6 +112,7 @@ class Requests extends Component {
             className={classes.textField}
             margin="normal"
             onChange={this.handleChange('composer')}
+            value={composer}
           />
           <TextField
             id="song-link"
@@ -100,6 +121,7 @@ class Requests extends Component {
             className={classes.textField}
             margin="normal"
             onChange={this.handleChange('url')}
+            value={url}
           />
           <Button
             color='primary'
@@ -111,6 +133,17 @@ class Requests extends Component {
             Submit
           </Button>
         </form>
+
+        {/* Find way to make the requested title appear eve though I'm setting title back to '' to clear the form onSubmit */}
+        {/* {title &&
+          <div>
+            You've requested the song {title
+              .toLowerCase()
+              .split(' ')
+              .map(word => word[0].toUpperCase() + word.slice(1))
+              .join(' ')
+            }.
+          </div> */}
       </Paper>
     );
   }
@@ -118,6 +151,14 @@ class Requests extends Component {
 
 Requests.propTypes = {
   classes: PropTypes.object.isRequired,
+  onUpdateRequestTitle: PropTypes.func.isRequired,
 };
 
-export default withStyles(styles)(Requests);
+// Below, we are mapping state to props and dispatching
+// Same layout as with mapStateToProps:
+//   export default connect (state, { dispatched action })(Component)
+// set onUpdateRequestTitle to updateRequestTitle for clarity in code
+
+export default connect(state => { }, {
+  onUpdateRequestTitle: updateRequestTitle,
+})(withStyles(styles)(Requests));
