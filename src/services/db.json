@@ -2,6 +2,7 @@
     "games": [
         {
             "name": "1001 Spikes",
+            "url": "1001-spikes",
             "backgroundImageURL": "https://i.ytimg.com/vi/hX0L_VG9K68/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -12,6 +13,7 @@
         },
         {
             "name": "Beyond Two Souls",
+            "url": "beyond-two-souls",
             "backgroundImageURL": "https://i.ytimg.com/vi/B_jnltymaTg/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -22,6 +24,7 @@
         },
         {
             "name": "Brothers: A Tale of Two Sons",
+            "url": "brothers",
             "backgroundImageURL": "https://i.ytimg.com/vi/VzKSLGtN09I/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -32,6 +35,7 @@
         },
         {
             "name": "Catherine",
+            "url": "catherine",
             "backgroundImageURL": "https://i.ytimg.com/vi/zfYB0tzjOyk/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -42,6 +46,7 @@
         },
         {
             "name": "Chroma",
+            "url": "chroma",
             "backgroundImageURL": "https://lh3.googleusercontent.com/proxy/TbfYpU1F-BDZZNKZ5Nx_Std5tvqS7qQJ8zfXEooF9DPiTqOR5ii-5XrrUdKgaPVHckWCfKE_Zwqs5gY6oEPzMszLjFY=w1200-h630-n-k-no-nu",
             "category": "Games",
             "info": {
@@ -52,6 +57,7 @@
         },
         {
             "name": "Grand Theft Auto V",
+            "url": "grand-theft-auto",
             "backgroundImageURL": "https://i.ytimg.com/vi/xDAtuAotJuo/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -62,6 +68,7 @@
         },
         {
             "name": "inFAMOUS Second Son",
+            "url": "infamous",
             "backgroundImageURL": "https://i.ytimg.com/vi/HsMitMHRHos/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -72,6 +79,7 @@
         },
         {
             "name": "Life Is Strange",
+            "url": "life-is-strange",
             "backgroundImageURL": "https://i.ytimg.com/vi/kPzFk_mytr0/maxresdefault.jpg",
             "category": "Games",
             "info": {
@@ -82,6 +90,7 @@
         },
         {
             "name": "Minecraft",
+            "url": "minecraft",
             "backgroundImageURL": "https://i.ytimg.com/vi/Xoaor-shCps/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -92,6 +101,7 @@
         },
         {
             "name": "NBA Street Vol. 2",
+            "url": "nba-street",
             "backgroundImageURL": "https://i.ytimg.com/vi/ModmUekQRvg/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -102,6 +112,7 @@
         },
         {
             "name": "Playstation Commercials",
+            "url": "playstation-commercials",
             "backgroundImageURL": "https://i.ytimg.com/vi/5lOQZbicoN4/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -112,6 +123,7 @@
         },
         {
             "name": "Pokemon",
+            "url": "pokemon",
             "backgroundImageURL": "https://i.ytimg.com/vi/LJvCmaAHKcE/maxresdefault.jpg",
             "category": "Games",
             "info": {
@@ -122,6 +134,7 @@
         },
         {
             "name": "Resident Evil",
+            "url": "resident-evil",
             "backgroundImageURL": "https://i.ytimg.com/vi/r9p2FxjKy0k/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -132,6 +145,7 @@
         },
         {
             "name": "The Last of Us",
+            "url": "the-last-of-us",
             "backgroundImageURL": "https://i.ytimg.com/vi/j6X1QR0xgHY/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -142,6 +156,7 @@
         },
         {
             "name": "The Walking Dead Game",
+            "url": "the-walking-dead-game",
             "backgroundImageURL": "https://i.ytimg.com/vi/Y5gpXe4WV7k/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -152,6 +167,7 @@
         },
         {
             "name": "Thomas Was Alone",
+            "url": "thomas-was-alone",
             "backgroundImageURL": "https://i.ytimg.com/vi/spDdgUqgxBo/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -162,6 +178,7 @@
         },
         {
             "name": "Transistor",
+            "url": "transistor",
             "backgroundImageURL": "https://i.ytimg.com/vi/Hr8Xs0AlLdI/maxresdefault.jpg",
             "category": "Games",
             "info": {
@@ -172,6 +189,7 @@
         },
         {
             "name": "Uncharted 3",
+            "url": "uncharted",
             "backgroundImageURL": "https://i.ytimg.com/vi/VCKXbo42CZ8/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -182,6 +200,7 @@
         },
         {
             "name": "Video Game Piano Mashups",
+            "url": "mashups",
             "backgroundImageURL": "https://i.ytimg.com/vi/EfawmKPbi-E/hqdefault.jpg",
             "category": "Games",
             "info": {
@@ -194,6 +213,7 @@
     "shows": [
         {
             "name": "Bob's Burgers",
+            "url": "bobs-burgers",
             "backgroundImageURL": "https://i.ytimg.com/vi/0bNEkJ5JBvc/hqdefault.jpg",
             "category": "Shows",
             "info": {

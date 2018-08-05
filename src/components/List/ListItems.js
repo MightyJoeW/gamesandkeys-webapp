@@ -63,8 +63,15 @@ const ListItems = (props) => {
               {game.name.length > 16 ? `${game.name.slice(0, 16)}...` : game.name}
             </Typography>
           </CardContent>
+          {console.log(game.url)}
           <CardActions>
-            <Button onClick={() => console.log('clicked')} size="small">Downloads</Button>
+            <Button
+              component="a"
+              href={game.url}
+              size="small"
+            >
+              Downloads
+            </Button>
           </CardActions>
         </Card>
       ))
