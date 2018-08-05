@@ -40,7 +40,7 @@ const styles = {
   },
 };
 
-function ListItems(props) {
+const ListItems = (props) => {
   const { classes } = props;
   // const bull = <span className={classes.bullet}>•</span>;
 
@@ -59,18 +59,12 @@ function ListItems(props) {
               style={{ width: '100%' }}
             />
             <Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
-              {game.name}
+              {/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
+              {game.name.length > 16 ? `${game.name.slice(0, 16)}...` : game.name}
             </Typography>
-            {/*<Typography className={classes.pos} color="textSecondary">
-              {`Original Composer(s): ${game.info.originalComposer}`}
-      </Typography> */}
-            {/*<Typography component="p">
-              Link to Sheet Music <br />
-              Link to Midi File
-    </Typography> */}
           </CardContent>
           <CardActions>
-            <Button size="small">Downloads</Button>
+            <Button onClick={() => console.log('clicked')} size="small">Downloads</Button>
           </CardActions>
         </Card>
       ))
