@@ -19,10 +19,10 @@ const styles = theme => ({
 });
 
 const songs = [
-  'beyond-e3-trailer',
-  'beyond',
-  'childhood-memories',
-  'my-imaginary-friend',
+  ['beyond-e3-trailer', 0],
+  ['beyond', 1],
+  ['childhood-memories', 2],
+  ['my-imaginary-friend', 3],
 ];
 
 // COMPONENT DEFINITION

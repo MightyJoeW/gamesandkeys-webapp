@@ -20,7 +20,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'grand-theft-auto-v-trailer-theme',
+    ['grand-theft-auto-v-trailer-theme', 0]
 ];
 
 // COMPONENT DEFINITION

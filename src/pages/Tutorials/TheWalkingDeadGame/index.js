@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'the-walking-dead-game-main-theme',
+  ['the-walking-dead-game-main-theme', 0]
 ];
 
 // COMPONENT DEFINITION

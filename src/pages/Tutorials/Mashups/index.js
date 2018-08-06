@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'the-last-of-uncharted',
+    ['the-last-of-uncharted', 0]
 ];
 
 // COMPONENT DEFINITION

@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'perfect-day',
+  ['perfect-day', 0]
 
 ];
 

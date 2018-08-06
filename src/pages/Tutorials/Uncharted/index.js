@@ -19,9 +19,9 @@ const styles = theme => ({
 });
 
 const songs = [
-  'drakes-return',
-  'museum-bust',
-  'small-beginnings',
+  ['drakes-return', 0],
+  ['museum-bust', 1],
+  ['small-beginnings', 2],
 ];
 
 // COMPONENT DEFINITION

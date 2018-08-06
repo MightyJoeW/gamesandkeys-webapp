@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'brothers-main-theme',
+    ['brothers-main-theme', 0]
 ];
 
 // COMPONENT DEFINITION

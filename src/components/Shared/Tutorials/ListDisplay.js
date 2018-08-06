@@ -11,14 +11,16 @@ const ListDisplay = props => (
   <div>
     {props.songs.map(song => {
       // Replace hyphens with empty space then title case so the songs don't look like links on the ListItemText primary prop
-      const title = song.replace(/-/g, ' ').split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+      const title = song[0].replace(/-/g, ' ').split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+      // Get id from 1 index of songs array for each game to use for a key
+      const key = song[1].toString();
       return (
-        <List component="nav">
+        <List component="nav" key={key}>
           <ListItem
             button
-            component="a"
             divider
-            href={song}
+            component="a"
+            href={song[0]}
           >
             <ListItemText primary={title} />
           </ListItem>

@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'oil-spill',
+    ['oil-spill', 0]
 ];
 
 // COMPONENT DEFINITION

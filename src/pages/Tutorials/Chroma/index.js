@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'chroma-trailer-theme',
+    ['chroma-trailer-theme', 0]
 ];
 
 // COMPONENT DEFINITION

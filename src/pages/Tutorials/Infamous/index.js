@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'second-son',
+    ['second-son', 0]
 ];
 
 // COMPONENT DEFINITION

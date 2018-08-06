@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'piano-fire',
+    ['piano-fire', 0]
 ];
 
 // COMPONENT DEFINITION

@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    'stray-sheep',
+    ['stray-sheep', 0]
 ];
 
 // COMPONENT DEFINITION

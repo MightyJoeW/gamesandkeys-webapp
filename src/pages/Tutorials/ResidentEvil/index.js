@@ -19,9 +19,9 @@ const styles = theme => ({
 });
 
 const songs = [
-  'resident-evil-0-safe-haven',
-  'resident-evil-revelations-menu-theme',
-  'resident-evil-revelations-previous-story'
+  ['resident-evil-0-safe-haven', 0],
+  ['resident-evil-revelations-menu-theme', 1],
+  ['resident-evil-revelations-previous-story', 2],
 ];
 
 // COMPONENT DEFINITION

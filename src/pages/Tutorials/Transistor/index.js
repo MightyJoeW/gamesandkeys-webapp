@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'old-friends',
+  ['old-friends', 0]
 ];
 
 // COMPONENT DEFINITION

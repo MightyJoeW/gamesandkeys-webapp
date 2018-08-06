@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'pokemon-league',
+  ['pokemon-league', 0]
 ];
 
 // COMPONENT DEFINITION

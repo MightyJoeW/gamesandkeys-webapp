@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'where-are-you',
+  ['where-are-you', 0]
 ];
 
 // COMPONENT DEFINITION

@@ -19,19 +19,19 @@ const styles = theme => ({
 });
 
 const songs = [
-  'all-gone-aftermath',
-  'all-gone-no-escape',
-  'fleeting',
-  'home',
-  'left-behind',
-  'left-behind-together',
-  'salt-of-the-earth',
-  'the-choice',
-  'the-last-of-us-goodnight',
-  'the-last-of-us-theme',
-  'the-path-a-new-beginning',
-  'the-way-it-was',
-  'vanishing-grace-innocence',
+  ['all-gone-aftermath', 1],
+  ['all-gone-no-escape', 2],
+  ['fleeting', 3],
+  ['home', 4],
+  ['left-behind', 5],
+  ['left-behind-together', 6],
+  ['salt-of-the-earth', 7],
+  ['the-choice', 8],
+  ['the-last-of-us-goodnight', 9],
+  ['the-last-of-us-theme', 10],
+  ['the-path-a-new-beginning', 11],
+  ['the-way-it-was', 12],
+  ['vanishing-grace-innocence', 13],
 ];
 
 // COMPONENT DEFINITION

@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-    '1001-spikes-main-theme',
+    ['1001-spikes-main-theme', 0]
 ];
 
 // COMPONENT DEFINITION

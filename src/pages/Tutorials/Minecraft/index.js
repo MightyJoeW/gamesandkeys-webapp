@@ -19,9 +19,9 @@ const styles = theme => ({
 });
 
 const songs = [
-  'dead-voxel',
-  'ki',
-  'moog-city-2',
+  ['dead-voxel', 0],
+  ['ki', 1],
+  ['moog-city-2', 2],
 ];
 
 // COMPONENT DEFINITION

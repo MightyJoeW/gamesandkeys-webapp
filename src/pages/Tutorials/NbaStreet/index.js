@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const songs = [
-  'ride-wit-me',
+  ['ride-wit-me', 0]
 ];
 
 // COMPONENT DEFINITION
