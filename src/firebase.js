@@ -1,5 +1,7 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import firebase from 'firebase';
+
+// LOCAL DEPENDENCIES
 import apiKey from './apiKey'
 
 var config = {

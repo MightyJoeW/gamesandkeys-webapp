@@ -1,15 +1,15 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import ListItems from '../components/List/ListItems';
 
-// Local Variables
+// LOCAL VARIABLES
 const wrapper = {
   display: 'grid',
 }
 
-// Component Definition
+// COMPONENT DEFINITION
 class Dashboard extends Component {
   render() {
     return (

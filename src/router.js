@@ -1,8 +1,8 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 // import Landing from './components/Landing/Landing';
 
 //Main Routes

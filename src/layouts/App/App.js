@@ -1,15 +1,15 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
 
-// Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { grey } from '@material-ui/core/colors';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import Navbar from '../../components/Navbar/Navbar';
 import router from '../../router';
 
-// Local Variables
+// LOCAL VARIABLES
 const navbarStyles = {
   marginRight: 60
 }
@@ -20,7 +20,7 @@ const styles = {
   display: 'grid',
 }
 
-// Component Definition
+// COMPONENT DEFINITION
 class App extends Component {
   render() {
     return (

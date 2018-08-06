@@ -1,11 +1,12 @@
-//External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 
-//Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
+// COMPONENT DEFINITION
 const ListDisplay = props => (
   <div>
     {props.songs.map(song => {

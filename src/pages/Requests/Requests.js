@@ -1,19 +1,19 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // import axios from 'axios';
 import { connect } from 'react-redux';
 
-//Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import { updateRequestTitle } from '../../state/reducer';
 
-//Local Variables
+// LOCAL VARIABLES
 const styles = theme => ({
   container: {
     display: 'flex',
@@ -38,7 +38,7 @@ const INITIAL_STATE = {
   submitted: false
 }
 
-// Component Definition
+// COMPONENT DEFINITION
 class Requests extends Component {
   constructor(props) {
     super(props);
