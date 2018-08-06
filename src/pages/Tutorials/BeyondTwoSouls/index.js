@@ -1,14 +1,14 @@
-//External Dependencies
+//EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//Material-UI Dependencies
+//MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 
-//Internal Dependencies
+//INTERNAL DEPENDENCIES
 import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
-//Local Variables
+//LOCAL VARIABLES
 const styles = theme => ({
   root: {
     width: '100%',
@@ -19,13 +19,13 @@ const styles = theme => ({
 });
 
 const songs = [
-  'beyond-e3-trailer',
-  'beyond-two-souls',
-  'childhood-memories',
-  'my-imaginary-friend',
+  ['beyond-e3-trailer', 0],
+  ['beyond', 1],
+  ['childhood-memories', 2],
+  ['my-imaginary-friend', 3],
 ];
 
-// Component Definition
+// COMPONENT DEFINITION
 function BeyondTwoSouls(props) {
   const { classes } = props;
   return (

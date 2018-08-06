@@ -1,11 +1,11 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import App from './layouts/App/App';
 import store from './state/store';
 

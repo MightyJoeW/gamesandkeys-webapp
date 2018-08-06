@@ -1,12 +1,12 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import TutorialContainer from '../../../components/Shared/Tutorials/TutorialContainer';
 
 const videoUrl = 'https://www.youtube.com/embed/nwcKv152tfs';
 
-// Component Definition
+// COMPONENT DEFINITION
 const VanishingGraceInnocence = () => (
   <div>
     <TutorialContainer

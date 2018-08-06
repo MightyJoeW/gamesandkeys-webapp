@@ -1,5 +1,8 @@
-import React from 'react';
+// EXTERNAL DEPENDENCIES
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -25,7 +28,8 @@ const styles = theme => ({
     },
 });
 
-class NavTabs extends React.Component {
+// COMPONENT DEFINITION
+class NavTabs extends Component {
     state = {
         value: 0,
     };

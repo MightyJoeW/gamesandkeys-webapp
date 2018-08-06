@@ -1,8 +1,8 @@
-//External Dependencies
+//EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//Material-UI Dependencies
+//MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -10,7 +10,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 // import DownloadIcon from '@material-ui/icons/CloudDownload';
 
-//Local Variables
+//LOCAL VARIABLES
 const styles = theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
@@ -23,7 +23,8 @@ const listItemStyles = {
   color: 'red',
 }
 
-function Library(props) {
+// COMPONENT DEFINITION
+const Library = (props) => {
   const { classes } = props;
   return (
     <div className={classes.root}>

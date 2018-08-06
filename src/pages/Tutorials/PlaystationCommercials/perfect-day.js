@@ -1,13 +1,13 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import TutorialContainer from '../../../components/Shared/Tutorials/TutorialContainer';
 
-// Local Variables
+// LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/xF0gICE1Vcg';
 
-// Component Definition
+// COMPONENT DEFINITION
 const PerfectDay = () => (
   <div>
     <TutorialContainer
