@@ -1,14 +1,14 @@
-//External Dependencies
+//EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//Material-UI Dependencies
+//MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 
-//Internal Dependencies
+//INTERNAL DEPENDENCIES
 import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
-//Local Variables
+//LOCAL VARIABLES
 const styles = theme => ({
   root: {
     width: '100%',
@@ -19,12 +19,12 @@ const styles = theme => ({
 });
 
 const songs = [
-  'resident-evil-0-safe-haven',
-  'resident-evil-revelations-menu-theme',
-  'resident-evil-revelations-previous-story'
+  ['resident-evil-0-safe-haven', 0],
+  ['resident-evil-revelations-menu-theme', 1],
+  ['resident-evil-revelations-previous-story', 2],
 ];
 
-// Component Definition
+// COMPONENT DEFINITION
 function ResidentEvil(props) {
   const { classes } = props;
   return (

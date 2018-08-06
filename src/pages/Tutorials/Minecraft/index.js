@@ -1,14 +1,14 @@
-//External Dependencies
+//EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-//Material-UI Dependencies
+//MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 
-//Internal Dependencies
+//INTERNAL DEPENDENCIES
 import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
-//Local Variables
+//LOCAL VARIABLES
 const styles = theme => ({
   root: {
     width: '100%',
@@ -19,12 +19,12 @@ const styles = theme => ({
 });
 
 const songs = [
-  'dead-voxel',
-  'ki',
-  'moog-city-2',
+  ['dead-voxel', 0],
+  ['ki', 1],
+  ['moog-city-2', 2],
 ];
 
-// Component Definition
+// COMPONENT DEFINITION
 function Minecraft(props) {
   const { classes } = props;
   return (

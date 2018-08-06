@@ -1,7 +1,7 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 
-// Component Definition
+// COMPONENT DEFINITION
 const VideoPlayer = (props) => {
   const url = props.videoUrl;
   return (

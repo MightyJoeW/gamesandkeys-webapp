@@ -1,15 +1,20 @@
+// COMPONENT DEFINITION
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+// LOCAL VARIABLES
 const styles = theme => ({
   progress: {
     margin: theme.spacing.unit * 2,
   },
 });
 
-function CircularIndeterminate(props) {
+// COMPONENT DEFINITION
+const CircularIndeterminate = (props) => {
   const { classes } = props;
   return (
     <div>

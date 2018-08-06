@@ -1,7 +1,11 @@
+// EXTERNAL DEPENDENCIES
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
+// LOCAL DEPENDENCIES
 import "./NotFound.css";
 
+// COMPONENT DEFINITION
 class NotFound extends Component {
   render() {
     return (
