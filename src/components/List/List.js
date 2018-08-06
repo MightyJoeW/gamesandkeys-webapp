@@ -1,8 +1,8 @@
-//External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -10,7 +10,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import MusicIcon from '@material-ui/icons/MusicNote';
 
-// Local Dependencies
+// LOCAL DEPENDENCIES
 import ListItems from './ListItems.js'
 
 function TabContainer(props) {
@@ -33,7 +33,7 @@ const styles = theme => ({
   },
 });
 
-// Component Definition
+// COMPONENT DEFINITION
 class List extends React.Component {
   state = {
     value: 0,

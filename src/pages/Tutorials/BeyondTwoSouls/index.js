@@ -20,7 +20,7 @@ const styles = theme => ({
 
 const songs = [
   'beyond-e3-trailer',
-  'beyond-two-souls',
+  'beyond',
   'childhood-memories',
   'my-imaginary-friend',
 ];

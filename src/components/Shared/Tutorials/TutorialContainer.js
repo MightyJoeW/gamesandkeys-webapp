@@ -1,17 +1,18 @@
-//External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
+
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-// import Typography from '@material-ui/core/Typography';
 
-//Internal Dependencies
+// INTERNAL DEPENDENCIES
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
 
-// Local Dependencies
+// LOCAL DEPENDENCIES
 import Downloads from './Downloads';
 
-// Local Variables
+// LOCAL VARIABLES
 const styles = theme => ({
   root: {
     ...theme.mixins.gutters(),
@@ -25,8 +26,8 @@ const styles = theme => ({
   },
 });
 
-// Component Definition
-function TutorialContainer(props) {
+// COMPONENT DEFINITION
+const TutorialContainer = (props) => {
   const { classes, pdf, videoUrl } = props;
 
   return (

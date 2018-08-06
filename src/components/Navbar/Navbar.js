@@ -1,8 +1,8 @@
-// External Dependencies
-import React from 'react';
+// EXTERNAL DEPENDENCIES
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -16,10 +16,10 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
-// Local Dependencies
+// LOCAL DEPENDENCIES
 import NavTabs from './NavTabs';
 
-// Local Variables
+// LOCAL VARIABLES
 const styles = {
   root: {
     flexGrow: 1,
@@ -34,7 +34,8 @@ const styles = {
 
 const siteTitle = 'Games and Keys';
 
-class Navbar extends React.Component {
+// COMPONENT DEFINITION
+class Navbar extends Component {
   state = {
     auth: true,
     anchorEl: null,

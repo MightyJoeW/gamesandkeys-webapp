@@ -18,7 +18,7 @@ const styles = theme => ({
     },
 });
 
-function Downloads(props) {
+const Downloads = (props) => {
     const { classes } = props;
     return (
         <div className={classes.root}>

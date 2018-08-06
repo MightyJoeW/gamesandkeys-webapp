@@ -1,8 +1,8 @@
-// External Dependencies
+// EXTERNAL DEPENDENCIES
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Material-UI Dependencies
+// MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -10,9 +10,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-// Internal Dependencies
+// INTERNAL DEPENDENCIES
 import preload from '../../services/db.json';
 
+// LOCAL VARIABLES
 const styles = {
   card: {
     margin: '0 5px',
@@ -40,10 +41,9 @@ const styles = {
   },
 };
 
+// COMPONENT DEFINITION
 const ListItems = (props) => {
   const { classes } = props;
-  // const bull = <span className={classes.bullet}>•</span>;
-
   return (
     <div style={styles.container}>
       {preload.games.map(game => (
@@ -63,7 +63,6 @@ const ListItems = (props) => {
               {game.name.length > 16 ? `${game.name.slice(0, 16)}...` : game.name}
             </Typography>
           </CardContent>
-          {console.log(game.url)}
           <CardActions>
             <Button
               component="a"
