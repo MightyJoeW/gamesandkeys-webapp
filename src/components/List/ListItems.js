@@ -19,18 +19,18 @@ const styles = {
     margin: '0 auto',
     marginBottom: 15,
   },
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    // justifyContent: 'center',
+    maxWidth: 2000,
+  },
   card: {
-    margin: '0 5px',
+    margin: '15px 5px',
     maxHeight: 325,
     minWidth: 275,
     textAlign: 'center',
     textDecoration: 'none',
-  },
-  container: {
-    display: 'flex',
-    marginTop: 20,
-    maxWidth: 2000,
-    overflowX: 'scroll',
   },
   title: {
     marginBottom: 16,
