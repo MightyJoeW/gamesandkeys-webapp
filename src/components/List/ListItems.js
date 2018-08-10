@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 // MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 // INTERNAL DEPENDENCIES
@@ -15,22 +15,22 @@ import preload from '../../services/db.json';
 
 // LOCAL VARIABLES
 const styles = {
-  card: {
-    margin: '0 5px',
-    minWidth: 275,
-    maxHeight: 325,
-    textAlign: 'center'
+  button: {
+    margin: '0 auto',
+    marginBottom: 15,
   },
   container: {
     display: 'flex',
-    marginTop: 20,
+    flexWrap: 'wrap',
+    // justifyContent: 'center',
     maxWidth: 2000,
-    overflowX: 'scroll',
   },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
+  card: {
+    margin: '15px 5px',
+    maxHeight: 325,
+    minWidth: 275,
+    textAlign: 'center',
+    textDecoration: 'none',
   },
   title: {
     marginBottom: 16,
@@ -39,6 +39,10 @@ const styles = {
   pos: {
     marginBottom: 12,
   },
+  thumbnail: {
+    width: 227,
+    height: 170,
+  }
 };
 
 // COMPONENT DEFINITION
@@ -49,14 +53,16 @@ const ListItems = (props) => {
       {preload.games.map(game => (
         <Card
           className={classes.card}
-          key={game.name}
+          component="a"
           game={game}
+          href={game.url}
+          key={game.name}
         >
           <CardContent>
             <img
               alt={game.name}
+              className={classes.thumbnail}
               src={game.backgroundImageURL}
-              style={{ width: '100%' }}
             />
             <Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
               {/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
@@ -65,9 +71,10 @@ const ListItems = (props) => {
           </CardContent>
           <CardActions>
             <Button
-              component="a"
-              href={game.url}
+              className={classes.button}
+              color="primary"
               size="small"
+              variant="raised"
             >
               Downloads
             </Button>

@@ -1,5 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 // MATERIAL-UI DEPENDENCIES
@@ -30,9 +31,13 @@ const styles = theme => ({
 
 // COMPONENT DEFINITION
 class NavTabs extends Component {
-    state = {
-        value: 0,
-    };
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            value: 1,
+        };
+    }
 
     handleChange = (event, value) => {
         this.setState({ value });
@@ -46,9 +51,9 @@ class NavTabs extends Component {
             <div className={classes.root}>
                 <AppBar position="static" elevation={0}>
                     <Tabs value={value} onChange={this.handleChange} centered>
-                        <Tab label="Library" href="/library" />
-                        <Tab label="Home" href="/" />
-                        <Tab label="Requests" href="/requests" />
+                        <Tab label="Library" component={Link} to="/library" centerRipple />
+                        <Tab label="Home" component={Link} to="/" centerRipple />
+                        <Tab label="Requests" component={Link} to="/requests" centerRipple />
                     </Tabs>
                 </AppBar>
             </div>
