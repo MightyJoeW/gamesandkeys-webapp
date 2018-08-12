@@ -6,8 +6,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 // INTERNAL DEPENDENCIES
-import App from './layouts/App/App';
-import store from './state/store';
+import App from './App';
+import store from './redux/store';
 
 ReactDOM.render(
   <div>

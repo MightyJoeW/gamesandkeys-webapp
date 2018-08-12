@@ -7,7 +7,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 
 // INTERNAL DEPENDENCIES
-import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
+import VideoPlayer from '../../VideoPlayer/VideoPlayer';
 
 // LOCAL DEPENDENCIES
 import Downloads from './Downloads';

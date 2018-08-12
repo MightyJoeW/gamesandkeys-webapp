@@ -11,7 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
 // INTERNAL DEPENDENCIES
-import preload from '../../services/db.json';
+import preload from '../../utils/db.json';
 
 // LOCAL VARIABLES
 const styles = {

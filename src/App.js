@@ -6,8 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { grey } from '@material-ui/core/colors';
 
 // INTERNAL DEPENDENCIES
-import Navbar from '../../components/Navbar/Navbar';
-import router from '../../router';
+import Navbar from './components/Navbar/Navbar';
+import router from './router';
 
 // LOCAL VARIABLES
 const navbarStyles = {
