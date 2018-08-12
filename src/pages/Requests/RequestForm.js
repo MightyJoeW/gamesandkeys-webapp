@@ -9,14 +9,15 @@ let Requests = props => {
       <div>
         <label htmlFor="songTitle">Song Title:&nbsp;</label>
         <Field
+          autoFocus
           component={TextField}
           name="songTitle"
-          type="text"
           required
+          type="text"
         />
       </div>
       <div>
-        <label htmlFor="gameTitle">Game Title&nbsp;</label>
+        <label htmlFor="gameTitle">Game Title:&nbsp;</label>
         <Field
           component={TextField}
           name="gameTitle"
