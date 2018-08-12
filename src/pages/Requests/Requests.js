@@ -1,41 +1,19 @@
-import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import React, { Component } from 'react';
 
-let Requests = props => {
-  const { handleSubmit } = props;
-  return (
-    <form onSubmit={handleSubmit}>
+import RequestForm from './RequestForm';
+
+class Requests extends Component {
+  submit = values => {
+    // print the form values to the console
+    console.log(values)
+  }
+  render() {
+    return (
       <div>
-        <label htmlFor="songTitle">Song Title</label>
-        <Field
-          component="input"
-          name="songTitle"
-          type="text"
-          required
-        />
+        <RequestForm onSubmit={this.submit} />
       </div>
-      <div>
-        <label htmlFor="composerName">Song Artist/Composer</label>
-        <Field
-          component="input"
-          name="composerName"
-          type="text"
-        />
-      </div>
-      <div>
-        <label htmlFor="songLink">Song Link</label>
-        <Field
-          component="input"
-          name="songLink"
-          type="text"
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  )
+    )
+  }
 }
 
-export default Requests = reduxForm({
-  // a unique name for the form
-  form: 'Requests'
-})(Requests)
+export default Requests;
