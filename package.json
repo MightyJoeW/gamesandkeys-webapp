@@ -9,7 +9,6 @@
     "axios": "^0.17.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "firebase-admin": "^5.13.0",
     "mdi-material-ui": "^5.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
@@ -26,6 +25,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -36,7 +37,9 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
-    "firebase": "^5.3.0",
+    "eslint": "^5.6.1",
+    "eslint-plugin-react": "^7.11.1",
+
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^16.4.1"
   },
