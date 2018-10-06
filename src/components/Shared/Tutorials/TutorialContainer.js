@@ -14,35 +14,35 @@ import Downloads from './Downloads';
 
 // LOCAL VARIABLES
 const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    fontSize: '1.5em',
-    fontWeight: 700,
-    margin: '0 auto',
-    minWidth: 450,
-    paddingBottom: theme.spacing.unit * 2,
-    paddingTop: theme.spacing.unit * 2,
-    width: '50%',
-  },
+	root: {
+		...theme.mixins.gutters(),
+		fontSize: '1.5em',
+		fontWeight: 700,
+		margin: '0 auto',
+		minWidth: 450,
+		paddingBottom: theme.spacing.unit * 2,
+		paddingTop: theme.spacing.unit * 2,
+		width: '50%',
+	},
 });
 
 // COMPONENT DEFINITION
 const TutorialContainer = (props) => {
-  const { classes, pdf, videoUrl } = props;
+	const { classes, pdf, videoUrl } = props;
 
-  return (
-    <div>
-      <Paper className={classes.root} elevation={1}>
-        {props.title}
-        <VideoPlayer videoUrl={videoUrl} />
-        <Downloads pdf={pdf} />
-      </Paper>
-    </div>
-  );
-}
+	return (
+		<div>
+			<Paper className={classes.root} elevation={1}>
+				{props.title}
+				<VideoPlayer videoUrl={videoUrl} />
+				<Downloads pdf={pdf} />
+			</Paper>
+		</div>
+	);
+};
 
 TutorialContainer.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(TutorialContainer);

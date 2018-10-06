@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 
 // COMPONENT DEFINITION
 const BeyondFriend = () => (
-  <div>
-    <TutorialContainer
-      title='My Imaginary Friend'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='My Imaginary Friend'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default BeyondFriend;

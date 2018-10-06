@@ -10,30 +10,30 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-    root: {
-        width: '100%',
-        margin: '0 auto',
-        maxWidth: '90%',
-        backgroundColor: theme.palette.background.paper,
-    },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-    ['second-son', 0]
+	['second-son', 0]
 ];
 
 // COMPONENT DEFINITION
 function Infamous(props) {
-    const { classes } = props;
-    return (
-        <div className={classes.root}>
-            <ListDisplay songs={songs} />
-        </div>
-    );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 Infamous.propTypes = {
-    classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Infamous);

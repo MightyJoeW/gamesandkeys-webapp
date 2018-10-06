@@ -15,127 +15,127 @@ import { updateRequestTitle } from '../../state/reducer';
 
 // LOCAL VARIABLES
 const styles = theme => ({
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: 200,
-  },
+	container: {
+		display: 'flex',
+		flexDirection: 'column',
+	},
+	textField: {
+		marginLeft: theme.spacing.unit,
+		marginRight: theme.spacing.unit,
+		width: 200,
+	},
 });
 
 const paperStyle = {
-  margin: '0 auto',
-  width: '60%',
-}
+	margin: '0 auto',
+	width: '60%',
+};
 
 const INITIAL_STATE = {
-  composer: '',
-  title: '',
-  url: '',
-  submitted: false
-}
+	composer: '',
+	title: '',
+	url: '',
+	submitted: false
+};
 
 // COMPONENT DEFINITION
 class Requests extends Component {
-  constructor(props) {
-    super(props);
+	constructor(props) {
+		super(props);
 
-    this.state = {
-      ...INITIAL_STATE
-    }
-  }
+		this.state = {
+			...INITIAL_STATE
+		};
+	}
 
   handleChange = (title, composer, url) => e => {
-    this.setState({
-      [title]: e.target.value,
-      [composer]: e.target.value,
-      [url]: e.target.value,
-    });
-    console.log(e.target.value)
+  	this.setState({
+  		[title]: e.target.value,
+  		[composer]: e.target.value,
+  		[url]: e.target.value,
+  	});
+  	console.log(e.target.value);
   };
 
   handleSubmit = (e) => {
-    this.setState({
-      title: '',
-      composer: '',
-      url: '',
-    })
+  	this.setState({
+  		title: '',
+  		composer: '',
+  		url: '',
+  	});
 
-    e.preventDefault(e);
+  	e.preventDefault(e);
 
-    // axios.post('/requests', {
-    //   name: 'Joe'
-    // })
-    //   .then(res => {
-    //     console.log(res);
-    //     console.log(res.data);
-    //   })
+  	// axios.post('/requests', {
+  	//   name: 'Joe'
+  	// })
+  	//   .then(res => {
+  	//     console.log(res);
+  	//     console.log(res.data);
+  	//   })
 
-    console.log(`Title: ${this.state.title}`);
-    console.log(`Composer: ${this.state.composer}`);
-    console.log(`Url: ${this.state.url}`);
+  	console.log(`Title: ${this.state.title}`);
+  	console.log(`Composer: ${this.state.composer}`);
+  	console.log(`Url: ${this.state.url}`);
   }
 
   render() {
-    const { classes } = this.props;
-    const {
-      title,
-      composer,
-      url,
-    } = this.state;
+  	const { classes } = this.props;
+  	const {
+  		title,
+  		composer,
+  		url,
+  	} = this.state;
 
-    return (
-      <Paper style={paperStyle}>
-        <form
-          className={classes.container}
-          noValidate
-          autoComplete="off"
-          onSubmit={this.handleSubmit}
-        >
-          <TextField
-            id="song-title"
-            label="Song Title"
-            placeholder="Enter Song Title"
-            className={classes.textField}
-            margin="normal"
-            onChange={this.handleChange('title')}
-            value={title}
-            required
-          />
-          <TextField
-            id="song-artist"
-            label="Song Artist/Composer"
-            placeholder="Optional"
-            className={classes.textField}
-            margin="normal"
-            onChange={this.handleChange('composer')}
-            value={composer}
-          />
-          <TextField
-            id="song-link"
-            label="Song Link"
-            placeholder="Optional"
-            className={classes.textField}
-            margin="normal"
-            onChange={this.handleChange('url')}
-            value={url}
-          />
-          <Button
-            color='primary'
-            variant='raised'
-            style={{ width: 100 }}
-            type="submit"
-            value="Submit"
-          >
+  	return (
+  		<Paper style={paperStyle}>
+  			<form
+  				className={classes.container}
+  				noValidate
+  				autoComplete="off"
+  				onSubmit={this.handleSubmit}
+  			>
+  				<TextField
+  					id="song-title"
+  					label="Song Title"
+  					placeholder="Enter Song Title"
+  					className={classes.textField}
+  					margin="normal"
+  					onChange={this.handleChange('title')}
+  					value={title}
+  					required
+  				/>
+  				<TextField
+  					id="song-artist"
+  					label="Song Artist/Composer"
+  					placeholder="Optional"
+  					className={classes.textField}
+  					margin="normal"
+  					onChange={this.handleChange('composer')}
+  					value={composer}
+  				/>
+  				<TextField
+  					id="song-link"
+  					label="Song Link"
+  					placeholder="Optional"
+  					className={classes.textField}
+  					margin="normal"
+  					onChange={this.handleChange('url')}
+  					value={url}
+  				/>
+  				<Button
+  					color='primary'
+  					variant='raised'
+  					style={{ width: 100 }}
+  					type="submit"
+  					value="Submit"
+  				>
             Submit
-          </Button>
-        </form>
+  				</Button>
+  			</form>
 
-        {/* Find way to make the requested title appear eve though I'm setting title back to '' to clear the form onSubmit */}
-        {/* {title &&
+  			{/* Find way to make the requested title appear eve though I'm setting title back to '' to clear the form onSubmit */}
+  			{/* {title &&
           <div>
             You've requested the song {title
               .toLowerCase()
@@ -144,14 +144,14 @@ class Requests extends Component {
               .join(' ')
             }.
           </div> */}
-      </Paper>
-    );
+  		</Paper>
+  	);
   }
 }
 
 Requests.propTypes = {
-  classes: PropTypes.object.isRequired,
-  onUpdateRequestTitle: PropTypes.func.isRequired,
+	classes: PropTypes.object.isRequired,
+	onUpdateRequestTitle: PropTypes.func.isRequired,
 };
 
 // Below, we are mapping state to props and dispatching
@@ -160,5 +160,5 @@ Requests.propTypes = {
 // set onUpdateRequestTitle to updateRequestTitle for clarity in code
 
 export default connect(state => { }, {
-  onUpdateRequestTitle: updateRequestTitle,
+	onUpdateRequestTitle: updateRequestTitle,
 })(withStyles(styles)(Requests));

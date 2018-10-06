@@ -9,13 +9,13 @@ const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
 
 // COMPONENT DEFINITION
 const Spikes = () => (
-  <div>
-    <TutorialContainer
-      pdf="PDF"
-      title='1001 Spikes Main Theme'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			pdf="PDF"
+			title='1001 Spikes Main Theme'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default Spikes;

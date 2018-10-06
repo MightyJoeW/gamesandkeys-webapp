@@ -11,30 +11,30 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-    root: {
-        width: '100%',
-        margin: '0 auto',
-        maxWidth: '90%',
-        backgroundColor: theme.palette.background.paper,
-    },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-    ['grand-theft-auto-v-trailer-theme', 0]
+	['grand-theft-auto-v-trailer-theme', 0]
 ];
 
 // COMPONENT DEFINITION
 function GrandTheftAuto(props) {
-    const { classes } = props;
-    return (
-        <div className={classes.root}>
-            <ListDisplay songs={songs} />
-        </div>
-    );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 GrandTheftAuto.propTypes = {
-    classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(GrandTheftAuto);

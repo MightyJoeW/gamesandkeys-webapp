@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
 
 // COMPONENT DEFINITION
 const BeyondChildhood = () => (
-  <div>
-    <TutorialContainer
-      title='Childhood Memories'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Childhood Memories'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default BeyondChildhood;

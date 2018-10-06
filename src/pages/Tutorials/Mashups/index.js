@@ -10,30 +10,30 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-    root: {
-        width: '100%',
-        margin: '0 auto',
-        maxWidth: '90%',
-        backgroundColor: theme.palette.background.paper,
-    },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-    ['the-last-of-uncharted', 0]
+	['the-last-of-uncharted', 0]
 ];
 
 // COMPONENT DEFINITION
 function Mashups(props) {
-    const { classes } = props;
-    return (
-        <div className={classes.root}>
-            <ListDisplay songs={songs} />
-        </div>
-    );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 Mashups.propTypes = {
-    classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Mashups);

@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/S1Hzdm8Uvbc';
 
 // COMPONENT DEFINITION
 const MenuTheme = () => (
-  <div>
-    <TutorialContainer
-      title='Menu Theme'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Menu Theme'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default MenuTheme;

@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/DCiy7CiR8UU';
 
 // COMPONENT DEFINITION
 const Home = () => (
-  <div>
-    <TutorialContainer
-      title='Home'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Home'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default Home;

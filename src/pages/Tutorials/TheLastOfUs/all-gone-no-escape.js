@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/V3ddk5KEWeQ';
 
 // COMPONENT DEFINITION
 const AllGoneNoEscape = () => (
-  <div>
-    <TutorialContainer
-      title='All Gone (No Escape)'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='All Gone (No Escape)'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default AllGoneNoEscape;

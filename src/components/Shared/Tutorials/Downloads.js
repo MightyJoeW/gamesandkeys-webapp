@@ -14,48 +14,48 @@ import MidiIcon from '@material-ui/icons/MusicNote';
 
 // LOCAL VARIABLES
 const styles = theme => ({
-    root: {
-        backgroundColor: theme.palette.background.paper,
-        margin: '0 auto',
-        maxWidth: 360,
-        width: '100%',
-    },
+	root: {
+		backgroundColor: theme.palette.background.paper,
+		margin: '0 auto',
+		maxWidth: 360,
+		width: '100%',
+	},
 });
 
 // COMPONENT DEFINITION
 const Downloads = (props) => {
-    const { classes } = props;
-    return (
-        <div className={classes.root}>
-            <List component="nav">
-                <ListItem button>
-                    <ListItemIcon>
-                        <SheetMusicIcon />
-                    </ListItemIcon>
-                    <ListItemText
-                        onClick={() => console.log('clicked sheet music')}
-                        primary="Sheet Music"
-                        secondary="Click to download"
-                    />
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon>
-                        <MidiIcon />
-                    </ListItemIcon>
-                    <ListItemText
-                        onClick={() => console.log('clicked midi file')}
-                        primary="Midi File"
-                        secondary="Click to download"
-                    />
-                </ListItem>
-            </List>
-            <Divider />
-        </div>
-    );
-}
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<List component="nav">
+				<ListItem button>
+					<ListItemIcon>
+						<SheetMusicIcon />
+					</ListItemIcon>
+					<ListItemText
+						onClick={() => console.log('clicked sheet music')}
+						primary="Sheet Music"
+						secondary="Click to download"
+					/>
+				</ListItem>
+				<ListItem button>
+					<ListItemIcon>
+						<MidiIcon />
+					</ListItemIcon>
+					<ListItemText
+						onClick={() => console.log('clicked midi file')}
+						primary="Midi File"
+						secondary="Click to download"
+					/>
+				</ListItem>
+			</List>
+			<Divider />
+		</div>
+	);
+};
 
 Downloads.propTypes = {
-    classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Downloads);

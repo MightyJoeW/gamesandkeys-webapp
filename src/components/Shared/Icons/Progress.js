@@ -8,23 +8,23 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 // LOCAL VARIABLES
 const styles = theme => ({
-  progress: {
-    margin: theme.spacing.unit * 2,
-  },
+	progress: {
+		margin: theme.spacing.unit * 2,
+	},
 });
 
 // COMPONENT DEFINITION
 const CircularIndeterminate = (props) => {
-  const { classes } = props;
-  return (
-    <div>
-      <CircularProgress className={classes.progress} />
-    </div>
-  );
-}
+	const { classes } = props;
+	return (
+		<div>
+			<CircularProgress className={classes.progress} />
+		</div>
+	);
+};
 
 CircularIndeterminate.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(CircularIndeterminate);

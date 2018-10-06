@@ -77,114 +77,114 @@ import MuseumBust from './pages/Tutorials/Uncharted/museum-bust';
 import SmallBeginnings from './pages/Tutorials/Uncharted/small-beginnings';
 
 export default (
-  <Switch>
-    {/* Pages */}
-    <Route exact path='/' component={Dashboard} />
-    <Route path='/library' component={Library} />
-    <Route path='/requests' component={Requests} />
+	<Switch>
+		{/* Pages */}
+		<Route exact path='/' component={Dashboard} />
+		<Route path='/library' component={Library} />
+		<Route path='/requests' component={Requests} />
 
-    {/* 1001 Spikes */}
-    <Route path='/1001-spikes' component={Spikes} />
-    <Route path='/1001-spikes-main-theme' component={SpikesTheme} />
+		{/* 1001 Spikes */}
+		<Route path='/1001-spikes' component={Spikes} />
+		<Route path='/1001-spikes-main-theme' component={SpikesTheme} />
 
-    {/* Beyond Two Souls */}
-    <Route path='/beyond' component={Beyond} />
-    <Route path='/beyond-e3-trailer' component={BeyondTrailer} />
-    <Route path='/beyond-two-souls' component={BeyondTwoSouls} />
-    <Route path='/childhood-memories' component={BeyondChildhood} />
-    <Route path='/my-imaginary-friend' component={BeyondFriend} />
+		{/* Beyond Two Souls */}
+		<Route path='/beyond' component={Beyond} />
+		<Route path='/beyond-e3-trailer' component={BeyondTrailer} />
+		<Route path='/beyond-two-souls' component={BeyondTwoSouls} />
+		<Route path='/childhood-memories' component={BeyondChildhood} />
+		<Route path='/my-imaginary-friend' component={BeyondFriend} />
 
-    {/* Bob's Burgers */}
-    <Route path='/bobs-burgers' component={BobsBurgers} />
-    <Route path='/oil-spill' component={OilSpill} />
+		{/* Bob's Burgers */}
+		<Route path='/bobs-burgers' component={BobsBurgers} />
+		<Route path='/oil-spill' component={OilSpill} />
 
-    {/* Brothers: A Tale of Two Sons */}
-    <Route path='/brothers' component={Brothers} />
-    <Route path='/brothers-main-theme' component={BrothersTheme} />
+		{/* Brothers: A Tale of Two Sons */}
+		<Route path='/brothers' component={Brothers} />
+		<Route path='/brothers-main-theme' component={BrothersTheme} />
 
-    {/* Catherine */}
-    <Route path='/catherine' component={Catherine} />
-    <Route path='/stray-sheep' component={CatherineStraySheep} />
+		{/* Catherine */}
+		<Route path='/catherine' component={Catherine} />
+		<Route path='/stray-sheep' component={CatherineStraySheep} />
 
-    {/* Chroma */}
-    <Route path='/chroma' component={Chroma} />
-    <Route path='/chroma-trailer-theme' component={ChromaTheme} />
+		{/* Chroma */}
+		<Route path='/chroma' component={Chroma} />
+		<Route path='/chroma-trailer-theme' component={ChromaTheme} />
 
-    {/* Grand Theft Auto V */}
-    <Route path='/grand-theft-auto' component={GrandTheftAuto} />
-    <Route path='/grand-theft-auto-v-trailer-theme' component={GrandTheftAutoTrailer} />
+		{/* Grand Theft Auto V */}
+		<Route path='/grand-theft-auto' component={GrandTheftAuto} />
+		<Route path='/grand-theft-auto-v-trailer-theme' component={GrandTheftAutoTrailer} />
 
-    {/* inFAMOUS Second Son */}
-    <Route path='/infamous' component={Infamous} />
-    <Route path='/second-son' component={SecondSon} />
+		{/* inFAMOUS Second Son */}
+		<Route path='/infamous' component={Infamous} />
+		<Route path='/second-son' component={SecondSon} />
 
-    {/* Life Is Strange */}
-    <Route path='/life-is-strange' component={LifeIsStrange} />
-    <Route path='/piano-fire' component={PianoFire} />
+		{/* Life Is Strange */}
+		<Route path='/life-is-strange' component={LifeIsStrange} />
+		<Route path='/piano-fire' component={PianoFire} />
 
-    {/* Minecraft */}
-    <Route path='/minecraft' component={Minecraft} />
-    <Route path='/dead-voxel' component={DeadVoxel} />
-    <Route path='/ki' component={Ki} />
-    <Route path='/moog-city-2' component={MoogCity2} />
+		{/* Minecraft */}
+		<Route path='/minecraft' component={Minecraft} />
+		<Route path='/dead-voxel' component={DeadVoxel} />
+		<Route path='/ki' component={Ki} />
+		<Route path='/moog-city-2' component={MoogCity2} />
 
-    {/* Video Game Piano Mashups */}
-    <Route path='/mashups' component={Mashups} />
-    <Route path='/the-last-of-uncharted' component={LastofUncharted} />
+		{/* Video Game Piano Mashups */}
+		<Route path='/mashups' component={Mashups} />
+		<Route path='/the-last-of-uncharted' component={LastofUncharted} />
 
-    {/* NBA Street Vol. 2 */}
-    <Route path='/nba-street' component={NbaStreet} />
-    <Route path='/ride-wit-me' component={RideWitMe} />
+		{/* NBA Street Vol. 2 */}
+		<Route path='/nba-street' component={NbaStreet} />
+		<Route path='/ride-wit-me' component={RideWitMe} />
 
-    {/* Playstation Commercials */}
-    <Route path='/playstation-commercials' component={PlaystationCommercials} />
-    <Route path='/perfect-day' component={PerfectDay} />
+		{/* Playstation Commercials */}
+		<Route path='/playstation-commercials' component={PlaystationCommercials} />
+		<Route path='/perfect-day' component={PerfectDay} />
 
-    {/* Pokemon */}
-    <Route path='/pokemon' component={Pokemon} />
-    <Route path='/pokemon-league' component={PokemonLeague} />
+		{/* Pokemon */}
+		<Route path='/pokemon' component={Pokemon} />
+		<Route path='/pokemon-league' component={PokemonLeague} />
 
-    {/* Resident Evil */}
-    <Route path='/resident-evil' component={ResidentEvil} />
-    <Route path='/resident-evil-0-safe-haven' component={SafeHaven} />
-    <Route path='/resident-evil-revelations-menu-theme' component={MenuTheme} />
-    <Route path='/resident-evil-revelations-previous-story' component={PreviousStory} />
+		{/* Resident Evil */}
+		<Route path='/resident-evil' component={ResidentEvil} />
+		<Route path='/resident-evil-0-safe-haven' component={SafeHaven} />
+		<Route path='/resident-evil-revelations-menu-theme' component={MenuTheme} />
+		<Route path='/resident-evil-revelations-previous-story' component={PreviousStory} />
 
-    {/* The Last of Us */}
-    <Route path='/the-last-of-us' component={TheLastOfUs} />
-    <Route path='/all-gone-aftermath' component={AllGoneAftermath} />
-    <Route path='/all-gone-no-escape' component={AllGoneNoEscape} />
-    <Route path='/fleeting' component={Fleeting} />
-    <Route path='/home' component={Home} />
-    <Route path='/left-behind' component={LeftBehind} />
-    <Route path='/left-behind-together' component={LeftBehindTogether} />
-    <Route path='/salt-of-the-earth' component={SaltOfTheEarth} />
-    <Route path='/the-choice' component={TheChoice} />
-    <Route path='/the-last-of-us-goodnight' component={Goodnight} />
-    <Route path='/the-last-of-us-theme' component={TheLastOfUsTheme} />
-    <Route path='/the-path-a-new-beginning' component={ThePath} />
-    <Route path='/the-way-it-was' component={TheWayItWas} />
-    <Route path='/vanishing-grace-innocence' component={VanishingGraceInnocence} />
+		{/* The Last of Us */}
+		<Route path='/the-last-of-us' component={TheLastOfUs} />
+		<Route path='/all-gone-aftermath' component={AllGoneAftermath} />
+		<Route path='/all-gone-no-escape' component={AllGoneNoEscape} />
+		<Route path='/fleeting' component={Fleeting} />
+		<Route path='/home' component={Home} />
+		<Route path='/left-behind' component={LeftBehind} />
+		<Route path='/left-behind-together' component={LeftBehindTogether} />
+		<Route path='/salt-of-the-earth' component={SaltOfTheEarth} />
+		<Route path='/the-choice' component={TheChoice} />
+		<Route path='/the-last-of-us-goodnight' component={Goodnight} />
+		<Route path='/the-last-of-us-theme' component={TheLastOfUsTheme} />
+		<Route path='/the-path-a-new-beginning' component={ThePath} />
+		<Route path='/the-way-it-was' component={TheWayItWas} />
+		<Route path='/vanishing-grace-innocence' component={VanishingGraceInnocence} />
 
-    {/* The Walking Dead Game */}
-    <Route path='/the-walking-dead-game-main-theme' component={TheWalkingDeadGameTheme} />
-    <Route path='/the-walking-dead-game' component={TheWalkingDeadGame} />
+		{/* The Walking Dead Game */}
+		<Route path='/the-walking-dead-game-main-theme' component={TheWalkingDeadGameTheme} />
+		<Route path='/the-walking-dead-game' component={TheWalkingDeadGame} />
 
-    {/* Thomas Was Alone */}
-    <Route path='/thomas-was-alone' component={ThomasWasAlone} />
-    <Route path='/where-are-you' component={WhereAreYou} />
+		{/* Thomas Was Alone */}
+		<Route path='/thomas-was-alone' component={ThomasWasAlone} />
+		<Route path='/where-are-you' component={WhereAreYou} />
 
-    {/* Transistor */}
-    <Route path='/transistor' component={Transistor} />
-    <Route path='/old-friends' component={OldFriends} />
+		{/* Transistor */}
+		<Route path='/transistor' component={Transistor} />
+		<Route path='/old-friends' component={OldFriends} />
 
-    {/* Uncharted 3 */}
-    <Route path='/uncharted' component={Uncharted} />
-    <Route path='/drakes-return' component={DrakesReturn} />
-    <Route path='/museum-bust' component={MuseumBust} />
-    <Route path='/small-beginnings' component={SmallBeginnings} />
+		{/* Uncharted 3 */}
+		<Route path='/uncharted' component={Uncharted} />
+		<Route path='/drakes-return' component={DrakesReturn} />
+		<Route path='/museum-bust' component={MuseumBust} />
+		<Route path='/small-beginnings' component={SmallBeginnings} />
 
-    {/* 404 */}
-    <Route path='*' component={NotFound} />
-  </Switch>
+		{/* 404 */}
+		<Route path='*' component={NotFound} />
+	</Switch>
 );

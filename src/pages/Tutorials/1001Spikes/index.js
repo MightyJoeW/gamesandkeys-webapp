@@ -10,31 +10,31 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-    root: {
-        width: '100%',
-        margin: '0 auto',
-        maxWidth: '90%',
-        backgroundColor: theme.palette.background.paper,
-    },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-    ['1001-spikes-main-theme', 0]
+	['1001-spikes-main-theme', 0]
 ];
 
 // COMPONENT DEFINITION
 function Spikes(props) {
-    const { classes, name } = props;
-    return (
-        <div className={classes.root}>
-            <div>{name}</div>
-            <ListDisplay songs={songs} />
-        </div>
-    );
+	const { classes, name } = props;
+	return (
+		<div className={classes.root}>
+			<div>{name}</div>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 Spikes.propTypes = {
-    classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Spikes);

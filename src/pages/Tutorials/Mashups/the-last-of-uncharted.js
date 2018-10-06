@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/EfawmKPbi-E';
 
 // COMPONENT DEFINITION
 const TheLastofUncharted = () => (
-  <div>
-    <TutorialContainer
-      title='The Last of Uncharted'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='The Last of Uncharted'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default TheLastofUncharted;

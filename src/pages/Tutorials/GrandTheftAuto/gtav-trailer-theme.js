@@ -9,11 +9,11 @@ const videoUrl = 'https://www.youtube.com/embed/xDAtuAotJuo';
 
 // COMPONENT DEFINITION
 const GrandTheftAuto = () => (
-  <div>
-    <TutorialContainer
-      title='Trailer Theme (Ogdens Nut Gone Flake)'
-      videoUrl={videoUrl} />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Trailer Theme (Ogdens Nut Gone Flake)'
+			videoUrl={videoUrl} />
+	</div>
+);
 
 export default GrandTheftAuto;

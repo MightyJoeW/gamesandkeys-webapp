@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 
 // COMPONENT DEFINITION
 const Brothers = () => (
-  <div>
-    <TutorialContainer
-      title='Winged Hope'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Winged Hope'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default Brothers;

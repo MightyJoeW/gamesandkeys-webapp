@@ -10,33 +10,33 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-  root: {
-    width: '100%',
-    margin: '0 auto',
-    maxWidth: '90%',
-    backgroundColor: theme.palette.background.paper,
-  },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-  ['beyond-e3-trailer', 0],
-  ['beyond', 1],
-  ['childhood-memories', 2],
-  ['my-imaginary-friend', 3],
+	['beyond-e3-trailer', 0],
+	['beyond', 1],
+	['childhood-memories', 2],
+	['my-imaginary-friend', 3],
 ];
 
 // COMPONENT DEFINITION
 function BeyondTwoSouls(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-      <ListDisplay songs={songs} />
-    </div>
-  );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 BeyondTwoSouls.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(BeyondTwoSouls);

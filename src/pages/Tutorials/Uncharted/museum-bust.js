@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/juBlhF_kp4A';
 
 // COMPONENT DEFINITION
 const MuseumBust = () => (
-  <div>
-    <TutorialContainer
-      title='Museum Bust'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Museum Bust'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default MuseumBust;

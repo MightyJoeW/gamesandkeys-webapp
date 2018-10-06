@@ -9,11 +9,11 @@ const videoUrl = 'https://www.youtube.com/embed/0bNEkJ5JBvc';
 
 // COMPONENT DEFINITION
 const OilSpill = () => (
-  <div>
-    <TutorialContainer
-      title='Oil Spill'
-      videoUrl={videoUrl} />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Oil Spill'
+			videoUrl={videoUrl} />
+	</div>
+);
 
 export default OilSpill;

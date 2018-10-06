@@ -10,30 +10,30 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-  root: {
-    width: '100%',
-    margin: '0 auto',
-    maxWidth: '90%',
-    backgroundColor: theme.palette.background.paper,
-  },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-  ['pokemon-league', 0]
+	['pokemon-league', 0]
 ];
 
 // COMPONENT DEFINITION
 function Pokemon(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-      <ListDisplay songs={songs} />
-    </div>
-  );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 Pokemon.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Pokemon);

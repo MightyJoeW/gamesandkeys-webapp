@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/kPzFk_mytr0';
 
 // COMPONENT DEFINITION
 const PianoFire = () => (
-  <div>
-    <TutorialContainer
-      title='Piano Fire'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Piano Fire'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default PianoFire;

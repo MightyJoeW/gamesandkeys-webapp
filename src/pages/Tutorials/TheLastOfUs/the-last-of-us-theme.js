@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/sb2ZC5WjjrA';
 
 // COMPONENT DEFINITION
 const TheLastOfUsTheme = () => (
-  <div>
-    <TutorialContainer
-      title="The Last of Us"
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title="The Last of Us"
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default TheLastOfUsTheme;

@@ -21,15 +21,15 @@ import NavTabs from './NavTabs';
 
 // LOCAL VARIABLES
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  siteTitle: {
-    textDecoration: 'none',
-  },
-  logo: {
-    marginLeft: -12,
-  },
+	root: {
+		flexGrow: 1
+	},
+	siteTitle: {
+		textDecoration: 'none'
+	},
+	logo: {
+		marginLeft: -12
+	}
 };
 
 const siteTitle = 'Games and Keys';
@@ -37,30 +37,30 @@ const siteTitle = 'Games and Keys';
 // COMPONENT DEFINITION
 class Navbar extends Component {
   state = {
-    auth: true,
-    anchorEl: null,
+  	auth: true,
+  	anchorEl: null
   };
 
   handleChange = (event, checked) => {
-    this.setState({ auth: checked });
+  	this.setState({ auth: checked });
   };
 
   handleMenu = event => {
-    this.setState({ anchorEl: event.currentTarget });
+  	this.setState({ anchorEl: event.currentTarget });
   };
 
   handleClose = () => {
-    this.setState({ anchorEl: null });
+  	this.setState({ anchorEl: null });
   };
 
   render() {
-    const { classes } = this.props;
-    const { auth, anchorEl } = this.state;
-    const open = Boolean(anchorEl);
+  	const { classes } = this.props;
+  	const { auth, anchorEl } = this.state;
+  	const open = Boolean(anchorEl);
 
-    return (
-      <div className={classes.root}>
-        {/*<FormGroup>
+  	return (
+  		<div className={classes.root}>
+  			{/*<FormGroup>
           <FormControlLabel
             control={
               <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
@@ -68,65 +68,65 @@ class Navbar extends Component {
             label={auth ? 'Logout' : 'Login'}
           />
           </FormGroup> */}
-        <AppBar position="static" color="primary" elevation={0}>
-          <Toolbar style={{ display: "flex", justifyContent: "center" }}>
-            <IconButton
-              aria-label="Logo"
-              className={classes.logo}
-              color="inherit"
-              component="a"
-              href="/"
-            >
-              <MusicIcon />
-            </IconButton>
-            <Typography
-              className={classes.siteTitle}
-              color="inherit"
-              component="a"
-              href="/"
-              variant="title"
-            >
-              {siteTitle}
-            </Typography>
-            <NavTabs />
-            {auth && (
-              <div>
-                <IconButton
-                  aria-owns={open ? 'menu-appbar' : null}
-                  aria-haspopup="true"
-                  onClick={this.handleMenu}
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton>
-                <Menu
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  open={open}
-                  onClose={this.handleClose}
-                >
-                  <MenuItem onClick={this.handleClose}>My Account</MenuItem>
-                  <MenuItem onClick={this.handleClose}>Logout</MenuItem>
-                </Menu>
-              </div>
-            )}
-          </Toolbar>
-        </AppBar>
-      </div>
-    );
+  			<AppBar position="static" color="primary" elevation={0}>
+  				<Toolbar style={{ display: 'flex', justifyContent: 'center' }}>
+  					<IconButton
+  						aria-label="Logo"
+  						className={classes.logo}
+  						color="inherit"
+  						component="a"
+  						href="/"
+  					>
+  						<MusicIcon />
+  					</IconButton>
+  					<Typography
+  						className={classes.siteTitle}
+  						color="inherit"
+  						component="a"
+  						href="/"
+  						variant="title"
+  					>
+  						{siteTitle}
+  					</Typography>
+  					<NavTabs />
+  					{auth && (
+  						<div>
+  							<IconButton
+  								aria-owns={open ? 'menu-appbar' : null}
+  								aria-haspopup="true"
+  								onClick={this.handleMenu}
+  								color="inherit"
+  							>
+  								<AccountCircle />
+  							</IconButton>
+  							<Menu
+  								id="menu-appbar"
+  								anchorEl={anchorEl}
+  								anchorOrigin={{
+  									vertical: 'top',
+  									horizontal: 'right'
+  								}}
+  								transformOrigin={{
+  									vertical: 'top',
+  									horizontal: 'right'
+  								}}
+  								open={open}
+  								onClose={this.handleClose}
+  							>
+  								<MenuItem onClick={this.handleClose}>My Account</MenuItem>
+  								<MenuItem onClick={this.handleClose}>Logout</MenuItem>
+  							</Menu>
+  						</div>
+  					)}
+  				</Toolbar>
+  			</AppBar>
+  		</div>
+  	);
   }
 }
 
 Navbar.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Navbar);

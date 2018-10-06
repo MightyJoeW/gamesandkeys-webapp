@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/ModmUekQRvg';
 
 // COMPONENT DEFINITION
 const RideWitMe = () => (
-  <div>
-    <TutorialContainer
-      title='Ride Wit Me'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Ride Wit Me'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default RideWitMe;

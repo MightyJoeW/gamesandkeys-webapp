@@ -10,31 +10,31 @@ import ListDisplay from '../../../components/Shared/Tutorials/ListDisplay';
 
 //LOCAL VARIABLES
 const styles = theme => ({
-  root: {
-    width: '100%',
-    margin: '0 auto',
-    maxWidth: '90%',
-    backgroundColor: theme.palette.background.paper,
-  },
+	root: {
+		width: '100%',
+		margin: '0 auto',
+		maxWidth: '90%',
+		backgroundColor: theme.palette.background.paper,
+	},
 });
 
 const songs = [
-  ['perfect-day', 0]
+	['perfect-day', 0]
 
 ];
 
 // COMPONENT DEFINITION
 function PlaystationCommercials(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root}>
-      <ListDisplay songs={songs} />
-    </div>
-  );
+	const { classes } = props;
+	return (
+		<div className={classes.root}>
+			<ListDisplay songs={songs} />
+		</div>
+	);
 }
 
 PlaystationCommercials.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(PlaystationCommercials);

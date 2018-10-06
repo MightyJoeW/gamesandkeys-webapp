@@ -9,12 +9,12 @@ const videoUrl = 'https://www.youtube.com/embed/spDdgUqgxBo';
 
 // COMPONENT DEFINITION
 const WhereAreYou = () => (
-  <div>
-    <TutorialContainer
-      title='Where Are You'
-      videoUrl={videoUrl}
-    />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Where Are You'
+			videoUrl={videoUrl}
+		/>
+	</div>
+);
 
 export default WhereAreYou;

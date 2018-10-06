@@ -9,11 +9,11 @@ const videoUrl = 'https://www.youtube.com/embed/zfYB0tzjOyk';
 
 // COMPONENT DEFINITION
 const StraySheep = () => (
-  <div>
-    <TutorialContainer
-      title='Stray Sheep'
-      videoUrl={videoUrl} />
-  </div>
-)
+	<div>
+		<TutorialContainer
+			title='Stray Sheep'
+			videoUrl={videoUrl} />
+	</div>
+);
 
 export default StraySheep;

@@ -15,79 +15,79 @@ import preload from '../../services/db.json';
 
 // LOCAL VARIABLES
 const styles = {
-  button: {
-    margin: '0 auto',
-    marginBottom: 15,
-  },
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    // justifyContent: 'center',
-    maxWidth: 2000,
-  },
-  card: {
-    margin: '15px 5px',
-    maxHeight: 325,
-    minWidth: 275,
-    textAlign: 'center',
-    textDecoration: 'none',
-  },
-  title: {
-    marginBottom: 16,
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-  thumbnail: {
-    width: 227,
-    height: 170,
-  }
+	button: {
+		margin: '0 auto',
+		marginBottom: 15,
+	},
+	container: {
+		display: 'flex',
+		flexWrap: 'wrap',
+		// justifyContent: 'center',
+		maxWidth: 2000,
+	},
+	card: {
+		margin: '15px 5px',
+		maxHeight: 325,
+		minWidth: 275,
+		textAlign: 'center',
+		textDecoration: 'none',
+	},
+	title: {
+		marginBottom: 16,
+		fontSize: 14,
+	},
+	pos: {
+		marginBottom: 12,
+	},
+	thumbnail: {
+		width: 227,
+		height: 170,
+	}
 };
 
 // COMPONENT DEFINITION
 const ListItems = (props) => {
-  const { classes } = props;
-  return (
-    <div style={styles.container}>
-      {preload.games.map(game => (
-        <Card
-          className={classes.card}
-          component="a"
-          game={game}
-          href={game.url}
-          key={game.name}
-        >
-          <CardContent>
-            <img
-              alt={game.name}
-              className={classes.thumbnail}
-              src={game.backgroundImageURL}
-            />
-            <Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
-              {/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
-              {game.name.length > 16 ? `${game.name.slice(0, 16)}...` : game.name}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button
-              className={classes.button}
-              color="primary"
-              size="small"
-              variant="raised"
-            >
+	const { classes } = props;
+	return (
+		<div style={styles.container}>
+			{preload.games.map(game => (
+				<Card
+					className={classes.card}
+					component="a"
+					game={game}
+					href={game.url}
+					key={game.name}
+				>
+					<CardContent>
+						<img
+							alt={game.name}
+							className={classes.thumbnail}
+							src={game.backgroundImageURL}
+						/>
+						<Typography variant="headline" component="h2" style={{ fontWeight: 700 }}>
+							{/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
+							{game.name.length > 16 ? `${game.name.slice(0, 16)}...` : game.name}
+						</Typography>
+					</CardContent>
+					<CardActions>
+						<Button
+							className={classes.button}
+							color="primary"
+							size="small"
+							variant="raised"
+						>
               Downloads
-            </Button>
-          </CardActions>
-        </Card>
-      ))
-      }
-    </div>
-  );
-}
+						</Button>
+					</CardActions>
+				</Card>
+			))
+			}
+		</div>
+	);
+};
 
 ListItems.propTypes = {
-  classes: PropTypes.object.isRequired,
+	classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(ListItems);

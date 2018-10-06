@@ -10,13 +10,13 @@ import App from './layouts/App/App';
 import store from './state/store';
 
 ReactDOM.render(
-  <div>
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  </div>,
-  document.getElementById('root')
+	<div>
+		<Provider store={store}>
+			<Router>
+				<App />
+			</Router>
+		</Provider>
+	</div>,
+	document.getElementById('root')
 );
 registerServiceWorker();
