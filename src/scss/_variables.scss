@@ -1,0 +1,25 @@
+//***********************************
+// Games And Keys Colors
+//***********************************
+
+
+//***********************************
+// Games And Keys Spacing
+//***********************************
+$spacing-xs: 5px; // 5px
+$spacing-sm: 8px; // 8px
+$spacing: 15px; // 15x
+$spacing-md: 22px; // 22px
+$spacing-x2: $spacing * 2; // 30px lg
+$spacing-x3: $spacing * 3; // 45px
+$spacing-x4: $spacing * 4; // 60px xl
+$spacing-x5: $spacing * 6; // 90px xxl
+$spacing-x8: $spacing * 8; // 120px
+$spacing-x10: $spacing * 10; // 150px
+$spacing-max: 200px;
+
+//***********************************
+// Helpers
+//***********************************
+$black: #000;
+$white: #fff;
