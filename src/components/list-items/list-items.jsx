@@ -44,7 +44,6 @@ const styles = {
 };
 
 
-
 // COMPONENT DEFINITION
 class ListItems extends Component {
 	state = {
@@ -63,7 +62,7 @@ class ListItems extends Component {
 	render() {
 		const { classes } = this.props;
 		const { games } = this.state;
-		console.log(games);
+		// console.log({ games });
 		return (
 			<div style={styles.container}>
 				{games.map(game => (
