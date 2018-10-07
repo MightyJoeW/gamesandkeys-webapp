@@ -2,27 +2,18 @@
 import React, { Component } from 'react';
 
 // INTERNAL DEPENDENCIES
-import ListItems from '../../components/List/ListItems';
+import ListItems from '../../components/list-items/list-items';
 
-// LOCAL VARIABLES
-const styles = {
-	display: 'flex',
-	flexDirection: 'column',
-	marginLeft: 45,
-};
-
-const titleStyles = {
-	fontWeight: 700,
-	marginTop: 45,
-};
+// LOCAL DEPENDENCIES
+import './dashboard.scss';
 
 // COMPONENT DEFINITION
 class Dashboard extends Component {
 	render() {
 		const title = 'Video Game Piano Tutorials';
 		return (
-			<div style={styles}>
-				<p style={titleStyles}> {title.toUpperCase()}</p>
+			<div className="dashboard-container">
+				<p className="dashboard-title"> {title.toUpperCase()}</p>
 				<ListItems />
 			</div>
 		);

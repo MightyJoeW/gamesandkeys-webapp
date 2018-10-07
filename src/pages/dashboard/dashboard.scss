@@ -1,1 +1,11 @@
-@import "../scss/settings";
+@import "../../scss/settings";
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  
+  .dashboard-title {
+    font-weight: $bold;
+    margin-top: $spacing-x3;
+  }
+}
