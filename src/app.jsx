@@ -7,7 +7,7 @@ import { grey } from '@material-ui/core/colors';
 
 // INTERNAL DEPENDENCIES
 import Navbar from './components/Navbar/Navbar';
-import router from './router';
+import routes from './routes';
 
 // LOCAL VARIABLES
 const navbarStyles = {
@@ -27,7 +27,7 @@ class App extends Component {
 			<div style={styles}>
 				<CssBaseline />
 				<Navbar style={navbarStyles} />
-				{router}
+				{routes}
 			</div>
 		);
 	}

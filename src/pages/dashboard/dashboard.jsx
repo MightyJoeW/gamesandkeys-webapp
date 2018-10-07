@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // INTERNAL DEPENDENCIES
-import ListItems from '../components/List/ListItems';
+import ListItems from '../../components/List/ListItems';
 
 // LOCAL VARIABLES
 const styles = {

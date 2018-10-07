@@ -31,34 +31,30 @@ const styles = theme => ({
 
 // COMPONENT DEFINITION
 class NavTabs extends Component {
-	constructor(props) {
-		super(props);
+	state = {
+		value: 1,
+	};
 
-		this.state = {
-			value: 1,
-		};
+	handleChange = (event, value) => {
+		this.setState({ value });
+	};
+
+	render() {
+		const { classes } = this.props;
+		const { value } = this.state;
+
+		return (
+			<div className={classes.root}>
+				<AppBar position="static" elevation={0}>
+					<Tabs value={value} onChange={this.handleChange} centered>
+						<Tab label="Library" component={Link} to="/library" centerRipple />
+						<Tab label="Home" component={Link} to="/" centerRipple />
+						<Tab label="Requests" component={Link} to="/requests" centerRipple />
+					</Tabs>
+				</AppBar>
+			</div>
+		);
 	}
-
-    handleChange = (event, value) => {
-    	this.setState({ value });
-    };
-
-    render() {
-    	const { classes } = this.props;
-    	const { value } = this.state;
-
-    	return (
-    		<div className={classes.root}>
-    			<AppBar position="static" elevation={0}>
-    				<Tabs value={value} onChange={this.handleChange} centered>
-    					<Tab label="Library" component={Link} to="/library" centerRipple />
-    					<Tab label="Home" component={Link} to="/" centerRipple />
-    					<Tab label="Requests" component={Link} to="/requests" centerRipple />
-    				</Tabs>
-    			</AppBar>
-    		</div>
-    	);
-    }
 }
 
 NavTabs.propTypes = {

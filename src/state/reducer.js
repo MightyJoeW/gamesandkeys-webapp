@@ -11,7 +11,7 @@ let initialState = {
 };
 
 // ACTION CREATORS
-export const updateRequestTitle = (title) => ({
+export const updateRequestTitle = title => ({
 	type: ADD_REQUEST_TITLE,
 	title
 });
