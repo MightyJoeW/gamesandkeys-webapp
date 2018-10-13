@@ -5,7 +5,7 @@ import React, { Component, Fragment } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 // INTERNAL DEPENDENCIES
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/layout/nav/navbar';
 import routes from './routes';
 
 // COMPONENT DEFINITION

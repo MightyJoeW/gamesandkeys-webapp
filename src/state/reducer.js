@@ -8,6 +8,7 @@ let initialState = {
 	requestTitle: '',
 	composer: '',
 	url: '',
+	submitted: false
 };
 
 // ACTION CREATORS
