@@ -1,5 +1,5 @@
 // EXTERNAL DEPENDENCIES
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 // import axios from 'axios';
 import { connect } from 'react-redux';
@@ -18,12 +18,17 @@ const styles = theme => ({
 	container: {
 		display: 'flex',
 		flexDirection: 'column',
+		padding: 15,
+		marginTop: 15
 	},
 	textField: {
 		marginLeft: theme.spacing.unit,
 		marginRight: theme.spacing.unit,
-		width: 200,
 	},
+	button: {
+		margin: '15px 0',
+		width: 100
+	}
 });
 
 const paperStyle = {
@@ -45,6 +50,8 @@ class Requests extends Component {
 
 	handleSubmit = (e) => {
 		// updateRequestTitle = () => {
+		console.log('%c this.state:', 'color: ##378cfc', this.state);
+
 
 		// }
 		this.setState({
@@ -73,55 +80,60 @@ class Requests extends Component {
 		} = this.props;
 
 		return (
-			<Paper style={paperStyle}>
-				<form
-					className={classes.container}
-					noValidate
-					autoComplete="off"
-					onSubmit={this.handleSubmit}
-				>
-					<TextField
-						id="song-title"
-						label="Song Title"
-						placeholder="Enter Song Title"
-						className={classes.textField}
-						margin="normal"
-						onChange={this.handleChange('title')}
-						value={title}
-						required
-					/>
-					<TextField
-						id="song-artist"
-						label="Song Artist/Composer"
-						placeholder="Optional"
-						className={classes.textField}
-						margin="normal"
-						onChange={this.handleChange('composer')}
-						value={composer}
-					/>
-					<TextField
-						id="song-link"
-						label="Song Link"
-						placeholder="Optional"
-						className={classes.textField}
-						margin="normal"
-						onChange={this.handleChange('url')}
-						value={url}
-					/>
-					<Button
-						color='primary'
-						variant='raised'
-						style={{ width: 100 }}
-						type="submit"
-						value="Submit"
-						onClick={updateRequestTitle()}
+			<Fragment>
+				<h1> Requests </h1>
+				<Paper style={paperStyle}>
+					<form
+						className={classes.container}
+						noValidate
+						autoComplete="off"
+						onSubmit={this.handleSubmit}
 					>
-						Submit
+						<TextField
+							id="song-title"
+							label="Song Title"
+							placeholder="Enter Song Title"
+							className={classes.textField}
+							margin="normal"
+							fullWidth
+							onChange={this.handleChange('title')}
+							value={title}
+							required
+						/>
+						<TextField
+							id="song-artist"
+							label="Song Artist/Composer"
+							placeholder="Optional"
+							className={classes.textField}
+							margin="normal"
+							fullWidth
+							onChange={this.handleChange('composer')}
+							value={composer}
+						/>
+						<TextField
+							id="song-link"
+							label="Song Link"
+							placeholder="Optional"
+							className={classes.textField}
+							margin="normal"
+							fullWidth
+							onChange={this.handleChange('url')}
+							value={url}
+						/>
+						<Button
+							color='primary'
+							variant='raised'
+							className={classes.button}
+							type="submit"
+							value="Submit"
+							onClick={updateRequestTitle()}
+						>
+							Submit
   				</Button>
-				</form>
+					</form>
 
-				{/* Find way to make the requested title appear eve though I'm setting title back to '' to clear the form onSubmit */}
-				{/* {title &&
+					{/* Find way to make the requested title appear eve though I'm setting title back to '' to clear the form onSubmit */}
+					{/* {title &&
           <div>
             You've requested the song {title
               .toLowerCase()
@@ -130,7 +142,9 @@ class Requests extends Component {
               .join(' ')
             }.
           </div> */}
-			</Paper>
+				</Paper>
+			</Fragment>
+
 		);
 	}
 }

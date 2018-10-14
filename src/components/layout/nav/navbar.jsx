@@ -1,6 +1,7 @@
 // EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 // MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
@@ -30,8 +31,8 @@ const styles = {
 	logo: {
 		marginLeft: -12
 	},
-	login: {
-		cursor: 'pointer'
+	authLinks: {
+		margin: '0 5px'
 	}
 };
 
@@ -44,16 +45,20 @@ class Navbar extends Component {
 		anchorEl: null
 	};
 
-	handleChange = (event, checked) => {
+	handleChange = (e, checked) => {
 		this.setState({ auth: checked });
 	};
 
-	handleMenu = event => {
-		this.setState({ anchorEl: event.currentTarget });
+	handleMenu = e => {
+		this.setState({ anchorEl: e.currentTarget });
 	};
 
 	handleClose = () => {
 		this.setState({ anchorEl: null });
+	};
+
+	handleLogout = () => {
+		this.setState({ auth: false });
 	};
 
 	handleLogin = () => {
@@ -125,15 +130,18 @@ class Navbar extends Component {
 									onClose={this.handleClose}
 								>
 									<MenuItem onClick={this.handleClose}>My Account</MenuItem>
-									<MenuItem onClick={this.handleClose}>Logout</MenuItem>
+									<MenuItem onClick={this.handleLogout}>Logout</MenuItem>
 								</Menu>
 							</div>
 							:
 							<div
-								onClick={this.handleLogin}
-								className={classes.login}
+							// className={classes.login}
 							>
-								Login
+								<div>
+									<Link className={classes.authLinks} to="/login">Login</Link>
+									<Link className={classes.authLinks} to="/signup">Signup</Link>
+								</div>
+
 							</div>
 						}
 					</Toolbar>
