@@ -10,9 +10,9 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-// import Switch from '@material-ui/core/Switch';
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import FormGroup from '@material-ui/core/FormGroup';
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
@@ -29,6 +29,9 @@ const styles = {
 	},
 	logo: {
 		marginLeft: -12
+	},
+	login: {
+		cursor: 'pointer'
 	}
 };
 
@@ -37,7 +40,7 @@ const siteTitle = 'Games and Keys';
 // COMPONENT DEFINITION
 class Navbar extends Component {
 	state = {
-		auth: true,
+		auth: false,
 		anchorEl: null
 	};
 
@@ -53,6 +56,11 @@ class Navbar extends Component {
 		this.setState({ anchorEl: null });
 	};
 
+	handleLogin = () => {
+		console.log('%c Clicked login', 'color: #308e7b');
+
+	}
+
 	render() {
 		const { classes } = this.props;
 		const { auth, anchorEl } = this.state;
@@ -60,14 +68,16 @@ class Navbar extends Component {
 
 		return (
 			<div className={classes.root}>
-				{/*<FormGroup>
-          <FormControlLabel
-            control={
-              <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
-            }
-            label={auth ? 'Logout' : 'Login'}
-          />
-          </FormGroup> */}
+				{process.env.NODE_ENV === 'development'
+					? <FormGroup>
+						<FormControlLabel
+							control={
+								<Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
+							}
+							label={auth ? 'Logout' : 'Login'}
+						/>
+					</FormGroup>
+					: null}
 				<AppBar position="static" color="primary" elevation={0}>
 					<Toolbar style={{ display: 'flex', justifyContent: 'center' }}>
 						<IconButton
@@ -89,7 +99,8 @@ class Navbar extends Component {
 							{siteTitle}
 						</Typography>
 						<NavTabs />
-						{auth && (
+						{auth
+							?
 							<div>
 								<IconButton
 									aria-owns={open ? 'menu-appbar' : null}
@@ -117,7 +128,14 @@ class Navbar extends Component {
 									<MenuItem onClick={this.handleClose}>Logout</MenuItem>
 								</Menu>
 							</div>
-						)}
+							:
+							<div
+								onClick={this.handleLogin}
+								className={classes.login}
+							>
+								Login
+							</div>
+						}
 					</Toolbar>
 				</AppBar>
 			</div>

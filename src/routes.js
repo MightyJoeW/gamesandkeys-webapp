@@ -46,7 +46,7 @@ import ChromaTheme from './components/library/tutorials-info/Chroma/chroma';
 import GrandTheftAutoTrailer from './components/library/tutorials-info/GrandTheftAuto/gtav-trailer-theme';
 import SecondSon from './components/library/tutorials-info/Infamous/second-son';
 import PianoFire from './components/library/tutorials-info/LifeIsStrange/piano-fire';
-import LastofUncharted from './components/library/tutorials-info/Mashups/the-last-of-uncharted';
+import LastOfUncharted from './components/library/tutorials-info/Mashups/the-last-of-uncharted';
 import Ki from './components/library/tutorials-info/Minecraft/ki';
 import DeadVoxel from './components/library/tutorials-info/Minecraft/dead-voxel';
 import MoogCity2 from './components/library/tutorials-info/Minecraft/moog-city-2';
@@ -130,7 +130,7 @@ export default (
 
 		{/* Video Game Piano Mashups */}
 		<Route path='/mashups' component={Mashups} />
-		<Route path='/the-last-of-uncharted' component={LastofUncharted} />
+		<Route path='/the-last-of-uncharted' component={LastOfUncharted} />
 
 		{/* NBA Street Vol. 2 */}
 		<Route path='/nba-street' component={NbaStreet} />

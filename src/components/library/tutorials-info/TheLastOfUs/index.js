@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 //INTERNAL DEPENDENCIES
-import ListDisplay from '../../list-display';
+import LibrarySongTitles from '../../library-song-titles';
 
 //LOCAL VARIABLES
 const styles = theme => ({
@@ -39,7 +39,7 @@ function TheLastOfUs(props) {
 	const { classes } = props;
 	return (
 		<div className={classes.root}>
-			<ListDisplay songs={songs} />
+			<LibrarySongTitles songs={songs} />
 		</div>
 	);
 }

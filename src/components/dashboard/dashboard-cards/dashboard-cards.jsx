@@ -45,14 +45,13 @@ const styles = {
 
 
 // COMPONENT DEFINITION
-class ListItems extends Component {
+class DashboardCards extends Component {
 	state = {
 		games: []
 	}
 
 	componentDidMount() {
 		axios.get('https://raw.githubusercontent.com/MightyJoeW/gamesandkeys-webapp/master/src/services/db.json').then(res => {
-			console.log('res.data', res.data);
 			this.setState({
 				games: res.data.games
 			});
@@ -62,7 +61,6 @@ class ListItems extends Component {
 	render() {
 		const { classes } = this.props;
 		const { games } = this.state;
-		// console.log({ games });
 		return (
 			<div style={styles.container}>
 				{games.map(game => (
@@ -102,8 +100,8 @@ class ListItems extends Component {
 	}
 }
 
-ListItems.propTypes = {
+DashboardCards.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ListItems);
+export default withStyles(styles)(DashboardCards);

@@ -7,10 +7,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 // COMPONENT DEFINITION
-const ListDisplay = props => (
+const LibrarySongTitles = props => (
 	<div>
 		{props.songs.map(song => {
-			// Replace hyphens with empty space then title case so the songs don't look like links on the ListItemText primary prop
+			// Replace hyphens with empty space then title case so the songs don't look like links on the DashboardCards primary prop
 			const title = song[0].replace(/-/g, ' ').split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 			// Get id from 1 index of songs array for each game to use for a key
 			const key = song[1].toString();
@@ -29,4 +29,4 @@ const ListDisplay = props => (
 		})}
 	</div>
 );
-export default ListDisplay;
+export default LibrarySongTitles;
