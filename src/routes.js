@@ -9,6 +9,8 @@ import { Route, Switch } from 'react-router-dom';
 import Dashboard from './components/dashboard/dashboard';
 import Library from './components/library/library';
 import Requests from './components/requests/requests';
+import Login from './components/auth/login';
+import SignUp from './components/auth/signup';
 import ErrorPage from './components/error-page/error-page';
 
 // Tutorial Main Pages
@@ -82,6 +84,8 @@ export default (
 		<Route exact path='/' component={Dashboard} />
 		<Route path='/library' component={Library} />
 		<Route path='/requests' component={Requests} />
+		<Route path='/login' component={Login} />
+		<Route path='/signup' component={SignUp} />
 
 		{/* 1001 Spikes */}
 		<Route path='/1001-spikes' component={Spikes} />
