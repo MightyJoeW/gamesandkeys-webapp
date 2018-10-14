@@ -3,22 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^1.4.0",
-    "@material-ui/icons": "^1.1.0",
+    "@material-ui/core": "^3.1.0",
+    "@material-ui/icons": "^1.1.1",
     "autosuggest-highlight": "^3.1.1",
     "axios": "^0.17.1",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "firebase-admin": "^5.13.0",
     "mdi-material-ui": "^5.2.0",
+    "node-sass": "^4.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-autosuggest": "^9.3.4",
     "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "1.1.0",
+    "react-scripts": "2.0.3",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
     "redux-form": "^7.4.2"
@@ -26,27 +25,28 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
     "test": "jest",
+    "test:update": "jest --updateSnapshot",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "eject": "react-scripts eject"
-  },
-  "jest": {
-    "setupFiles": [
-      "./test/jestsetup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
   },
   "devDependencies": {
     "dotenv": "^4.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
-    "firebase": "^5.3.0",
+    "eslint": "5.6.0",
+    "eslint-plugin-react": "^7.11.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^23.4.2",
     "react-test-renderer": "^16.4.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
