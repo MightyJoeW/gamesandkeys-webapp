@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/ESPJGXs_tDU';
 
 // COMPONENT DEFINITION
 const MoogCity2 = () => (
-	<div>
-		<TutorialContainer
-			title='Moog City 2'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="Minecraft/moog-city-2.mid"
+		sheetRoute="Minecraft/moog-city-2.png"
+		title="Moog City 2"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default MoogCity2;

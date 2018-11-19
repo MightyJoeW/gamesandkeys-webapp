@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 
 // COMPONENT DEFINITION
 const BeyondFriend = () => (
-	<div>
-		<TutorialContainer
-			title='My Imaginary Friend'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="BeyondTwoSouls/my-imaginary-friend.mid"
+		sheetRoute="BeyondTwoSouls/my-imaginary-friend.png"
+		title="My Imaginary Friend"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default BeyondFriend;

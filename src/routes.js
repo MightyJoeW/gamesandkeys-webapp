@@ -8,8 +8,8 @@ import { Route, Switch } from 'react-router-dom';
 //Main Routes
 import Dashboard from './components/dashboard/dashboard';
 import Library from './components/library/library';
-import Requests from './components/requests/requests';
 import ErrorPage from './components/error-page/error-page';
+import Requests from './components/requests/requests';
 
 // Tutorial Main Pages
 import Spikes from './components/library/tutorials-info/1001Spikes';
@@ -70,6 +70,7 @@ import Goodnight from './components/library/tutorials-info/TheLastOfUs/the-last-
 import ThePath from './components/library/tutorials-info/TheLastOfUs/the-path-a-new-beginning';
 import TheWayItWas from './components/library/tutorials-info/TheLastOfUs/the-way-it-was';
 import TheWalkingDeadGameTheme from './components/library/tutorials-info/TheWalkingDeadGame/the-walking-dead-game-main-theme';
+import InTheWater from './components/library/tutorials-info/TheWalkingDeadGame/in-the-water';
 import WhereAreYou from './components/library/tutorials-info/ThomasWasAlone/where-are-you';
 import OldFriends from './components/library/tutorials-info/Transistor/old-friends';
 import DrakesReturn from './components/library/tutorials-info/Uncharted/drakes-return';
@@ -167,8 +168,9 @@ export default (
 		<Route path='/vanishing-grace-innocence' component={VanishingGraceInnocence} />
 
 		{/* The Walking Dead Game */}
-		<Route path='/the-walking-dead-game-main-theme' component={TheWalkingDeadGameTheme} />
+		<Route path='/the-walking-dead-game-season-2-reveal-trailer' component={InTheWater} />
 		<Route path='/the-walking-dead-game' component={TheWalkingDeadGame} />
+		<Route path='/the-walking-dead-game-main-theme' component={TheWalkingDeadGameTheme} />
 
 		{/* Thomas Was Alone */}
 		<Route path='/thomas-was-alone' component={ThomasWasAlone} />

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/juBlhF_kp4A';
@@ -10,7 +10,9 @@ const videoUrl = 'https://www.youtube.com/embed/juBlhF_kp4A';
 // COMPONENT DEFINITION
 const MuseumBust = () => (
 	<div>
-		<TutorialContainer
+		<TutorialWrapper
+			midiRoute='Uncharted/museum-bust.mid'
+			sheetRoute="Uncharted/museum-bust.png"
 			title='Museum Bust'
 			videoUrl={videoUrl}
 		/>

@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 
 // COMPONENT DEFINITION
 const Brothers = () => (
-	<div>
-		<TutorialContainer
-			title='Winged Hope'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="Brothers/winged-hope.mid"
+		sheetRoute="Brothers/winged-hope.png"
+		title="Winged Hope"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default Brothers;

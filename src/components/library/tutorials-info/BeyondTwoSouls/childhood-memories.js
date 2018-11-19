@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
 
 // COMPONENT DEFINITION
 const BeyondChildhood = () => (
-	<div>
-		<TutorialContainer
-			title='Childhood Memories'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="BeyondTwoSouls/childhood-memories.mid"
+		sheetRoute="BeyondTwoSouls/childhood-memories.png"
+		title='Childhood Memories'
+		videoUrl={videoUrl}
+	/>
 );
 
 export default BeyondChildhood;

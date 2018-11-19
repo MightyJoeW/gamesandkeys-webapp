@@ -2,7 +2,7 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/Zlx37MUbq9E';
@@ -10,8 +10,8 @@ const videoUrl = 'https://www.youtube.com/embed/Zlx37MUbq9E';
 // COMPONENT DEFINITION
 const LeftBehindTogether = () => (
 	<div>
-		<TutorialContainer
-			title='Left Behind (Together)'
+		<TutorialWrapper
+			title="Left Behind (Together)"
 			videoUrl={videoUrl}
 		/>
 	</div>

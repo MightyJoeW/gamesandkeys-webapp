@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/S1Hzdm8Uvbc';
 
 // COMPONENT DEFINITION
 const MenuTheme = () => (
-	<div>
-		<TutorialContainer
-			title='Menu Theme'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="ResidentEvil/menu-theme.mid"
+		sheetRoute="ResidentEvil/menu-theme.png"
+		title="Menu Theme"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default MenuTheme;

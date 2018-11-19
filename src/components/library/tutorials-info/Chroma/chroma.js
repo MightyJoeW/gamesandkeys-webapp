@@ -2,18 +2,18 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/HnAu8DBAZmk';
 
 // COMPONENT DEFINITION
 const Chroma = () => (
-	<div>
-		<TutorialContainer
-			title='Chroma - announce trailer theme'
-			videoUrl={videoUrl} />
-	</div>
+	<TutorialWrapper
+		midiRoute="Chroma/chroma-announce-trailer.mid"
+		sheetRoute="Chroma/chroma-announce-trailer.png"
+		title="Chroma - announce trailer theme"
+		videoUrl={videoUrl} />
 );
 
 export default Chroma;

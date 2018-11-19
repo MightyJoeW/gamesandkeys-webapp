@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/Xoaor-shCps';
 
 // COMPONENT DEFINITION
 const DeadVoxel = () => (
-	<div>
-		<TutorialContainer
-			title='Dead Voxel'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="Minecraft/dead-voxel.mid"
+		sheetRoute="Minecraft/dead-voxel.png"
+		title="Dead Voxel"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default DeadVoxel;

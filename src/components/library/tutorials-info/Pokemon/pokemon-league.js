@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/LJvCmaAHKcE';
 
 // COMPONENT DEFINITION
 const PokemonLeague = () => (
-	<div>
-		<TutorialContainer
-			title='Pokemon League'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="Pokemon/pokemon-league-xy.mid"
+		sheetRoute="Pokemon/pokemon-league-xy.png"
+		title="Pokemon League"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default PokemonLeague;

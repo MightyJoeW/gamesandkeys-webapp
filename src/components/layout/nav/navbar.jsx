@@ -9,12 +9,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import Switch from '@material-ui/core/Switch';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 
 // LOCAL DEPENDENCIES
 import NavTabs from './navbar-tabs';
@@ -30,8 +24,8 @@ const styles = {
 	logo: {
 		marginLeft: -12
 	},
-	login: {
-		cursor: 'pointer'
+	authLinks: {
+		margin: '0 5px'
 	}
 };
 
@@ -39,45 +33,16 @@ const siteTitle = 'Games and Keys';
 
 // COMPONENT DEFINITION
 class Navbar extends Component {
-	state = {
-		auth: false,
-		anchorEl: null
+
+	handleMenu = e => {
+		this.setState({ anchorEl: e.currentTarget });
 	};
-
-	handleChange = (event, checked) => {
-		this.setState({ auth: checked });
-	};
-
-	handleMenu = event => {
-		this.setState({ anchorEl: event.currentTarget });
-	};
-
-	handleClose = () => {
-		this.setState({ anchorEl: null });
-	};
-
-	handleLogin = () => {
-		console.log('%c Clicked login', 'color: #308e7b');
-
-	}
 
 	render() {
 		const { classes } = this.props;
-		const { auth, anchorEl } = this.state;
-		const open = Boolean(anchorEl);
 
 		return (
 			<div className={classes.root}>
-				{process.env.NODE_ENV === 'development'
-					? <FormGroup>
-						<FormControlLabel
-							control={
-								<Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
-							}
-							label={auth ? 'Logout' : 'Login'}
-						/>
-					</FormGroup>
-					: null}
 				<AppBar position="static" color="primary" elevation={0}>
 					<Toolbar style={{ display: 'flex', justifyContent: 'center' }}>
 						<IconButton
@@ -99,43 +64,6 @@ class Navbar extends Component {
 							{siteTitle}
 						</Typography>
 						<NavTabs />
-						{auth
-							?
-							<div>
-								<IconButton
-									aria-owns={open ? 'menu-appbar' : null}
-									aria-haspopup="true"
-									onClick={this.handleMenu}
-									color="inherit"
-								>
-									<AccountCircle />
-								</IconButton>
-								<Menu
-									id="menu-appbar"
-									anchorEl={anchorEl}
-									anchorOrigin={{
-										vertical: 'top',
-										horizontal: 'right'
-									}}
-									transformOrigin={{
-										vertical: 'top',
-										horizontal: 'right'
-									}}
-									open={open}
-									onClose={this.handleClose}
-								>
-									<MenuItem onClick={this.handleClose}>My Account</MenuItem>
-									<MenuItem onClick={this.handleClose}>Logout</MenuItem>
-								</Menu>
-							</div>
-							:
-							<div
-								onClick={this.handleLogin}
-								className={classes.login}
-							>
-								Login
-							</div>
-						}
 					</Toolbar>
 				</AppBar>
 			</div>
