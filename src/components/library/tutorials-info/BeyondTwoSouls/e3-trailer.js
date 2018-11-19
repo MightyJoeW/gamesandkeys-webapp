@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/Ll8wJKBpZ8o';
 
 // COMPONENT DEFINITION
 const BeyondTrailer = () => (
-	<div>
-		<TutorialContainer
-			title='E3 Trailer (End Piano Theme)'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="BeyondTwoSouls/E3-ending-heme.mid"
+		sheetRoute="BeyondTwoSouls/beyond-two-souls.png"
+		title='E3 Trailer (End Piano Theme)'
+		videoUrl={videoUrl}
+	/>
 );
 
 export default BeyondTrailer;

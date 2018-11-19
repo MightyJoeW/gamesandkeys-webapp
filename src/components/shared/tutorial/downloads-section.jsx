@@ -23,27 +23,83 @@ const styles = theme => ({
 });
 
 // COMPONENT DEFINITION
-const Downloads = (props) => {
-	const { classes } = props;
+const Downloads = props => {
+	const {
+		classes,
+		midiRoute,
+		sheetRoute,
+		sheetRoute2,
+		sheetRoute2Title,
+		sheetRoute3,
+		sheetRoute3Title
+	} = props;
 	return (
 		<div className={classes.root}>
 			<List component="nav">
-				<ListItem button>
+				<ListItem
+					button
+					component={sheetRoute ? 'a' : null} // Only make components with a sheet music file clickable.
+					download
+					href={`static/images/${sheetRoute}`}
+				>
 					<ListItemIcon>
 						<SheetMusicIcon />
 					</ListItemIcon>
 					<ListItemText
-						onClick={() => console.log('clicked sheet music')}
-						primary="Sheet Music"
+						// Add (piano) if additional sheet for different instrument exists. 
+						// If I don't have the file, put Coming Soon.
+						primary={`Sheet Music ${sheetRoute2 ? '(piano)' : sheetRoute === '' ? '(Coming Soon...)' : ''}`}
 						secondary="Click to download"
 					/>
 				</ListItem>
-				<ListItem button>
+				{sheetRoute2
+					? (
+						<ListItem
+							button
+							component="a"
+							download
+							href={`static/images/${sheetRoute2}`}
+						>
+							<ListItemIcon>
+								<SheetMusicIcon />
+							</ListItemIcon>
+							<ListItemText
+								primary={`Sheet Music (${sheetRoute2Title})`}
+								secondary="Click to download"
+							/>
+						</ListItem>
+					)
+					: null
+				}
+				{sheetRoute3
+					? (
+						<ListItem
+							button
+							component="a"
+							download
+							href={`static/images/${sheetRoute3}`}
+						>
+							<ListItemIcon>
+								<SheetMusicIcon />
+							</ListItemIcon>
+							<ListItemText
+								primary={`Sheet Music (${sheetRoute3Title})`}
+								secondary="Click to download"
+							/>
+						</ListItem>
+					)
+					: null
+				}
+				<ListItem
+					button
+					component="a"
+					download
+					href={`static/midis/${midiRoute}`}
+				>
 					<ListItemIcon>
 						<MidiIcon />
 					</ListItemIcon>
 					<ListItemText
-						onClick={() => console.log('clicked midi file')}
 						primary="Midi File"
 						secondary="Click to download"
 					/>

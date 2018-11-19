@@ -2,7 +2,7 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/EfawmKPbi-E';
@@ -10,7 +10,9 @@ const videoUrl = 'https://www.youtube.com/embed/EfawmKPbi-E';
 // COMPONENT DEFINITION
 const TheLastOfUncharted = () => (
 	<div>
-		<TutorialContainer
+		<TutorialWrapper
+			midiRoute="Mashups/the-last-of-uncharted-piano-mashup.mid"
+			sheetRoute="Mashups/the-last-of-uncharted-piano-mashup.png"
 			title='The Last of Uncharted'
 			videoUrl={videoUrl}
 		/>

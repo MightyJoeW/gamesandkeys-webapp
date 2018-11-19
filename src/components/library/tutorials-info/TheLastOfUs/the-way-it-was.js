@@ -2,18 +2,18 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 const videoUrl = 'https://www.youtube.com/embed/ByfsRJbAVWs';
 
 // COMPONENT DEFINITION
 const TheWayItWas = () => (
-	<div>
-		<TutorialContainer
-			title='The Way It Was'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/the-way-it-was.mid"
+		sheetRoute="TheLastOfUs/the-way-it-was.png"
+		title="The Way It Was"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default TheWayItWas;

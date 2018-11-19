@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/T92IROWXd4w';
 
 // COMPONENT DEFINITION
 const Ki = () => (
-	<div>
-		<TutorialContainer
-			title='Ki'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="Minecraft/ki.mid"
+		sheetRoute="Minecraft/ki.png"
+		title="Ki"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default Ki;

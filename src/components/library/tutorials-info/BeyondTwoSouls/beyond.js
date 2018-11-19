@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/B_jnltymaTg';
 
 // COMPONENT DEFINITION
 const Beyond = () => (
-	<div>
-		<TutorialContainer
-			title='Beyond Two Souls: Main Theme'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute='BeyondTwoSouls/beyond-two-souls-main-theme.mid'
+		sheetRoute="BeyondTwoSouls/beyond-two-souls.png"
+		title='Beyond Two Souls: Main Theme'
+		videoUrl={videoUrl}
+	/>
 );
 
 export default Beyond;

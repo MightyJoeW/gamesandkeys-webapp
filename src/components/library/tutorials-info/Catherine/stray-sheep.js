@@ -2,18 +2,18 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/zfYB0tzjOyk';
 
 // COMPONENT DEFINITION
 const StraySheep = () => (
-	<div>
-		<TutorialContainer
-			title='Stray Sheep'
-			videoUrl={videoUrl} />
-	</div>
+	<TutorialWrapper
+		midiRoute="Catherine/stray-sheep.mid"
+		sheetRoute="Catherine/stray-sheep.png"
+		title="Stray Sheep"
+		videoUrl={videoUrl} />
 );
 
 export default StraySheep;

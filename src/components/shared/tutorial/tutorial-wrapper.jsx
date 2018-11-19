@@ -1,5 +1,5 @@
 // EXTERNAL DEPENDENCIES
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 // MATERIAL-UI DEPENDENCIES
@@ -25,22 +25,39 @@ const styles = theme => ({
 });
 
 // COMPONENT DEFINITION
-const TutorialContainer = (props) => {
-	const { classes, pdf, videoUrl } = props;
+const TutorialWrapper = (props) => {
+	const {
+		classes,
+		midiRoute,
+		sheetRoute,
+		sheetRoute2,
+		sheetRoute3,
+		sheetRoute2Title,
+		sheetRoute3Title,
+		videoUrl
+	} = props;
 
 	return (
-		<div>
+		<Fragment>
 			<Paper className={classes.root} elevation={1}>
 				{props.title}
 				<VideoPlayer videoUrl={videoUrl} />
-				<Downloads pdf={pdf} />
+				<Downloads
+					midiRoute={midiRoute}
+					sheetRoute={sheetRoute}
+					sheetRoute2={sheetRoute2}
+					sheetRoute2Title={sheetRoute2Title}
+					sheetRoute3={sheetRoute3}
+					sheetRoute3Title={sheetRoute3Title}
+
+				/>
 			</Paper>
-		</div>
+		</Fragment>
 	);
 };
 
-TutorialContainer.propTypes = {
+TutorialWrapper.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TutorialContainer);
+export default withStyles(styles)(TutorialWrapper);

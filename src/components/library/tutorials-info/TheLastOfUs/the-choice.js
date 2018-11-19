@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/kq8qR5kmFtM';
 
 // COMPONENT DEFINITION
 const TheChoice = () => (
-	<div>
-		<TutorialContainer
-			title='The Choice'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/the-choice.mid"
+		sheetRoute="TheLastOfUs/the-choice.png"
+		title="The Choice"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default TheChoice;

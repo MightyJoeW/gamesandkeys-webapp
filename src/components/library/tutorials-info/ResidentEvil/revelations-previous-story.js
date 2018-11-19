@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/ivzd0KwpOMU';
 
 // COMPONENT DEFINITION
 const PreviousStory = () => (
-	<div>
-		<TutorialContainer
-			title='Previous Story'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="ResidentEvil/previous-story.mid"
+		sheetRoute="ResidentEvil/previous-story.png"
+		title="Previous Story"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default PreviousStory;

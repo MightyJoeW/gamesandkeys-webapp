@@ -25,7 +25,7 @@ const styles = theme => ({
 });
 
 // COMPONENT DEFINITION
-const TutorialContainer = (props) => {
+const TutorialWrapper = (props) => {
 	const { classes, pdf, videoUrl } = props;
 
 	return (
@@ -39,8 +39,8 @@ const TutorialContainer = (props) => {
 	);
 };
 
-TutorialContainer.propTypes = {
+TutorialWrapper.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TutorialContainer);
+export default withStyles(styles)(TutorialWrapper);
