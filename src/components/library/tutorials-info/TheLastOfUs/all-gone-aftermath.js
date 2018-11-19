@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/JnzjGqG0WQ4';
 
 // COMPONENT DEFINITION
 const AllGoneAftermath = () => (
-	<div>
-		<TutorialContainer
-			title='All Gone (Aftermath)'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/all-gone-aftermath.mid"
+		sheetRoute="TheLastOfUs/all-gone-aftermath.png"
+		title="All Gone (Aftermath)"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default AllGoneAftermath;

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/D41L6sv84NM';
@@ -10,7 +10,9 @@ const videoUrl = 'https://www.youtube.com/embed/D41L6sv84NM';
 // COMPONENT DEFINITION
 const DrakesReturn = () => (
 	<div>
-		<TutorialContainer
+		<TutorialWrapper
+			midiRoute='Uncharted/drakes-return.mid'
+			sheetRoute="Uncharted/drakes-return.png"
 			title="Drake's Return"
 			videoUrl={videoUrl}
 		/>

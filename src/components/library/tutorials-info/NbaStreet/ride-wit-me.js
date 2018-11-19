@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/ModmUekQRvg';
 
 // COMPONENT DEFINITION
 const RideWitMe = () => (
-	<div>
-		<TutorialContainer
-			title='Ride Wit Me'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="NbaStreet/ride-wit-me.mid"
+		sheetRoute="NbaStreet/ride-wit-me.png"
+		title="Ride Wit Me"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default RideWitMe;

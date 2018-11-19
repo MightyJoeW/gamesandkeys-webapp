@@ -2,19 +2,23 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/j6X1QR0xgHY';
 
 // COMPONENT DEFINITION
 const ThePath = () => (
-	<div>
-		<TutorialContainer
-			title='The Path'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/the-path-a-new-beginning.mid"
+		sheetRoute="TheLastOfUs/the-path-a-new-beginning-chords.png"
+		sheetRoute2="TheLastOfUs/the-path-a-new-beginning-lead.png"
+		sheetRoute2Title="lead"
+		sheetRoute3="TheLastOfUs/the-path-a-new-beginning-consolidated.png"
+		sheetRoute3Title="consolidated"
+		title="The Path"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default ThePath;

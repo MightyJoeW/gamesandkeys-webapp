@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/0BZdZeumGJo';
 
 // COMPONENT DEFINITION
 const Fleeting = () => (
-	<div>
-		<TutorialContainer
-			title='Fleeting'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/fleeting.mid"
+		sheetRoute="TheLastOfUs/fleeting.png"
+		title="Fleeting"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default Fleeting;

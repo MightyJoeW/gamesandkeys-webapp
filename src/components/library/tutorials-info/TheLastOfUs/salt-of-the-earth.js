@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/C_14Ill5-k8';
 
 // COMPONENT DEFINITION
 const SaltOfTheEarth = () => (
-	<div>
-		<TutorialContainer
-			title='Salt Of The Earth'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/salt-of-the-earth.mid"
+		sheetRoute="TheLastOfUs/salt-of-the-earth.png"
+		title="Salt Of The Earth"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default SaltOfTheEarth;

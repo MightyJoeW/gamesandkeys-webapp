@@ -2,7 +2,7 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/VCKXbo42CZ8';
@@ -10,7 +10,9 @@ const videoUrl = 'https://www.youtube.com/embed/VCKXbo42CZ8';
 // COMPONENT DEFINITION
 const SmallBeginnings = () => (
 	<div>
-		<TutorialContainer
+		<TutorialWrapper
+			midiRoute='Uncharted/small-beginnings.mid'
+			sheetRoute="Uncharted/small-beginnings.png"
 			title='Small Beginnings'
 			videoUrl={videoUrl}
 		/>

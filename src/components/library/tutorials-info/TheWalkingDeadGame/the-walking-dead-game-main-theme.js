@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/Y5gpXe4WV7k';
 
 // COMPONENT DEFINITION
 const TheWalkingDead = () => (
-	<div>
-		<TutorialContainer
-			title='The Walking Dead Game - Main Theme'
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheWalkingDeadGame/the-walking-dead-game-main-theme.mid"
+		sheetRoute=""
+		title='The Walking Dead Game - Main Theme'
+		videoUrl={videoUrl}
+	/>
 );
 
 export default TheWalkingDead;

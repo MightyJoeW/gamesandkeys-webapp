@@ -2,18 +2,20 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/0bNEkJ5JBvc';
 
 // COMPONENT DEFINITION
 const OilSpill = () => (
-	<div>
-		<TutorialContainer
-			title='Oil Spill'
-			videoUrl={videoUrl} />
-	</div>
+	<TutorialWrapper
+		midiRoute="1001Spikes/1001-spikes.mid"
+		sheetRoute="BobsBurgers/oil-spill-piano.png"
+		sheetRoute2="BobsBurgers/oil-spill-pizz.png"
+		sheetRoute2Title="pizz"
+		title="Oil Spill"
+		videoUrl={videoUrl} />
 );
 
 export default OilSpill;

@@ -19,7 +19,8 @@ const styles = theme => ({
 });
 
 const songs = [
-	['the-walking-dead-game-main-theme', 0]
+	['the-walking-dead-game-main-theme', 0],
+	['the-walking-dead-game-season-2-reveal-trailer', 1]
 ];
 
 // COMPONENT DEFINITION

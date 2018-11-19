@@ -2,19 +2,19 @@
 import React from 'react';
 
 // INTERNAL DEPENDENCIES
-import TutorialContainer from '../../../shared/tutorial/tutorial-container';
+import TutorialWrapper from '../../../shared/tutorial/tutorial-wrapper';
 
 // LOCAL VARIABLES
 const videoUrl = 'https://www.youtube.com/embed/sb2ZC5WjjrA';
 
 // COMPONENT DEFINITION
 const TheLastOfUsTheme = () => (
-	<div>
-		<TutorialContainer
-			title="The Last of Us"
-			videoUrl={videoUrl}
-		/>
-	</div>
+	<TutorialWrapper
+		midiRoute="TheLastOfUs/main-theme.mid"
+		sheetRoute="TheLastOfUs/main-theme.png"
+		title="The Last of Us"
+		videoUrl={videoUrl}
+	/>
 );
 
 export default TheLastOfUsTheme;
