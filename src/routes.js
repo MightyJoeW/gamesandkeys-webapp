@@ -1,6 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React from 'react';
-import { Router } from "@reach/router"
+import { Router } from '@reach/router';
 
 // INTERNAL DEPENDENCIES
 // import Landing from './components/Landing/Landing';

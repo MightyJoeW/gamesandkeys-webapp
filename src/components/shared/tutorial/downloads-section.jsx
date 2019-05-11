@@ -47,8 +47,8 @@ const Downloads = props => {
 					</ListItemIcon>
 					<ListItemText
 						// Add (piano) if additional sheet for different instrument exists. 
-						// If I don't have the file, put Coming Soon.
-						primary={`Sheet Music ${sheetRoute2 ? '(piano)' : sheetRoute === '' ? '(Coming Soon...)' : ''}`}
+						// If I don't have the file, put unavailable.
+						primary={`Sheet Music ${sheetRoute2 ? '(piano)' : sheetRoute === '' ? '(currently unavailable)' : ''}`}
 						secondary="Click to download"
 					/>
 				</ListItem>

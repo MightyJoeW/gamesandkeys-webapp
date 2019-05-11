@@ -47,7 +47,7 @@ class NavTabs extends Component {
 			<div className={classes.root}>
 				<AppBar position="static" elevation={0}>
 					<Tabs value={value} onChange={this.handleChange} centered>
-					{/*
+						{/*
 						<Tab label="List" component={Link} to="/library" centerRipple />
 						<Tab label="Grid" component={Link} to="/" centerRipple />
 					*/}

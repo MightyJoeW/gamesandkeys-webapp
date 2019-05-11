@@ -11,7 +11,7 @@ import store from './redux/configureStore';
 ReactDOM.render(
 	<Fragment>
 		<Provider store={store}>
-				<App />
+			<App />
 		</Provider>
 	</Fragment>,
 	document.getElementById('root')

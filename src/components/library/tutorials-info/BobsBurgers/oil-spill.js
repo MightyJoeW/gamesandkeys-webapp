@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/0bNEkJ5JBvc';
 // COMPONENT DEFINITION
 const OilSpill = () => (
 	<TutorialWrapper
-		midiRoute="1001Spikes/1001-spikes.mid"
+		midiRoute="BobsBurgers/oil-spill.mid"
 		sheetRoute="BobsBurgers/oil-spill-piano.png"
 		sheetRoute2="BobsBurgers/oil-spill-pizz.png"
 		sheetRoute2Title="pizz"
