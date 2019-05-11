@@ -6,7 +6,7 @@ import { Router } from "@reach/router"
 // import Landing from './components/Landing/Landing';
 
 //Main Routes
-import Dashboard from './components/dashboard/dashboard';
+// import Dashboard from './components/dashboard/dashboard';
 import Library from './components/library/library';
 import ErrorPage from './components/error-page/error-page';
 import Requests from './components/requests/requests';
@@ -80,8 +80,8 @@ import SmallBeginnings from './components/library/tutorials-info/Uncharted/small
 export default (
 	<Router>
 		{/* Pages */}
-		<Dashboard path='/' />
-		<Library path='/library' />
+		{/* <Dashboard path='/' /> */}
+		<Library path='/' />
 		<Requests path='/requests' />
 
 		{/* 1001 Spikes */}
