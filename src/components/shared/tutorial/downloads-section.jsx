@@ -40,7 +40,7 @@ const Downloads = props => {
 					button
 					component={sheetRoute ? 'a' : null} // Only make components with a sheet music file clickable.
 					download
-					href={`static/images/${sheetRoute}`}
+					href={`static/sheets-images/${sheetRoute}`}
 				>
 					<ListItemIcon>
 						<SheetMusicIcon />
@@ -58,7 +58,7 @@ const Downloads = props => {
 							button
 							component="a"
 							download
-							href={`static/images/${sheetRoute2}`}
+							href={`static/sheets-images/${sheetRoute2}`}
 						>
 							<ListItemIcon>
 								<SheetMusicIcon />
@@ -77,7 +77,7 @@ const Downloads = props => {
 							button
 							component="a"
 							download
-							href={`static/images/${sheetRoute3}`}
+							href={`static/sheets-images/${sheetRoute3}`}
 						>
 							<ListItemIcon>
 								<SheetMusicIcon />
