@@ -23,3 +23,5 @@ yarn-error.log*
 .env
 
 apiKey.js
+
+/notes.md

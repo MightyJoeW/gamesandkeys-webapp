@@ -1,5 +1,5 @@
 let initialState = {
-	imagesFolder: 'static/images/'
+	imagesFolder: 'static/sheets-images/'
 };
 
 const pdfRoutesReducer = (state = initialState, action) => {

@@ -1,11 +1,11 @@
 // EXTERNAL DEPENDENCIES
-import React from 'react';
+import React, { Fragment } from 'react';
 
 // COMPONENT DEFINITION
 const VideoPlayer = (props) => {
 	const url = props.videoUrl;
 	return (
-		<div>
+		<Fragment>
 			<iframe
 				allow="autoplay; encrypted-media"
 				allowFullScreen
@@ -17,7 +17,7 @@ const VideoPlayer = (props) => {
 				width="100%"
 			>
 			</iframe>
-		</div>
+		</Fragment>
 	);
 };
 
