@@ -23,10 +23,10 @@ const styles = theme => ({
 	},
 	textField: {
 		marginLeft: theme.spacing.unit,
-		marginRight: theme.spacing.unit,
+		marginRight: theme.spacing.unit
 	},
 	title: {
-		marginLeft: theme.spacing.unit,
+		marginLeft: theme.spacing.unit
 	},
 	button: {
 		margin: '15px 0',
@@ -36,31 +36,29 @@ const styles = theme => ({
 
 const paperStyle = {
 	margin: '0 auto',
-	width: '60%',
+	width: '60%'
 };
 
 // COMPONENT DEFINITION
 class Requests extends Component {
-
   handleChange = (title, composer, url) => e => {
   	this.setState({
   		[title]: e.target.value,
   		[composer]: e.target.value,
-  		[url]: e.target.value,
+  		[url]: e.target.value
   	});
   	console.log(e.target.value);
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
   	// updateRequestTitle = () => {
   	console.log('%c this.state:', 'color: ##378cfc', this.state);
-
 
   	// }
   	this.setState({
   		title: '',
   		composer: '',
-  		url: '',
+  		url: ''
   	});
 
   	e.preventDefault(e);
@@ -72,15 +70,11 @@ class Requests extends Component {
   	//     console.log(res);
   	//     console.log(res.data);
   	//   })
-  }
+  };
 
   render() {
   	const { classes } = this.props;
-  	const {
-  		title,
-  		composer,
-  		url,
-  	} = this.props;
+  	const { title, composer, url } = this.props;
 
   	return (
   		<Fragment>
@@ -124,15 +118,15 @@ class Requests extends Component {
   						value={url}
   					/>
   					<Button
-  						color='primary'
-  						variant='raised'
+  						color="primary"
+  						variant="contained"
   						className={classes.button}
   						type="submit"
   						value="Submit"
   						// onClick={updateRequestTitle()}
   					>
               Submit
-  				</Button>
+  					</Button>
   				</form>
 
   				{/* Find way to make the requested title appear even though I'm setting title back to '' to clear the form onSubmit */}
@@ -147,16 +141,18 @@ class Requests extends Component {
           </div> */}
   			</Paper>
   		</Fragment>
-
   	);
   }
 }
 
 Requests.propTypes = {
 	classes: PropTypes.object.isRequired,
-	onUpdateRequestTitle: PropTypes.func.isRequired,
+	onUpdateRequestTitle: PropTypes.func.isRequired
 };
 
-export default connect(state => { }, {
-	// onUpdateRequestTitle: updateRequestTitle,
-})(withStyles(styles)(Requests));
+export default connect(
+	state => {},
+	{
+		// onUpdateRequestTitle: updateRequestTitle,
+	}
+)(withStyles(styles)(Requests));
