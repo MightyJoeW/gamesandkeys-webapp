@@ -2,7 +2,6 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 // INTERNAL DEPENDENCIES
@@ -12,9 +11,7 @@ import store from './redux/configureStore';
 ReactDOM.render(
 	<Fragment>
 		<Provider store={store}>
-			<Router>
-				<App />
-			</Router>
+			<App />
 		</Provider>
 	</Fragment>,
 	document.getElementById('root')
