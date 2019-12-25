@@ -1,6 +1,7 @@
 //EXTERNAL DEPENDENCIES
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from 'react-ga';
 
 //MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
@@ -26,6 +27,18 @@ const listItemStyles = {
 // COMPONENT DEFINITION
 const Library = (props) => {
 	const { classes } = props;
+
+	// Google Analytics
+	const trackingId = '43084370';
+	useEffect(() => {
+		ReactGA.initialize(`UA-${trackingId}-01`, {
+			debug: false // set to true to log pageview to console
+			// I also have the chrome extension with localhost/* whitelisted
+
+		});
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	return (
 		<div className={classes.root}>
 			<List component="nav">
