@@ -1,5 +1,6 @@
 // EXTERNAL DEPENDENCIES
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
+import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 
 // MATERIAL-UI DEPENDENCIES
@@ -36,6 +37,15 @@ const TutorialWrapper = (props) => {
 		sheetRoute3Title,
 		videoUrl
 	} = props;
+
+	// Google Analytics
+	const trackingId = '43084370';
+	useEffect(() => {
+		ReactGA.initialize(`UA-${trackingId}-01`, {
+			debug: false // set to true to log pageview to console
+		});
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
 
 	return (
 		<Fragment>

@@ -45,67 +45,67 @@ const styles = {
 
 // COMPONENT DEFINITION
 class DashboardCards extends Component {
-  state = {
-  	games: []
-  };
+	state = {
+		games: []
+	};
 
-  componentDidMount() {
-  	axios
-  		.get(
-  			'https://raw.githubusercontent.com/MightyJoeW/gamesandkeys-webapp/master/src/services/db.json'
-  		)
-  		.then(res => {
-  			this.setState({
-  				games: res.data.games
-  			});
-  		});
-  }
+	componentDidMount() {
+		axios
+			.get(
+				'https://raw.githubusercontent.com/MightyJoeW/gamesandkeys-webapp/master/src/services/db.json'
+			)
+			.then(res => {
+				this.setState({
+					games: res.data.games
+				});
+			});
+	}
 
-  render() {
-  	const { classes } = this.props;
-  	const { games } = this.state;
-  	return (
-  		<div style={styles.container}>
-  			{games.map(game => (
-  				<Card
-  					className={classes.card}
-  					component="a"
-  					game={game}
-  					href={game.url}
-  					key={game.name}
-  				>
-  					<CardContent>
-  						<img
-  							alt={game.name}
-  							className={classes.thumbnail}
-  							src={game.backgroundImageURL}
-  						/>
-  						<Typography
-  							variant="headline"
-  							component="h2"
-  							style={{ fontWeight: 700 }}
-  						>
-  							{/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
-  							{game.name.length > 16
-  								? `${game.name.slice(0, 16)}...`
-  								: game.name}
-  						</Typography>
-  					</CardContent>
-  					<CardActions>
-  						<Button
-  							className={classes.button}
-  							color="primary"
-  							size="small"
-  							variant="contained"
-  						>
-                Downloads
+	render() {
+		const { classes } = this.props;
+		const { games } = this.state;
+		return (
+			<div style={styles.container}>
+				{games.map(game => (
+					<Card
+						className={classes.card}
+						component="a"
+						game={game}
+						href={game.url}
+						key={game.name}
+					>
+						<CardContent>
+							<img
+								alt={game.name}
+								className={classes.thumbnail}
+								src={game.backgroundImageURL}
+							/>
+							<Typography
+								variant="headline"
+								component="h2"
+								style={{ fontWeight: 700 }}
+							>
+								{/* To prevent titles from using two lines, only allow 16 characters followed by ... */}
+								{game.name.length > 16
+									? `${game.name.slice(0, 16)}...`
+									: game.name}
+							</Typography>
+						</CardContent>
+						<CardActions>
+							<Button
+								className={classes.button}
+								color="primary"
+								size="small"
+								variant="contained"
+							>
+								Downloads
   						</Button>
-  					</CardActions>
-  				</Card>
-  			))}
-  		</div>
-  	);
-  }
+						</CardActions>
+					</Card>
+				))}
+			</div>
+		);
+	}
 }
 
 DashboardCards.propTypes = {
