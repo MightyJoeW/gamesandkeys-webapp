@@ -23,7 +23,6 @@ const VideoPlayer = (props) => {
 				height="360"
 				onClick={() => trackEvent(props.videoUrl)}
 				src={url}
-				style={{ margin: '0 auto' }}
 				title="Game Title"
 				width="100%"
 			>

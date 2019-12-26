@@ -17,10 +17,8 @@ const styles = theme => ({
 		fontSize: '1.5em',
 		fontWeight: 700,
 		margin: '0 auto',
-		minWidth: 450,
 		paddingBottom: theme.spacing.unit * 2,
 		paddingTop: theme.spacing.unit * 2,
-		width: '50%',
 	},
 });
 
