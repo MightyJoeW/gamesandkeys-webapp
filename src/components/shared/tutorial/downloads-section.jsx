@@ -39,7 +39,7 @@ const Downloads = props => {
 		ReactGA.event({
 			category: 'User',
 			action: `User clicked to download ${file === midiRoute ? 'midi file' : 'sheet file'}`,
-			label: file === midiRoute ? 'Midi File' : 'Sheet File'
+			label: file
 		});
 	};
 
