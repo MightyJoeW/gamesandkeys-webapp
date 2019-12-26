@@ -14,12 +14,13 @@ const styles = theme => ({
 	root: {
 		backgroundColor: theme.palette.background.paper,
 		margin: '0 auto',
-		width: '60%',
+		width: '100%'
 	},
 });
 
 const listItemStyles = {
-	color: 'red',
+	// textAlign: 'center',
+	fontSize: 20
 };
 
 // COMPONENT DEFINITION
@@ -53,61 +54,61 @@ const Library = (props) => {
 					<ListItemText style={listItemStyles} primary="1001 Spikes" />
 				</ListItem>
 				<ListItem button divider component="a" href="/beyond-two-souls" onClick={() => trackEvent(('beyond-two-souls'))}>
-					<ListItemText primary="Beyond Two Souls" />
-				</ListItem>
-				<ListItem button divider component="a" href="/brothers" onClick={() => trackEvent(('brothers'))}>
-					<ListItemText primary="Brothers: A Tale of Two Sons" />
-				</ListItem>
-				<ListItem button divider component="a" href="/catherine" onClick={() => trackEvent(('catherine'))}>
-					<ListItemText primary="Catherine" />
-				</ListItem>
-				<ListItem button divider component="a" href="/chroma" onClick={() => trackEvent(('chroma'))}>
-					<ListItemText primary="Chroma" />
-				</ListItem>
-				<ListItem button divider component="a" href="/grand-theft-auto" onClick={() => trackEvent(('grand-theft-auto'))}>
-					<ListItemText primary="Grand Theft Auto" />
-				</ListItem>
-				<ListItem button divider component="a" href="/infamous" onClick={() => trackEvent(('infamous'))}>
-					<ListItemText primary="inFAMOUS" />
-				</ListItem>
-				<ListItem button divider component="a" href="/life-is-strange" onClick={() => trackEvent(('life-is-strange'))}>
-					<ListItemText primary="Life Is Strange" />
-				</ListItem>
-				<ListItem button divider component="a" href="/minecraft" onClick={() => trackEvent(('minecraft'))}>
-					<ListItemText primary="Minecraft" />
-				</ListItem>
-				<ListItem button divider component="a" href="/nba-street" onClick={() => trackEvent(('nba-street'))}>
-					<ListItemText primary="NBA Street" />
-				</ListItem>
-				<ListItem button divider component="a" href="/playstation-commercials" onClick={() => trackEvent(('playstation-commercials'))}>
-					<ListItemText primary="Playstation Commercials" />
-				</ListItem>
-				<ListItem button divider component="a" href="/pokemon" onClick={() => trackEvent(('pokemon'))}>
-					<ListItemText primary="Pokemon" />
-				</ListItem>
-				<ListItem button divider component="a" href="/resident-evil" onClick={() => trackEvent(('resident-evil'))}>
-					<ListItemText primary="Resident Evil" />
-				</ListItem>
-				<ListItem button divider component="a" href="/the-last-of-us" onClick={() => trackEvent(('the-last-of-us'))}>
-					<ListItemText primary="The Last of Us" />
-				</ListItem>
-				<ListItem button divider component="a" href="/the-walking-dead-game" onClick={() => trackEvent(('the-walking-dead-game'))}>
-					<ListItemText primary="The Walking Dead Game" />
-				</ListItem>
-				<ListItem button divider component="a" href="/thomas-was-alone" onClick={() => trackEvent(('chrothomas-was-alonema'))}>
-					<ListItemText primary="Thomas Was Alone" />
-				</ListItem>
-				<ListItem button divider component="a" href="/transistor" onClick={() => trackEvent(('transistor'))}>
-					<ListItemText primary="Transistor" />
-				</ListItem>
-				<ListItem button divider component="a" href="/uncharted" onClick={() => trackEvent(('uncharted'))}>
-					<ListItemText primary="Uncharted" />
-				</ListItem>
-				<ListItem button divider component="a" href="/mashups" onClick={() => trackEvent(('mashups'))}>
-					<ListItemText primary="Video Game Piano Mashups" />
+					<ListItemText style={listItemStyles} primary="Beyond Two Souls" />
 				</ListItem>
 				<ListItem button divider component="a" href="/bobs-burgers" onClick={() => trackEvent(('bobs-burgers'))}>
-					<ListItemText primary="Bob's Burgers" />
+					<ListItemText style={listItemStyles} primary="Bob's Burgers" />
+				</ListItem>
+				<ListItem button divider component="a" href="/brothers" onClick={() => trackEvent(('brothers'))}>
+					<ListItemText style={listItemStyles} primary="Brothers: A Tale of Two Sons" />
+				</ListItem>
+				<ListItem button divider component="a" href="/catherine" onClick={() => trackEvent(('catherine'))}>
+					<ListItemText style={listItemStyles} primary="Catherine" />
+				</ListItem>
+				<ListItem button divider component="a" href="/chroma" onClick={() => trackEvent(('chroma'))}>
+					<ListItemText style={listItemStyles} primary="Chroma" />
+				</ListItem>
+				<ListItem button divider component="a" href="/grand-theft-auto" onClick={() => trackEvent(('grand-theft-auto'))}>
+					<ListItemText style={listItemStyles} primary="Grand Theft Auto" />
+				</ListItem>
+				<ListItem button divider component="a" href="/infamous" onClick={() => trackEvent(('infamous'))}>
+					<ListItemText style={listItemStyles} primary="inFAMOUS" />
+				</ListItem>
+				<ListItem button divider component="a" href="/life-is-strange" onClick={() => trackEvent(('life-is-strange'))}>
+					<ListItemText style={listItemStyles} primary="Life Is Strange" />
+				</ListItem>
+				<ListItem button divider component="a" href="/minecraft" onClick={() => trackEvent(('minecraft'))}>
+					<ListItemText style={listItemStyles} primary="Minecraft" />
+				</ListItem>
+				<ListItem button divider component="a" href="/nba-street" onClick={() => trackEvent(('nba-street'))}>
+					<ListItemText style={listItemStyles} primary="NBA Street" />
+				</ListItem>
+				<ListItem button divider component="a" href="/playstation-commercials" onClick={() => trackEvent(('playstation-commercials'))}>
+					<ListItemText style={listItemStyles} primary="Playstation Commercials" />
+				</ListItem>
+				<ListItem button divider component="a" href="/pokemon" onClick={() => trackEvent(('pokemon'))}>
+					<ListItemText style={listItemStyles} primary="Pokemon" />
+				</ListItem>
+				<ListItem button divider component="a" href="/resident-evil" onClick={() => trackEvent(('resident-evil'))}>
+					<ListItemText style={listItemStyles} primary="Resident Evil" />
+				</ListItem>
+				<ListItem button divider component="a" href="/the-last-of-us" onClick={() => trackEvent(('the-last-of-us'))}>
+					<ListItemText style={listItemStyles} primary="The Last of Us" />
+				</ListItem>
+				<ListItem button divider component="a" href="/the-walking-dead-game" onClick={() => trackEvent(('the-walking-dead-game'))}>
+					<ListItemText style={listItemStyles} primary="The Walking Dead Game" />
+				</ListItem>
+				<ListItem button divider component="a" href="/thomas-was-alone" onClick={() => trackEvent(('chrothomas-was-alonema'))}>
+					<ListItemText style={listItemStyles} primary="Thomas Was Alone" />
+				</ListItem>
+				<ListItem button divider component="a" href="/transistor" onClick={() => trackEvent(('transistor'))}>
+					<ListItemText style={listItemStyles} primary="Transistor" />
+				</ListItem>
+				<ListItem button divider component="a" href="/uncharted" onClick={() => trackEvent(('uncharted'))}>
+					<ListItemText style={listItemStyles} primary="Uncharted" />
+				</ListItem>
+				<ListItem button divider component="a" href="/mashups" onClick={() => trackEvent(('mashups'))}>
+					<ListItemText style={listItemStyles} primary="Video Game Piano Mashups" />
 				</ListItem>
 			</List>
 		</div>
