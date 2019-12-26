@@ -1,5 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React from 'react';
+import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 
 // MATERIAL-UI DEPENDENCIES
@@ -33,6 +34,15 @@ const Downloads = props => {
 		sheetRoute3,
 		sheetRoute3Title
 	} = props;
+
+	const trackEvent = (file) => {
+		ReactGA.event({
+			category: 'User',
+			action: `User clicked to download ${file === midiRoute ? 'midi file' : 'sheet file'}`,
+			label: file === midiRoute ? 'Midi File' : 'Sheet File'
+		});
+	};
+
 	return (
 		<div className={classes.root}>
 			<List component="nav">
@@ -50,6 +60,7 @@ const Downloads = props => {
 						// If I don't have the file, put unavailable.
 						primary={`Sheet Music ${sheetRoute2 ? '(piano)' : sheetRoute === '' ? '(currently unavailable)' : ''}`}
 						secondary="Click to download"
+						onClick={() => trackEvent(sheetRoute)}
 					/>
 				</ListItem>
 				{sheetRoute2
@@ -66,6 +77,7 @@ const Downloads = props => {
 							<ListItemText
 								primary={`Sheet Music (${sheetRoute2Title})`}
 								secondary="Click to download"
+								onClick={() => trackEvent(sheetRoute)}
 							/>
 						</ListItem>
 					)
@@ -85,6 +97,7 @@ const Downloads = props => {
 							<ListItemText
 								primary={`Sheet Music (${sheetRoute3Title})`}
 								secondary="Click to download"
+								onClick={() => trackEvent(sheetRoute)}
 							/>
 						</ListItem>
 					)
@@ -95,6 +108,7 @@ const Downloads = props => {
 					component="a"
 					download
 					href={`static/midis/${midiRoute}`}
+					onClick={() => trackEvent(midiRoute)}
 				>
 					<ListItemIcon>
 						<MidiIcon />

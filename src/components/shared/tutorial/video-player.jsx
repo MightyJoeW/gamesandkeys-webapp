@@ -1,9 +1,19 @@
 // EXTERNAL DEPENDENCIES
 import React, { Fragment } from 'react';
+import ReactGA from 'react-ga';
 
 // COMPONENT DEFINITION
 const VideoPlayer = (props) => {
 	const url = props.videoUrl;
+
+	const trackEvent = (title) => {
+		ReactGA.event({
+			category: 'Media',
+			action: 'Played YouTube video',
+			label: title
+		});
+	};
+
 	return (
 		<Fragment>
 			<iframe
@@ -11,6 +21,7 @@ const VideoPlayer = (props) => {
 				allowFullScreen
 				frameBorder="0"
 				height="360"
+				onClick={() => trackEvent(props.videoUrl)}
 				src={url}
 				style={{ margin: '0 auto' }}
 				title="Game Title"

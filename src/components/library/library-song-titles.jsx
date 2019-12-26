@@ -21,6 +21,15 @@ const LibrarySongTitles = props => {
 		});
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
+
+	const trackEvent = (title) => {
+		ReactGA.event({
+			category: 'Navigation',
+			action: 'Selected a Game Tutorial',
+			label: title
+		});
+	};
+
 	return (
 		<div>
 			{props.songs.map(song => {
@@ -35,7 +44,7 @@ const LibrarySongTitles = props => {
 
 				return (
 					<List component="nav" key={key}>
-						<ListItem button divider component="a" href={song[0]}>
+						<ListItem button divider component="a" href={song[0]} onClick={() => trackEvent(title)}>
 							<ListItemText primary={title} />
 						</ListItem>
 					</List>
