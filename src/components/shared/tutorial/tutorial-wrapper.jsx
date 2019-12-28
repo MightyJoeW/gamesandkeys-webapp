@@ -56,13 +56,13 @@ const TutorialWrapper = (props) => {
 				<VideoPlayer videoUrl={videoUrl} />
 
 				{/* responsive and native ads */}
-				<AdSense.Google
+				{/* <AdSense.Google
 					client={client}
 					slot='7806394673'
 					style={{ display: 'block' }}
 					layout='in-article'
 					format='fluid'
-				/>
+				/> */}
 
 				<Downloads
 					midiRoute={midiRoute}
