@@ -19,7 +19,7 @@ const styles = theme => ({
 });
 
 const listItemStyles = {
-	// textAlign: 'center',
+	textAlign: 'center',
 	fontSize: 20
 };
 
