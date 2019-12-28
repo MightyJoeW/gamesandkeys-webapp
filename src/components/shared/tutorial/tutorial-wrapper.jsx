@@ -1,5 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React, { Fragment, useEffect } from 'react';
+import AdSense from 'react-adsense';
 import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 
@@ -46,11 +47,23 @@ const TutorialWrapper = (props) => {
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
+	const client = 'ca-pub-3224412354170471';
+
 	return (
 		<Fragment>
 			<Paper className={classes.root} elevation={1}>
 				{props.title}
 				<VideoPlayer videoUrl={videoUrl} />
+
+				{/* responsive and native ads */}
+				<AdSense.Google
+					client={client}
+					slot='7806394673'
+					style={{ display: 'block' }}
+					layout='in-article'
+					format='fluid'
+				/>
+
 				<Downloads
 					midiRoute={midiRoute}
 					sheetRoute={sheetRoute}

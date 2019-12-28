@@ -45,7 +45,7 @@ const LibrarySongTitles = props => {
 				return (
 					<List component="nav" key={key}>
 						<ListItem button divider component="a" href={song[0]} onClick={() => trackEvent(title)}>
-							<ListItemText primary={title} />
+							<ListItemText primary={title} style={{ textAlign: 'center' }} />
 						</ListItem>
 					</List>
 				);

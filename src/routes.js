@@ -2,14 +2,9 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
-// INTERNAL DEPENDENCIES
-// import Landing from './components/Landing/Landing';
-
 //Main Routes
-// import Dashboard from './components/dashboard/dashboard';
 import Library from './components/library/library';
 import ErrorPage from './components/error-page/error-page';
-import Requests from './components/requests/requests';
 
 // Tutorial Main Pages
 import Spikes from './components/library/tutorials-info/1001Spikes';
@@ -80,9 +75,7 @@ import SmallBeginnings from './components/library/tutorials-info/Uncharted/small
 export default (
 	<Router>
 		{/* Pages */}
-		{/* <Dashboard path='/' /> */}
 		<Library path='/' />
-		<Requests path='/requests' />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />
