@@ -5,7 +5,6 @@ GamesAndKeys is a website that provides users with free video game piano tutoria
 
 ## Features
 
-* Google Login
 * Watch videos of video game piano tutorials
 * Download sheet music (pdf)
 * Download midi files of piano tutorials
@@ -31,15 +30,6 @@ To view videos or to download files, click on the title of the game. Then, selec
 * React
 * Redux
 * Material-UI
-
-### Backend technologies
-
-* Node
-* Express
-
-### Database
-
-* SQL
 
 ### Testing
 
