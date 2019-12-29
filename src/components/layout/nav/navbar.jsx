@@ -19,7 +19,8 @@ const styles = {
 		flexGrow: 1
 	},
 	siteTitle: {
-		textDecoration: 'none'
+		textDecoration: 'none',
+		fontSize: '1em'
 	},
 	logo: {
 		marginLeft: -12
@@ -61,7 +62,7 @@ class Navbar extends Component {
 							href="/"
 							variant="title"
 						>
-							{siteTitle}
+							<h1>{siteTitle}</h1>
 						</Typography>
 						<NavTabs />
 					</Toolbar>
