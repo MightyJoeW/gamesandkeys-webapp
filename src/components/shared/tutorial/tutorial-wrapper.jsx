@@ -1,6 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React, { Fragment, useEffect } from 'react';
-import AdSense from 'react-adsense';
+// import AdSense from 'react-adsense';
 import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 
@@ -47,7 +47,7 @@ const TutorialWrapper = (props) => {
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
-	const client = 'ca-pub-3224412354170471';
+	// const client = 'ca-pub-3224412354170471';
 
 	return (
 		<Fragment>
