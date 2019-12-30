@@ -28,7 +28,6 @@ To view videos or to download files, click on the title of the game. Then, selec
 ### Front-End technologies
 
 * React
-* Redux
 * Material-UI
 
 ### Testing
