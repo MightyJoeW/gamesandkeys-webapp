@@ -7,6 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 // INTERNAL DEPENDENCIES
 import routes from './routes';
 import Navbar from './components/layout/nav/navbar';
+import BottomNav from './components/layout/nav/bottom-nav';
 
 // COMPONENT DEFINITION
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
 		<CssBaseline />
 		<Navbar />
 		{routes}
+		<BottomNav />
 	</Fragment>
 );
 

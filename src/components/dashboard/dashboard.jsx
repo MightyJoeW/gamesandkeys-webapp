@@ -14,7 +14,8 @@ export default class Dashboard extends Component {
 		return (
 			<div className="dashboard-container">
 				<p className="dashboard-title"> {title.toUpperCase()}</p>
-				<DashboardCards />
+				<p>Landing Page</p>
+				{/*<DashboardCards />*/}
 			</div>
 		);
 	}
