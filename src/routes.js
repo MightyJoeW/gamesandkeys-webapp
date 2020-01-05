@@ -3,6 +3,8 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 //Main Routes
+import Dashboard from './components/dashboard/dashboard';
+import Docs from './components/docs/docs';
 import Library from './components/library/library';
 import ErrorPage from './components/error-page/error-page';
 
@@ -75,7 +77,9 @@ import SmallBeginnings from './components/library/tutorials-info/Uncharted/small
 export default (
 	<Router>
 		{/* Pages */}
-		<Library path='/' />
+		<Dashboard path='/' />
+		<Docs path='/docs' />
+		<Library path='/library' />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />

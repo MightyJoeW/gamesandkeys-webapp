@@ -7,5 +7,15 @@
   .dashboard-title {
     font-weight: $bold;
     margin-top: $spacing-x3;
+    text-align: center;
+  }
+
+  .dashboard-subtitle {
+    text-align: center;
+  }
+
+  .dashboard-get-started-button {
+    width: 150px;
+    margin: 0 auto;
   }
 }

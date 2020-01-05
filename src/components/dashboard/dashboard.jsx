@@ -1,5 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
 
 // INTERNAL DEPENDENCIES
 import DashboardCards from './dashboard-cards/dashboard-cards';
@@ -10,11 +11,15 @@ import './dashboard.scss';
 // COMPONENT DEFINITION
 export default class Dashboard extends Component {
 	render() {
-		const title = 'Video Game Piano Tutorials';
+		const title = 'Learn how to play your favorite video game songs on the piano';
 		return (
 			<div className="dashboard-container">
-				<p className="dashboard-title"> {title.toUpperCase()}</p>
-				<DashboardCards />
+				<h1 className="dashboard-title"> {title}</h1>
+				<p className="dashboard-subtitle">GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv shows via video instruction, sheet music, and midi files.</p>
+				<Button className="dashboard-get-started-button" variant="contained" color="primary" href="/docs">
+					Get Started
+      	</Button>
+				{/*<DashboardCards />*/}
 			</div>
 		);
 	}
