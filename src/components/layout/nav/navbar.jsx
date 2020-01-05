@@ -60,7 +60,7 @@ class Navbar extends Component {
 							color="inherit"
 							component="a"
 							href="/"
-							variant="title"
+							variant="h1"
 						>
 							<h1>{siteTitle}</h1>
 						</Typography>
