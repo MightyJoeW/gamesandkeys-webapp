@@ -1,122 +1,73 @@
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import { navigate } from '@reach/router';
 
 export default function ComboBox() {
+	const [value, setValue] = useState('N/A');
+
 	return (
 		<Autocomplete
-			id="combo-box-demo"
-			options={top100Films}
+			autoComplete={true}
+			disableClearable={true}
+			id="combo-box"
+			options={tutorialList}
 			getOptionLabel={option => option.title}
 			style={{ width: 300 }}
 			renderInput={params => (
-				<TextField {...params} label="Combo box" variant="outlined" fullWidth />
+				<TextField {...params} label="Search" variant="outlined" fullWidth />
 			)}
+			onChange={(event, newValue) => {
+				setValue(newValue);
+				navigate(newValue.route);
+			}}
+			value={value}
 		/>
 	);
 }
 
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
-	{ title: 'The Shawshank Redemption', year: 1994 },
-	{ title: 'The Godfather', year: 1972 },
-	{ title: 'The Godfather: Part II', year: 1974 },
-	{ title: 'The Dark Knight', year: 2008 },
-	{ title: '12 Angry Men', year: 1957 },
-	{ title: 'Schindler\'s List', year: 1993 },
-	{ title: 'Pulp Fiction', year: 1994 },
-	{ title: 'The Lord of the Rings: The Return of the King', year: 2003 },
-	{ title: 'The Good, the Bad and the Ugly', year: 1966 },
-	{ title: 'Fight Club', year: 1999 },
-	{ title: 'The Lord of the Rings: The Fellowship of the Ring', year: 2001 },
-	{ title: 'Star Wars: Episode V - The Empire Strikes Back', year: 1980 },
-	{ title: 'Forrest Gump', year: 1994 },
-	{ title: 'Inception', year: 2010 },
-	{ title: 'The Lord of the Rings: The Two Towers', year: 2002 },
-	{ title: 'One Flew Over the Cuckoo\'s Nest', year: 1975 },
-	{ title: 'Goodfellas', year: 1990 },
-	{ title: 'The Matrix', year: 1999 },
-	{ title: 'Seven Samurai', year: 1954 },
-	{ title: 'Star Wars: Episode IV - A New Hope', year: 1977 },
-	{ title: 'City of God', year: 2002 },
-	{ title: 'Se7en', year: 1995 },
-	{ title: 'The Silence of the Lambs', year: 1991 },
-	{ title: 'It\'s a Wonderful Life', year: 1946 },
-	{ title: 'Life Is Beautiful', year: 1997 },
-	{ title: 'The Usual Suspects', year: 1995 },
-	{ title: 'Léon: The Professional', year: 1994 },
-	{ title: 'Spirited Away', year: 2001 },
-	{ title: 'Saving Private Ryan', year: 1998 },
-	{ title: 'Once Upon a Time in the West', year: 1968 },
-	{ title: 'American History X', year: 1998 },
-	{ title: 'Interstellar', year: 2014 },
-	{ title: 'Casablanca', year: 1942 },
-	{ title: 'City Lights', year: 1931 },
-	{ title: 'Psycho', year: 1960 },
-	{ title: 'The Green Mile', year: 1999 },
-	{ title: 'The Intouchables', year: 2011 },
-	{ title: 'Modern Times', year: 1936 },
-	{ title: 'Raiders of the Lost Ark', year: 1981 },
-	{ title: 'Rear Window', year: 1954 },
-	{ title: 'The Pianist', year: 2002 },
-	{ title: 'The Departed', year: 2006 },
-	{ title: 'Terminator 2: Judgment Day', year: 1991 },
-	{ title: 'Back to the Future', year: 1985 },
-	{ title: 'Whiplash', year: 2014 },
-	{ title: 'Gladiator', year: 2000 },
-	{ title: 'Memento', year: 2000 },
-	{ title: 'The Prestige', year: 2006 },
-	{ title: 'The Lion King', year: 1994 },
-	{ title: 'Apocalypse Now', year: 1979 },
-	{ title: 'Alien', year: 1979 },
-	{ title: 'Sunset Boulevard', year: 1950 },
-	{ title: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb', year: 1964 },
-	{ title: 'The Great Dictator', year: 1940 },
-	{ title: 'Cinema Paradiso', year: 1988 },
-	{ title: 'The Lives of Others', year: 2006 },
-	{ title: 'Grave of the Fireflies', year: 1988 },
-	{ title: 'Paths of Glory', year: 1957 },
-	{ title: 'Django Unchained', year: 2012 },
-	{ title: 'The Shining', year: 1980 },
-	{ title: 'WALL·E', year: 2008 },
-	{ title: 'American Beauty', year: 1999 },
-	{ title: 'The Dark Knight Rises', year: 2012 },
-	{ title: 'Princess Mononoke', year: 1997 },
-	{ title: 'Aliens', year: 1986 },
-	{ title: 'Oldboy', year: 2003 },
-	{ title: 'Once Upon a Time in America', year: 1984 },
-	{ title: 'Witness for the Prosecution', year: 1957 },
-	{ title: 'Das Boot', year: 1981 },
-	{ title: 'Citizen Kane', year: 1941 },
-	{ title: 'North by Northwest', year: 1959 },
-	{ title: 'Vertigo', year: 1958 },
-	{ title: 'Star Wars: Episode VI - Return of the Jedi', year: 1983 },
-	{ title: 'Reservoir Dogs', year: 1992 },
-	{ title: 'Braveheart', year: 1995 },
-	{ title: 'M', year: 1931 },
-	{ title: 'Requiem for a Dream', year: 2000 },
-	{ title: 'Amélie', year: 2001 },
-	{ title: 'A Clockwork Orange', year: 1971 },
-	{ title: 'Like Stars on Earth', year: 2007 },
-	{ title: 'Taxi Driver', year: 1976 },
-	{ title: 'Lawrence of Arabia', year: 1962 },
-	{ title: 'Double Indemnity', year: 1944 },
-	{ title: 'Eternal Sunshine of the Spotless Mind', year: 2004 },
-	{ title: 'Amadeus', year: 1984 },
-	{ title: 'To Kill a Mockingbird', year: 1962 },
-	{ title: 'Toy Story 3', year: 2010 },
-	{ title: 'Logan', year: 2017 },
-	{ title: 'Full Metal Jacket', year: 1987 },
-	{ title: 'Dangal', year: 2016 },
-	{ title: 'The Sting', year: 1973 },
-	{ title: '2001: A Space Odyssey', year: 1968 },
-	{ title: 'Singin\' in the Rain', year: 1952 },
-	{ title: 'Toy Story', year: 1995 },
-	{ title: 'Bicycle Thieves', year: 1948 },
-	{ title: 'The Kid', year: 1921 },
-	{ title: 'Inglourious Basterds', year: 2009 },
-	{ title: 'Snatch', year: 2000 },
-	{ title: '3 Idiots', year: 2009 },
-	{ title: 'Monty Python and the Holy Grail', year: 1975 },
+const tutorialList = [
+	{ title: '1001 Spikes Main Theme', game: '1001 Spikes', route: '/1001-spikes-main-theme' },
+	{ title: 'Beyond E3 Trailer', game: 'Beyond Two Souls', route: '/beyond-e3-trailer' },
+	{ title: 'Beyond Two Souls: Main Theme', game: 'Beyond Two Souls', route: '/beyond' },
+	{ title: 'Childhood Memories', game: 'Beyond Two Souls', route: '/childhood-memories' },
+	{ title: 'My Imaginary Friend', game: 'Beyond Two Souls', route: '/my-imaginary-friend' },
+	{ title: 'Oil Spill', game: 'Bob\'s Burgers', route: 'oil-spill', route: '/oil-spill' },
+	{ title: 'Winged Hope ', game: 'Brothers: A Tale of Two Sons', route: '/brothers-main-theme' },
+	{ title: 'Stray Sheep', game: 'Catherine', route: '/stray-sheep' },
+	{ title: 'Chroma: Announce Trailer Theme', game: 'Chroma', route: '/chroma-trailer-theme' },
+	{ title: 'Trailer Theme (Odgens Nut Gone Flake)', game: 'Grand Theft Auto V', route: '/grand-theft-auto-v-trailer-theme' },
+	{ title: 'Second Son (trailer theme)', game: 'inFAMOUS Second Son', route: '/second-son' },
+	{ title: 'Piano Fire', game: 'Life is Strange', route: '/piano-fire' },
+	{ title: 'Dead Voxel', game: 'Minecraft', route: '/dead-voxel' },
+	{ title: 'Ki', game: 'Minecraft', route: '/ki' },
+	{ title: 'Moog City 2', game: 'Minecraft', route: '/moog-city-2' },
+	{ title: 'Ride Wit Me', game: 'NBA Street', route: '/ride-wit-me' },
+	{ title: 'Perfect Day', game: 'Playstation Commercial', route: '/playstation-commercials' },
+	{ title: 'Pokemon League Theme', game: 'Pokemon X and Y', route: '/pokemon-league' },
+	{ title: 'Resident Evil 0 Safe Haven', game: 'Resident Evil', route: '/resident-evil-0-safe-haven' },
+	{ title: 'Resident Evil Revelations Menu Theme', game: 'Resident Evil Revelations', route: '/resident-evil-revelations-menu-theme' },
+	{ title: 'Previous Story', game: 'Resident Evil Revelations', route: '/resident-evil-revelations-previous-story' },
+	{ title: 'All Gone (Aftermath)', game: 'The Last of Us', route: '/all-gone-aftermath' },
+	{ title: 'All Gone (No Escape)', game: 'The Last of Us', route: '/all-gone-no-escape' },
+	{ title: 'Fleeting', game: 'The Last of Us', route: '/fleeting' },
+	{ title: 'Home', game: 'The Last of Us', route: '/home' },
+	{ title: 'Left Behind', game: 'The Last of Us', route: '/left-behind' },
+	{ title: 'Left Behind (Together)', game: 'The Last of Us', route: '/left-behind-together' },
+	{ title: 'Salt Of The Earth', game: 'The Last of Us', route: '/salt-of-the-earth' },
+	{ title: 'The Choice', game: 'The Last of Us', route: '/the-choice' },
+	{ title: 'The Last of Us (Goodnight)', game: 'The Last of Us', route: '/the-last-of-us-goodnight' },
+	{ title: 'The Last of Us Main Theme', game: 'The Last of Us', route: '/the-last-of-us-theme' },
+	{ title: 'The Path (A New Beginning)', game: 'The Last of Us', route: '/the-path-a-new-beginning' },
+	{ title: 'The Way It Was', game: 'The Last of Us', route: '/the-way-it-was' },
+	{ title: 'Vanishing Grace (Innocence)', game: 'The Last of Us', route: '/vanishing-grace-innocence' },
+	{ title: 'The Walking Dead Game - Main Theme', game: 'The Walking Dead Game', route: '/the-walking-dead-game-main-theme' },
+	{ title: 'Reveal Trailer Theme (In The Water)', game: 'The Walking Dead Season 2', route: '/the-walking-dead-game-season-2-reveal-trailer' },
+	{ title: 'Where Are You', game: 'Thomas Was Alone', route: '/where-are-you' },
+	{ title: 'Old Friends', game: 'Transistor', route: '/old-friends' },
+	{ title: 'Drake\'s Return', game: 'Uncharted', route: '/drakes-return' },
+	{ title: 'Museum Bust', game: 'Uncharted', route: '/museum-bust' },
+	{ title: 'Small Beginnings', game: 'Uncharted', route: '/small-beginnings' },
+	{ title: 'The Last of Uncharted', game: 'Video Game Mashups', route: '/the-last-of-uncharted' }
 ];
