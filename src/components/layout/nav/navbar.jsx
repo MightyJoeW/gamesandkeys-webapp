@@ -76,11 +76,11 @@ const useStyles = makeStyles(theme => ({
 export default function Navbar() {
 	const classes = useStyles();
 	const siteTitle = 'Games and Keys';
-	const [term, setTerm] = useState('N/A')
+	const [term, setTerm] = useState('N/A');
 	const onInputChange = term => {
-		setTerm(term)
-		console.log(term)
-	}
+		setTerm(term);
+		console.log(term);
+	};
 
 	return (
 		<div className={classes.root}>
@@ -98,15 +98,15 @@ export default function Navbar() {
 					<Typography className={classes.title} variant="h6" noWrap component="a" href="/">
 						{siteTitle}
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap>
+					<Typography className={classes.link} variant="h6" noWrap component="a" href="/docs">
 						Docs
-          </Typography>
+					</Typography>
 					<Typography className={classes.link} variant="h6" noWrap component="a" href="/library">
 						Tutorials
-          </Typography>
-					<Typography className={classes.link} variant="h6" noWrap>
+					</Typography>
+					<Typography className={classes.link} variant="h6" noWrap component="a" href="/blog">
 						Blog
-          </Typography>
+					</Typography>
 					<div className={classes.search}>
 						<div className={classes.searchIcon}>
 							<SearchIcon />
