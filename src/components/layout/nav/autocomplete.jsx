@@ -33,7 +33,7 @@ const tutorialList = [
 	{ title: 'Beyond Two Souls: Main Theme', game: 'Beyond Two Souls', route: '/beyond' },
 	{ title: 'Childhood Memories', game: 'Beyond Two Souls', route: '/childhood-memories' },
 	{ title: 'My Imaginary Friend', game: 'Beyond Two Souls', route: '/my-imaginary-friend' },
-	{ title: 'Oil Spill', game: 'Bob\'s Burgers', route: 'oil-spill', route: '/oil-spill' },
+	{ title: 'Oil Spill', game: 'Bob\'s Burgers', route: 'oil-spill' },
 	{ title: 'Winged Hope ', game: 'Brothers: A Tale of Two Sons', route: '/brothers-main-theme' },
 	{ title: 'Stray Sheep', game: 'Catherine', route: '/stray-sheep' },
 	{ title: 'Chroma: Announce Trailer Theme', game: 'Chroma', route: '/chroma-trailer-theme' },

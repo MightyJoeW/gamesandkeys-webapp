@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import { navigate } from '@reach/router';
 
-// INTERNAL DEPENDENCIES
-import DashboardCards from './dashboard-cards/dashboard-cards';
-
 // LOCAL DEPENDENCIES
 import './dashboard.scss';
 
@@ -20,7 +17,6 @@ export default class Dashboard extends Component {
 				<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={() => navigate('/docs')}>
 					Get Started
 				</Button>
-				{/*<DashboardCards />*/}
 			</div>
 		);
 	}
