@@ -5,12 +5,14 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import Brightness3Icon from '@material-ui/icons/Brightness3';
 import ComboBox from './autocomplete';
 import { navigate } from '@reach/router';
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		flexGrow: 1,
+		flexGrow: 1
 	},
 	menuButton: {
 		marginRight: theme.spacing(2),
@@ -64,7 +66,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export default function Navbar() {
+export default function Navbar(props) {
 	const classes = useStyles();
 	const siteTitle = 'Games and Keys';
 
@@ -95,6 +97,14 @@ export default function Navbar() {
 					<div className={classes.search}>
 						<ComboBox />
 					</div>
+					<IconButton
+						aria-label="Logo"
+						className={classes.logo}
+						color="inherit"
+						onClick={props.toggleMode}
+					>
+						{props.mode === 'light' ? <Brightness3Icon /> : <WbSunnyIcon />}
+					</IconButton>
 				</Toolbar>
 			</AppBar>
 		</div>

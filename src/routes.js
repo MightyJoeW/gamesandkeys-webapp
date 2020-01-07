@@ -5,7 +5,8 @@ import { Router } from '@reach/router';
 //Main Routes
 import Dashboard from './components/dashboard/dashboard';
 import Docs from './components/docs/docs';
-import Library from './components/library/library';
+import Tutorials from './components/library/library';
+import Blog from './components/blog/blog';
 import ErrorPage from './components/error-page/error-page';
 
 // Tutorial Main Pages
@@ -79,7 +80,8 @@ export default (
 		{/* Pages */}
 		<Dashboard path='/' />
 		<Docs path='/docs' />
-		<Library path='/tutorials' />
+		<Tutorials path='/tutorials' />
+		<Blog path='/blog' />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />
