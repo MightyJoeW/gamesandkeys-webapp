@@ -4,20 +4,17 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		display: 'flex',
+		display: 'flex'
 	},
 	drawer: {
 		[theme.breakpoints.up('sm')]: {
@@ -28,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 	appBar: {
 		[theme.breakpoints.up('sm')]: {
 			width: `calc(100% - ${drawerWidth}px)`,
-			marginLeft: drawerWidth,
+			marginLeft: drawerWidth
 		},
 	},
 	menuButton: {
@@ -48,10 +45,9 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-function DocsSideDrawer(props) {
+function BlogSideDrawer(props) {
 	const { container } = props;
 	const classes = useStyles();
-	const theme = useTheme();
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 
 	const handleDrawerToggle = () => {
@@ -63,22 +59,15 @@ function DocsSideDrawer(props) {
 			<div className={classes.toolbar} />
 			<Divider />
 			<List>
-				{['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+				{/* Recent Posts array */}
+        Recent Posts
+				{['Blog5', 'Blog4', 'Blog4', 'Blog2'].map(text => (
 					<ListItem button key={text}>
-						<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
 						<ListItemText primary={text} />
 					</ListItem>
 				))}
 			</List>
 			<Divider />
-			<List>
-				{['All mail', 'Trash', 'Spam'].map((text, index) => (
-					<ListItem button key={text}>
-						<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-						<ListItemText primary={text} />
-					</ListItem>
-				))}
-			</List>
 		</div>
 	);
 
@@ -92,7 +81,7 @@ function DocsSideDrawer(props) {
 					<Drawer
 						container={container}
 						variant="temporary"
-						anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+						anchor="right"
 						open={mobileOpen}
 						onClose={handleDrawerToggle}
 						classes={{
@@ -120,7 +109,7 @@ function DocsSideDrawer(props) {
 			<main className={classes.content}>
 				<div className={classes.toolbar} />
 				<Typography paragraph>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
           facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
           gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
@@ -132,7 +121,7 @@ function DocsSideDrawer(props) {
           donec massa sapien faucibus et molestie ac.
 				</Typography>
 				<Typography paragraph>
-					Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
+          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
           facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
           tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
           consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
@@ -147,7 +136,7 @@ function DocsSideDrawer(props) {
 	);
 }
 
-DocsSideDrawer.propTypes = {
+BlogSideDrawer.propTypes = {
 	/**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -155,4 +144,4 @@ DocsSideDrawer.propTypes = {
 	container: PropTypes.instanceOf(typeof Element === 'undefined' ? Object : Element),
 };
 
-export default DocsSideDrawer;
+export default BlogSideDrawer;
