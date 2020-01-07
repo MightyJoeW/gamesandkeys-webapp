@@ -2,21 +2,32 @@
 import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import { makeStyles } from '@material-ui/core/styles';
 import { navigate } from '@reach/router';
 
+const useStyles = makeStyles(theme => ({
+	comboBox: {
+		width: '100%',
+		[theme.breakpoints.up('sm')]: {
+			width: 300,
+		},
+	},
+}));
+
 export default function ComboBox() {
-	const [value, setValue] = useState('N/A');
+	const classes = useStyles();
+	const [value, setValue] = useState(null);
 
 	return (
 		<Autocomplete
 			autoComplete={true}
+			className={classes.comboBox}
 			disableClearable={true}
 			id="combo-box"
 			options={tutorialList}
 			getOptionLabel={option => option.title}
-			style={{ width: 300 }}
 			renderInput={params => (
-				<TextField {...params} label="Search" variant="outlined" fullWidth />
+				<TextField {...params} variant="outlined" fullWidth placeholder="Search..." />
 			)}
 			onChange={(event, newValue) => {
 				setValue(newValue);

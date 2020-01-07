@@ -79,7 +79,7 @@ export default (
 		{/* Pages */}
 		<Dashboard path='/' />
 		<Docs path='/docs' />
-		<Library path='/library' />
+		<Library path='/tutorials' />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />

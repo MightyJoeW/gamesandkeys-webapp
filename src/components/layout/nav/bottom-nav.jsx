@@ -34,7 +34,7 @@ export default function BottomNav() {
 			}}
 		>
 			<BottomNavigationAction label="Docs" value="/docs" icon={<FolderIcon />} />
-			<BottomNavigationAction label="Tutorials" value="/library" icon={<MusicNoteIcon />} />
+			<BottomNavigationAction label="Tutorials" value="/tutorials" icon={<MusicNoteIcon />} />
 			<BottomNavigationAction label="Blog" value="/blog" icon={<ComputerIcon />} />
 		</BottomNavigation>
 	);
