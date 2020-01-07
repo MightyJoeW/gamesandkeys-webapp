@@ -86,7 +86,7 @@ export default function Navbar() {
 					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/docs')}>
 						Docs
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/library')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/tutorials')}>
 						Tutorials
 					</Typography>
 					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/blog')}>
