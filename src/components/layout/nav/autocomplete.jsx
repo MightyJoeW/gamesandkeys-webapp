@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ComboBox() {
 	const classes = useStyles();
-	const [value, setValue] = useState('N/A');
+	const [value, setValue] = useState(null);
 
 	return (
 		<Autocomplete
