@@ -1,6 +1,7 @@
 // EXTERNAL DEPENDENCIES
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import ReactGA from 'react-ga';
 
 // MATERIAL-UI DEPENDENCIES
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -30,9 +31,20 @@ const App = () => {
 	const toggleMode = () => {
 		if (mode === 'light') {
 			setMode('dark');
+			ReactGA.event({
+				category: 'Settings',
+				action: 'Turn on dark mode',
+				label: 'Dark Mode'
+			});
 		} else {
 			setMode('light');
+			ReactGA.event({
+				category: 'Settings',
+				action: 'Turned on Light Mode',
+				label: 'Light Mode'
+			});
 		}
+
 	};
 
 	const theme = createMuiTheme({

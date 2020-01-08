@@ -9,13 +9,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 // INTERNAL DEPENDENCIES
+import { trackingId } from '../../keys';
 // import songTitleFormatter from '../../utils/formatting';
 
 // COMPONENT DEFINITION
 const LibrarySongTitles = props => {
 
-	// Google Analytics
-	const trackingId = '43084370';
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {
 			debug: false // set to true to log pageview to console

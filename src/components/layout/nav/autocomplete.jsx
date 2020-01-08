@@ -22,7 +22,6 @@ export default function ComboBox() {
 		<Autocomplete
 			autoComplete={true}
 			className={classes.comboBox}
-			disableClearable={true}
 			id="combo-box"
 			options={tutorialList}
 			getOptionLabel={option => option.title}
@@ -32,6 +31,7 @@ export default function ComboBox() {
 			onChange={(event, newValue) => {
 				setValue(newValue);
 				navigate(newValue.route);
+				setValue(null);
 			}}
 			value={value}
 		/>
