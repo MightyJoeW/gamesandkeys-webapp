@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
 		},
 		marginRight: 15
 	},
+	logo: {
+		margin: '0 10px'
+	},
 	link: {
 		textDecoration: 'none',
 		display: 'none',
@@ -64,7 +67,6 @@ const useStyles = makeStyles(theme => ({
 		},
 	},
 }));
-
 
 export default function Navbar(props) {
 	const classes = useStyles();

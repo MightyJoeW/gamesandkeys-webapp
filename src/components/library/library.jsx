@@ -10,6 +10,9 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
+// INTERNAL DEPENDENCIES
+import { trackingId } from '../../keys';
+
 // LOCAL VARIABLES
 const styles = theme => ({
 	root: {
@@ -27,9 +30,6 @@ const listItemStyles = {
 // COMPONENT DEFINITION
 const Library = (props) => {
 	const { classes } = props;
-
-	// Google Analytics
-	const trackingId = '43084370';
 
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {

@@ -1,8 +1,10 @@
 // EXTERNAL DEPENDENCIES
 import React, { Fragment, useEffect } from 'react';
-// import AdSense from 'react-adsense';
 import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
+
+// INTERNAL DEPENDENCIES
+import { trackingId } from '../../../keys';
 
 // MATERIAL-UI DEPENDENCIES
 import { withStyles } from '@material-ui/core/styles';
@@ -38,16 +40,12 @@ const TutorialWrapper = (props) => {
 		videoUrl
 	} = props;
 
-	// Google Analytics
-	const trackingId = '43084370';
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {
 			debug: false // set to true to log pageview to console
 		});
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
-
-	// const client = 'ca-pub-3224412354170471';
 
 	return (
 		<Fragment>
