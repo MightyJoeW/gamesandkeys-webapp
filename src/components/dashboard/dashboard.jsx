@@ -41,8 +41,8 @@ const Dashboard = () => {
 		<div className="dashboard-container">
 			<h1 className="dashboard-title"> {title}</h1>
 			<p className="dashboard-subtitle">
-				GamesAndKeys is a free learning resource that teaches pianists how to play songs <br />
-				from video games and tv shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
+				GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv <br />
+				shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
 			</p>
 			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={(route) => handleClick('docs')}>
 				Get Started
