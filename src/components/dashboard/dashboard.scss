@@ -6,16 +6,19 @@
   
   .dashboard-title {
     font-weight: $bold;
-    margin-top: $spacing-x3;
+    font-size: calc(28px + 0.5vh + 1.5vw);
+    margin-top: 80;
     text-align: center;
   }
 
   .dashboard-subtitle {
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .dashboard-get-started-button {
     width: 150px;
-    margin: 0 auto;
+    margin: 30px auto;
+    height: 50px;
   }
 }

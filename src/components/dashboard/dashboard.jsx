@@ -5,6 +5,7 @@ import { navigate } from '@reach/router';
 import ReactGA from 'react-ga';
 
 // INTERNAL DEPENDENCIES
+import Footer from '../layout/nav/footer';
 import { trackingId } from '../../keys';
 
 // LOCAL DEPENDENCIES
@@ -34,17 +35,19 @@ const Dashboard = () => {
 		navigate(`/${route}`);
 	};
 
-	const title = 'Learn how to play your favorite video game songs on the piano';
-
-
+	const title = 'Play your favorite video game songs on the piano';
 
 	return (
 		<div className="dashboard-container">
 			<h1 className="dashboard-title"> {title}</h1>
-			<p className="dashboard-subtitle">GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv shows via video instruction, sheet music, and midi files.</p>
+			<p className="dashboard-subtitle">
+				GamesAndKeys is a free learning resource that teaches pianists how to play songs <br />
+				from video games and tv shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
+			</p>
 			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={(route) => handleClick('docs')}>
 				Get Started
 			</Button>
+			<Footer />
 		</div>
 	);
 };
