@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 		display: 'block',
 		position: 'relative',
 		paddingBottom: 56 // height of the footer
-	},
+	}
 });
 
 // COMPONENT DEFINITION
