@@ -6,12 +6,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import { trackingId } from '../../keys';
 import BlogCard from './blog-card';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
 	pageTitle: {
-		width: '50%',
-		margin: '45px auto'
+		width: '65vw',
+		margin: '45px auto',
+		[theme.breakpoints.down('sm')]: {
+			width: '90vw'
+		},
 	},
-});
+}));
 
 const Blog = () => {
 	const classes = useStyles();

@@ -8,11 +8,14 @@ import Typography from '@material-ui/core/Typography';
 import { navigate } from '@reach/router';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
 	card: {
-		width: '50%',
+		width: '70vw',
 		margin: '0 auto 45px auto',
-		padding: 15
+		padding: 15,
+		[theme.breakpoints.down('sm')]: {
+			width: '90vw'
+		},
 	},
 	image: {
 		borderRadius: '50%',
@@ -24,7 +27,7 @@ const useStyles = makeStyles({
 	pos: {
 		marginBottom: 12,
 	},
-});
+}));
 
 export default function BlogCard(props) {
 	const classes = useStyles();
