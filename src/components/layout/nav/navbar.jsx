@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -11,9 +11,6 @@ import ComboBox from './autocomplete';
 import { navigate } from '@reach/router';
 
 const useStyles = makeStyles(theme => ({
-	root: {
-		flexGrow: 1
-	},
 	menuButton: {
 		marginRight: theme.spacing(2),
 	},
@@ -73,29 +70,39 @@ const useStyles = makeStyles(theme => ({
 export default function Navbar(props) {
 	const classes = useStyles();
 	const siteTitle = 'Games and Keys';
+	const [newRender, triggerNewRender] = useState(false);
+
+	const handleClick = (route) => {
+		triggerNewRender(!newRender); // creates a render to toggle the fixed navbar
+		navigate(route);
+	};
 
 	return (
-		<div className={classes.root}>
+		// setting navbar to fixed when using side drawer to eliminate gap on mobile horizontal
+		<div className={window.location.pathname === '/docs'
+			? props.navbarFixed
+			: props.navbar
+		}>
 			<AppBar position="static">
 				<Toolbar>
 					<IconButton
 						aria-label="Logo"
 						className={classes.logo}
 						color="inherit"
-						onClick={() => navigate('/')}
+						onClick={() => handleClick('/')}
 					>
 						<MusicIcon />
 					</IconButton>
-					<Typography className={classes.title} variant="h6" noWrap onClick={() => navigate('/')}>
+					<Typography className={classes.title} variant="h6" noWrap onClick={() => handleClick('/')}>
 						{siteTitle}
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/docs')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/docs')}>
 						Docs
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/tutorials')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/tutorials')}>
 						Tutorials
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => navigate('/blog')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/blog')}>
 						Blog
 					</Typography>
 					<div className={classes.search}>

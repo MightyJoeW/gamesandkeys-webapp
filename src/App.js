@@ -20,8 +20,17 @@ const useStyles = makeStyles({
 		display: 'block',
 		position: 'relative',
 		paddingBottom: 56 // height of the footer
-	}
+	},
+	navbar: {
+		flexGrow: 1
+	},
+	navbarFixed: {
+		flexGrow: 1,
+		position: 'fixed',
+		width: '100vw'
+	},
 });
+
 
 // COMPONENT DEFINITION
 const App = () => {
@@ -58,7 +67,12 @@ const App = () => {
 		<ThemeProvider theme={theme}>
 			<div className={classes.root}>
 				<CssBaseline />
-				<Navbar mode={mode} toggleMode={toggleMode} />
+				<Navbar
+					mode={mode}
+					toggleMode={toggleMode}
+					navbar={classes.navbar}
+					navbarFixed={classes.navbarFixed}
+				/>
 				{routes}
 				<BottomNav />
 			</div>
