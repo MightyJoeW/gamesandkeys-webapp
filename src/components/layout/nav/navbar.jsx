@@ -23,7 +23,8 @@ const useStyles = makeStyles(theme => ({
 		[theme.breakpoints.up('sm')]: {
 			display: 'block',
 		},
-		marginRight: 15
+		marginRight: 15,
+		cursor: 'pointer'
 	},
 	logo: {
 		margin: '0 10px'
@@ -37,6 +38,7 @@ const useStyles = makeStyles(theme => ({
 		textAlign: 'center',
 		margin: '0 10px',
 		fontSize: '1rem',
+		cursor: 'pointer'
 	},
 	search: {
 		position: 'relative',

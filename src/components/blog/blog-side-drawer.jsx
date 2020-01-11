@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
 function BlogSideDrawer(props) {
 	const { container } = props;
 	const classes = useStyles();
-	const [mobileOpen, setMobileOpen] = React.useState(false);
+	const [mobileOpen, setMobileOpen] = useState(false);
 
 	const handleDrawerToggle = () => {
 		setMobileOpen(!mobileOpen);
@@ -60,7 +60,7 @@ function BlogSideDrawer(props) {
 			<Divider />
 			<List>
 				{/* Recent Posts array */}
-        Recent Posts
+				Recent Posts
 				{['Blog5', 'Blog4', 'Blog3', 'Blog2'].map(text => (
 					<ListItem button key={text}>
 						<ListItemText primary={text} />
@@ -101,6 +101,7 @@ function BlogSideDrawer(props) {
 						}}
 						variant="permanent"
 						open
+						anchor="right"
 					>
 						{drawer}
 					</Drawer>
@@ -109,7 +110,7 @@ function BlogSideDrawer(props) {
 			<main className={classes.content}>
 				<div className={classes.toolbar} />
 				<Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
           facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
           gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
@@ -121,7 +122,7 @@ function BlogSideDrawer(props) {
           donec massa sapien faucibus et molestie ac.
 				</Typography>
 				<Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
+					Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
           facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
           tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
           consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed

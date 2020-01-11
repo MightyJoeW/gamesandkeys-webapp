@@ -3,17 +3,18 @@
 .dashboard-container {
   display: flex;
   flex-direction: column;
+  margin: 0 15px;
   
   .dashboard-title {
     font-weight: $bold;
-    font-size: calc(28px + 0.5vh + 1.5vw);
+    font-size: 2rem;
     margin-top: 80;
     text-align: center;
   }
 
   .dashboard-subtitle {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .dashboard-get-started-button {
