@@ -7,7 +7,7 @@ const Footer = () => {
 	const useStyles = makeStyles(theme => ({
 		root: {
 			overflow: 'hidden',
-			position: 'fixed',
+			// position: 'fixed',
 			bottom: 0,
 			width: '100%',
 			[theme.breakpoints.down('xs')]: {

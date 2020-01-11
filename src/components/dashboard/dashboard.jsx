@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Button from '@material-ui/core/Button';
 import { navigate } from '@reach/router';
 import ReactGA from 'react-ga';
+import { makeStyles } from '@material-ui/core/styles';
 
 // INTERNAL DEPENDENCIES
 import Footer from '../layout/nav/footer';
@@ -13,6 +14,16 @@ import './dashboard.scss';
 
 // COMPONENT DEFINITION
 const Dashboard = () => {
+	const useStyles = makeStyles(theme => ({
+		gif: {
+			margin: '10px auto',
+			[theme.breakpoints.up('sm')]: {
+				height: '50%',
+				width: '40vw'
+			},
+		}
+	}));
+	const classes = useStyles();
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {
 			debug: false // set to true to log pageview to console
@@ -41,9 +52,9 @@ const Dashboard = () => {
 		<div className="dashboard-container">
 			<h1 className="dashboard-title"> {title}</h1>
 			<p className="dashboard-subtitle">
-				GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv <br />
-				shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
+				GamesAndKeys is a free learning resource that teaches pianists how to play songs <br />from video games and tv shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
 			</p>
+			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" height="200" width="300" />
 			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={(route) => handleClick('docs')}>
 				Get Started
 			</Button>
