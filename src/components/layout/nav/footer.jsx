@@ -6,17 +6,17 @@ import Divider from '@material-ui/core/Divider';
 const Footer = () => {
 	const useStyles = makeStyles(theme => ({
 		root: {
-			overflow: 'hidden',
+			// overflow: 'hidden',
 			// position: 'fixed',
-			bottom: 0,
-			width: '100%',
+			// bottom: 0,
+			// width: '100%',
 			[theme.breakpoints.down('xs')]: {
 				display: 'none',
 			},
 		},
 		footerText: {
 			fontSize: '1rem',
-			margin: 30
+			margin: 15
 		},
 		backToTop: {
 			marginLeft: 'auto'
@@ -30,7 +30,6 @@ const Footer = () => {
 		<Fragment>
 			<div className={classes.root}>
 				<Divider />
-
 				<div className={classes.footerText}>© Copyright {year} | GamesAndKeys.com </div>
 				{/* <div onClick={() => navigate('/')}>Privacy · </div> */}
 				{/* <div onClick={() => navigate('/')}>Terms · </div> */}
