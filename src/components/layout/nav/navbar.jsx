@@ -79,7 +79,7 @@ export default function Navbar(props) {
 
 	return (
 		// setting navbar to fixed when using side drawer to eliminate gap on mobile horizontal
-		<div className={window.location.pathname === '/docs' || window.location.pathname === '/blog'
+		<div className={window.location.pathname === '/docs'
 			? props.navbarFixed
 			: props.navbar
 		}>

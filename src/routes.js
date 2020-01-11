@@ -9,6 +9,9 @@ import Tutorials from './components/library/library';
 import Blog from './components/blog/blog';
 import ErrorPage from './components/error-page/error-page';
 
+// Blog Posts
+import Post1 from './components/blog/post-1';
+
 // Tutorial Main Pages
 import Spikes from './components/library/tutorials-info/1001Spikes';
 import BeyondTwoSouls from './components/library/tutorials-info/BeyondTwoSouls';
@@ -82,6 +85,9 @@ export default (
 		<Docs path='/docs' />
 		<Tutorials path='/tutorials' />
 		<Blog path='/blog' />
+
+		{/* Blog Posts */}
+		<Post1 path="/launch-of-the-new-homepage" />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />
