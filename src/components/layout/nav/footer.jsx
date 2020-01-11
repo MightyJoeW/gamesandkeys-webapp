@@ -6,10 +6,6 @@ import Divider from '@material-ui/core/Divider';
 const Footer = () => {
 	const useStyles = makeStyles(theme => ({
 		root: {
-			// overflow: 'hidden',
-			// position: 'fixed',
-			// bottom: 0,
-			// width: '100%',
 			[theme.breakpoints.down('xs')]: {
 				display: 'none',
 			},
