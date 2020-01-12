@@ -11,6 +11,7 @@ import Bio from './components/bio/bio';
 import ErrorPage from './components/error-page/error-page';
 
 // Blog Posts
+import Post0 from './components/blog/post-0';
 import Post1 from './components/blog/post-1';
 
 // Tutorial Main Pages
@@ -89,7 +90,8 @@ export default (
 		<Bio path='/joe-warren' />
 
 		{/* Blog Posts */}
-		<Post1 path="/launch-of-the-new-homepage" />
+		<Post0 path="/new-youtube-channel" />
+		<Post1 path="/launch-of-the-new-site" />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />

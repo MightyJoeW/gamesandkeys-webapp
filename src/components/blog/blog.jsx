@@ -19,16 +19,16 @@ const useStyles = makeStyles(theme => ({
 export const blogPosts = () => (
 	<Fragment>
 		<BlogCard
-			title="Launch of the New Homepage"
-			preview="It is with great excitement that the launch of the new homepage is finally here! What began as an entry to a Naughty Dog video content organically blossomed into a..."
+			title="Launch of the New Site"
+			preview="Welcome to the new GamesAndKeys website! GamesAndKeys was not a planned resource, but developed organically overtime. It all began when I entered Naughty Dog's Firefly Pendant Contest back in 2013..."
 			date="January 12th, 2020"
-			route="/launch-of-the-new-homepage"
+			route="/launch-of-the-new-site"
 		/>
 		<BlogCard
-			title="How to Download PDF's on Mobile"
-			preview="If you are using mobile..."
+			title="New YouTube Channel for Tutorials"
+			preview="I have created a nw channel tat is dedicated 100% to videogame piano tutorials..."
 			date="January 10th, 2020"
-			route="#"
+			route="/new-youtube-channel"
 		/>
 	</Fragment>
 );
