@@ -6,7 +6,8 @@ import { Router } from '@reach/router';
 import Dashboard from './components/dashboard/dashboard';
 import Docs from './components/docs/docs';
 import Tutorials from './components/library/library';
-import Blog from './components/blog/blog';
+import { Blog } from './components/blog/blog';
+import Bio from './components/bio/bio';
 import ErrorPage from './components/error-page/error-page';
 
 // Blog Posts
@@ -85,6 +86,7 @@ export default (
 		<Docs path='/docs' />
 		<Tutorials path='/tutorials' />
 		<Blog path='/blog' />
+		<Bio path='/joe-warren' />
 
 		{/* Blog Posts */}
 		<Post1 path="/launch-of-the-new-homepage" />

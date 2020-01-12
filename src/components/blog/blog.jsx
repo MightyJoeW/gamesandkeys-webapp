@@ -16,7 +16,24 @@ const useStyles = makeStyles(theme => ({
 	},
 }));
 
-const Blog = () => {
+export const blogPosts = () => (
+	<Fragment>
+		<BlogCard
+			title="Launch of the New Homepage"
+			preview="It is with great excitement that the launch of the new homepage is finally here! What began as an entry to a Naughty Dog video content organically blossomed into a..."
+			date="January 12th, 2020"
+			route="/launch-of-the-new-homepage"
+		/>
+		<BlogCard
+			title="How to Download PDF's on Mobile"
+			preview="If you are using mobile..."
+			date="January 10th, 2020"
+			route="#"
+		/>
+	</Fragment>
+);
+
+export const Blog = () => {
 	const classes = useStyles();
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {
@@ -26,21 +43,12 @@ const Blog = () => {
 		});
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
+
+
 	return (
 		<Fragment>
 			<h1 className={classes.pageTitle}> Blog </h1 >
-			<BlogCard
-				title="Launch of the New Homepage"
-				preview="It is with great excitement that the launch of the new homepage is finally here! What began as an entry to a Naughty Dog video content organically blossomed into a..."
-				date="January 12th, 2020"
-				route="/launch-of-the-new-homepage"
-			/>
-			<BlogCard
-				title="How to Download PDF's on Mobile"
-				preview="If you are using mobile..."
-				date="January 10th, 2020"
-				route="#"
-			/>
+			{blogPosts()}
 		</Fragment >
 
 	);
