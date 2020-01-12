@@ -52,10 +52,10 @@ const Dashboard = () => {
 		<div className="dashboard-container">
 			<h1 className="dashboard-title"> {title}</h1>
 			<p className="dashboard-subtitle">
-				GamesAndKeys is a free learning resource that teaches pianists how to play songs <br />from video games and tv shows via <strong>video instruction</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
+				GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv shows via <strong>videos</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
 			</p>
-			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" height="200" width="300" />
-			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={(route) => handleClick('docs')}>
+			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" height="150" width="250" />
+			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={() => handleClick('docs')}>
 				Get Started
 			</Button>
 			<Footer />

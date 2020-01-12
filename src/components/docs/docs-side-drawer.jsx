@@ -44,6 +44,13 @@ const useStyles = makeStyles(theme => ({
 		flexGrow: 1,
 		padding: theme.spacing(3),
 	},
+	doc: {
+		[theme.breakpoints.up('sm')]: {
+			width: '50vw',
+			margin: '0 auto'
+		},
+		
+	}
 }));
 
 function DocsSideDrawer(props) {
@@ -110,7 +117,7 @@ function DocsSideDrawer(props) {
 			</nav>
 			<main className={classes.content}>
 				<div className={classes.toolbar} />
-				<Typography paragraph>
+				<Typography paragraph className={classes.doc}>
 					{/* cleanup in refactor */}
 					{currentDoc === 'Introduction' ? <Introduction />
 						: currentDoc === 'Quick Start' ? <QuickStart />

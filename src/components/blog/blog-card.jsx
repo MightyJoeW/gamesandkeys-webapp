@@ -3,16 +3,19 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { navigate } from '@reach/router';
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
 	card: {
-		width: '50%',
+		width: '70vw',
 		margin: '0 auto 45px auto',
-		padding: 15
+		padding: 15,
+		cursor: 'pointer',
+		[theme.breakpoints.down('sm')]: {
+			width: '90vw'
+		},
 	},
 	image: {
 		borderRadius: '50%',
@@ -24,15 +27,19 @@ const useStyles = makeStyles({
 	pos: {
 		marginBottom: 12,
 	},
-});
+}));
 
 export default function BlogCard(props) {
 	const classes = useStyles();
 
+	const handleClickBio = () => {
+		navigate('/joe-warren');
+	};
+
 	return (
 		<Fragment>
-			<Card className={classes.card} onClick={() => navigate(props.route)} >
-				<CardContent>
+			<Card className={classes.card} >
+				<CardContent onClick={() => navigate(props.route)}>
 					<Typography variant="h5" component="h2">
 						{props.title}
 					</Typography>
@@ -41,8 +48,8 @@ export default function BlogCard(props) {
 					</Typography>
 				</CardContent>
 				<CardActions>
-					<img className={classes.image} src="https://lh3.googleusercontent.com/a-/AAuE7mAcrGE_SCjrxH5UM3AZyuTnA4f2K-VUJQi_9IBkJME=s88-c-k-c0x00ffffff-no-rj-mo" />
-					<a href="#" className={classes.author}>Joe Warren</a>
+					<img className={classes.image} onClick={handleClickBio} src="https://lh3.googleusercontent.com/a-/AAuE7mAcrGE_SCjrxH5UM3AZyuTnA4f2K-VUJQi_9IBkJME=s88-c-k-c0x00ffffff-no-rj-mo" alt="Joe Warren Vector" />
+					<p className={classes.author} onClick={handleClickBio}> Joe Warren</p>
 					<span>on {props.date}</span>
 				</CardActions>
 			</Card >

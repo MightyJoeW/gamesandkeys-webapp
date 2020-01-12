@@ -4,27 +4,15 @@ import Typography from '@material-ui/core/Typography';
 export const Introduction = () => (
 	<Fragment>
 		<Typography paragraph>
-      Introduction ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-      facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-      gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-      donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-      adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-      Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-      imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-      arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-      donec massa sapien faucibus et molestie ac.
+         GamesAndKeys is a learning platform with the primary goal of teaching musicians how to
+         play video game songs on the piano. The video content uses Synthesia, piano keyboard trainer.
+         Synthesia includes many useful features such as notes that light up and tempo adjustments.
 		</Typography>
+    
 		<Typography paragraph>
-      Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-      facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-      tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-      consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-      vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-      hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-      tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-      nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-      accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+         In addition to the Synthesia videos, you can also download sheet music and midi files for each
+         song. Each sheet is a pdf that can be saved or printed. Each midi file can also be downloaded
+         and opened up in any digital audio workstation (music software).
 		</Typography>
 	</Fragment >
 );
@@ -32,27 +20,12 @@ export const Introduction = () => (
 export const QuickStart = () => (
 	<Fragment>
 		<Typography paragraph>
-      Quick Start ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-      facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-      gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-      donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-      adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-      Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-      imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-      arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-      donec massa sapien faucibus et molestie ac.
+         To begin learning, use the Search bar to search for your tutorial. To see a full list of
+         available tutorials, click the Tutorials link. Click the game title followed by the song title
+         to navigate to its downloads page.
 		</Typography>
 		<Typography paragraph>
-      Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-      facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-      tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-      consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-      vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-      hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-      tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-      nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-      accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+         On the downloads page, you can watch the piano tutorial, download the sheet music, and download the midi file. 
 		</Typography>
 	</Fragment >
 );
@@ -60,27 +33,14 @@ export const QuickStart = () => (
 export const Synthesia = () => (
 	<Fragment>
 		<Typography paragraph>
-      Synthesia ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-      facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-      gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-      donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-      adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-      Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-      imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-      arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-      donec massa sapien faucibus et molestie ac.
+         Synthesia utilizes midi files to create visual tutorials. If you download the Synthesia
+         software from <a href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer">https://synthesiagame.com/</a>, you can open the midi file and utilize features such as slowing down
+         the tempo for easier learning. 
 		</Typography>
 		<Typography paragraph>
-      Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-      facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-      tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-      consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-      vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-      hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-      tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-      nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-      accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+         You can also open the midi file in any other music program such as Garage Band or FL Studio. Doing
+         so allows you to have complete control over the midi file. You can move notes around, add notes,
+         use the chords to create other music, etc.
 		</Typography>
 	</Fragment >
 );
@@ -88,27 +48,11 @@ export const Synthesia = () => (
 export const Downloading = () => (
 	<Fragment>
 		<Typography paragraph>
-      Learning ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-      facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-      gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-      donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-      adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-      Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-      imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-      arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-      donec massa sapien faucibus et molestie ac.
+         On desktop, simply click on the Sheet Music button or the Midi File button on the download
+         page to save the file on your computer.
 		</Typography>
 		<Typography paragraph>
-      Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-      facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-      tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-      consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-      vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-      hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-      tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-      nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-      accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+         On mobile devices, click on Sheet Music and long press to bring up the option to Save the pdfs. For midi files, click on the Midi File button to bring up the save option.
 		</Typography>
 	</Fragment >
 );
