@@ -9,7 +9,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import { navigate } from '@reach/router';
-import blue from '@material-ui/core/colors/blue';
 
 import { Introduction, QuickStart, Synthesia, Downloading } from './docs-config';
 
@@ -135,7 +134,7 @@ function DocsSideDrawer(props) {
 					}
 				</Typography>
 
-				<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3' }} onClick={() => handleClickDocTitle(currentDoc === 'Introduction' ? 'Quick Start'
+				<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickDocTitle(currentDoc === 'Introduction' ? 'Quick Start'
 					: currentDoc === 'Quick Start' ? 'Downloading'
 						: currentDoc === 'Downloading' ? 'Synthesia'
 							: currentDoc === 'Synthesia' ? 'Tutorials'

@@ -25,8 +25,8 @@ export const blogPosts = () => (
 			route="/launch-of-the-new-site"
 		/>
 		<BlogCard
-			title="New YouTube Channel for Tutorials"
-			preview="I have created a nw channel tat is dedicated 100% to videogame piano tutorials..."
+			title="New GameAndKeys YouTube Channel"
+			preview="I have created a new channel that is dedicated 100% to videogame piano tutorials..."
 			date="January 10th, 2020"
 			route="/new-youtube-channel"
 		/>
