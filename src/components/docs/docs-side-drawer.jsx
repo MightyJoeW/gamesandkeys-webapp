@@ -8,6 +8,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import { navigate } from '@reach/router';
+import blue from '@material-ui/core/colors/blue';
 
 import { Introduction, QuickStart, Synthesia, Downloading } from './docs-config';
 
@@ -48,8 +50,7 @@ const useStyles = makeStyles(theme => ({
 		[theme.breakpoints.up('sm')]: {
 			width: '50vw',
 			margin: '0 auto'
-		},
-		
+		}
 	}
 }));
 
@@ -65,7 +66,13 @@ function DocsSideDrawer(props) {
 	};
 
 	const handleClickDocTitle = doc => {
-		setCurrentDoc(doc);
+		if (currentDoc !== 'Synthesia') {
+			return setCurrentDoc(doc);
+		} else if (currentDoc === 'Synthesia') {
+			return navigate('/tutorials');
+		} else {
+			return null;
+		}
 	};
 
 	const drawer = (
@@ -118,14 +125,29 @@ function DocsSideDrawer(props) {
 			<main className={classes.content}>
 				<div className={classes.toolbar} />
 				<Typography paragraph className={classes.doc}>
+
 					{/* cleanup in refactor */}
 					{currentDoc === 'Introduction' ? <Introduction />
 						: currentDoc === 'Quick Start' ? <QuickStart />
-							: currentDoc === 'Synthesia' ? <Synthesia />
-								: currentDoc === 'Downloading' ? <Downloading />
+							: currentDoc === 'Downloading' ? <Downloading />
+								: currentDoc === 'Synthesia' ? <Synthesia />
 									: null
 					}
 				</Typography>
+
+				<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3' }} onClick={() => handleClickDocTitle(currentDoc === 'Introduction' ? 'Quick Start'
+					: currentDoc === 'Quick Start' ? 'Downloading'
+						: currentDoc === 'Downloading' ? 'Synthesia'
+							: currentDoc === 'Synthesia' ? 'Tutorials'
+								: null)}>
+					{
+						currentDoc === 'Introduction' ? 'Quick Start ->'
+							: currentDoc === 'Quick Start' ? 'Downloading ->'
+								: currentDoc === 'Downloading' ? 'Synthesia ->'
+									: currentDoc === 'Synthesia' ? 'Tutorials ->'
+										: null
+					}
+				</p>
 			</main>
 		</div>
 	);
