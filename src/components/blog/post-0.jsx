@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const Post0 = () => {
 	const useStyles = makeStyles(theme => ({
 		container: {
-			width: '70vw',
+			width: '50vw',
 			margin: '0 auto 45px auto',
 			padding: 15,
 			[theme.breakpoints.down('sm')]: {

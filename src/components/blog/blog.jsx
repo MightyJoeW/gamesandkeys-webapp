@@ -8,7 +8,7 @@ import BlogCard from './blog-card';
 
 const useStyles = makeStyles(theme => ({
 	pageTitle: {
-		width: '65vw',
+		width: '50vw',
 		margin: '45px auto',
 		[theme.breakpoints.down('sm')]: {
 			width: '90vw'
