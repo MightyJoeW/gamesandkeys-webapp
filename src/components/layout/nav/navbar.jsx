@@ -96,13 +96,13 @@ export default function Navbar(props) {
 	useEffect(() => {
 		// console.log(window.location.pathname);
 
-		window.location.pathname === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative')
-	}, [])
+		window.location.pathname === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative');
+	}, []);
 
 	const handleNavigate = route => {
-		route === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative')
+		route === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative');
 		navigate(route);
-	}
+	};
 
 	// console.log(window.location.pathname)
 
