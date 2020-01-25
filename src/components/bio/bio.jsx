@@ -27,8 +27,8 @@ const Bio = () => {
 				alt="Joe Warren Vector"
 			/>
 			<h1>Joe Warren</h1>
-			<p>Musician turned software developer - <a href="http://mightyjoetech.com/" target="_blank" rel="noopener noreferrer">mightyjoetech.com</a></p>
-			<p><a href="https://twitter.com/MightyJoeW" target="_blank" rel="noopener noreferrer">@mightyjoew</a></p>
+			<p>Musician turned software developer - <a style={{ color: '#b17acc', textDecoration: 'none' }} href="http://mightyjoetech.com/" target="_blank" rel="noopener noreferrer">mightyjoetech.com</a></p>
+			<p><a style={{ color: '#b17acc', textDecoration: 'none' }} href="https://twitter.com/MightyJoeW" target="_blank" rel="noopener noreferrer">@mightyjoew</a></p>
 			{blogPosts()}
 		</div>
 	);
