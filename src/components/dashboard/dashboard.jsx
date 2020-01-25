@@ -17,9 +17,10 @@ const Dashboard = () => {
 	const useStyles = makeStyles(theme => ({
 		gif: {
 			margin: '10px auto',
+			width: '40vw',
+
 			[theme.breakpoints.up('sm')]: {
-				height: '50%',
-				width: '40vw'
+				height: '40vh',
 			},
 		}
 	}));
@@ -54,7 +55,7 @@ const Dashboard = () => {
 			<p className="dashboard-subtitle">
 				GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv shows via <strong>videos</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
 			</p>
-			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" height="150" width="250" />
+			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" />
 			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={() => handleClick('docs')}>
 				Get Started
 			</Button>
