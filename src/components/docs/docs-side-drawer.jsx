@@ -8,7 +8,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { navigate } from '@reach/router';
 import ReactGA from 'react-ga';
 
 import { Introduction, QuickStart, Synthesia, Downloading } from './docs-config';
@@ -79,7 +78,6 @@ function DocsSideDrawer(props) {
 				action: 'Clicked Tutorials link from docs',
 				label: `${doc} link`
 			});
-			return navigate('/tutorials');
 		} else {
 			return null;
 		}
@@ -92,6 +90,14 @@ function DocsSideDrawer(props) {
 			label: `${doc} link`
 		});
 		return setCurrentDoc(doc);
+	};
+
+	const tutorialRoute = () => {
+		if (process.env.NODE_ENV === 'development') {
+			return 'http://localhost:3000/tutorials';
+		} else {
+			return 'https://www.gamesandkeys.com/tutorials';
+		}
 	};
 
 	const drawer = (
@@ -145,7 +151,7 @@ function DocsSideDrawer(props) {
 				<div className={classes.toolbar} />
 				<Typography paragraph className={classes.doc}>
 
-					{/* cleanup in refactor */}
+					{/* Update state to swap content - will rewrite in refactor */}
 					{currentDoc === 'Introduction' ? <Introduction />
 						: currentDoc === 'Quick Start' ? <QuickStart />
 							: currentDoc === 'Downloading' ? <Downloading />
@@ -153,12 +159,15 @@ function DocsSideDrawer(props) {
 									: null
 					}
 				</Typography>
+
+				{/*// check state to update previous and next labels */}
 				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
-					<p style={{ textAlign: 'left', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickBack(currentDoc === 'Introduction' ? null
-						: currentDoc === 'Quick Start' ? 'Introduction'
-							: currentDoc === 'Downloading' ? 'Quick Start'
-								: currentDoc === 'Synthesia' ? 'Downloading'
-									: null)}>
+					<p style={{ textAlign: 'left', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }}
+						onClick={() => handleClickBack(currentDoc === 'Introduction' ? null
+							: currentDoc === 'Quick Start' ? 'Introduction'
+								: currentDoc === 'Downloading' ? 'Quick Start'
+									: currentDoc === 'Synthesia' ? 'Downloading'
+										: null)}>
 						{
 							currentDoc === 'Introduction' ? null
 								: currentDoc === 'Quick Start' ? '<- Introduction'
@@ -168,16 +177,18 @@ function DocsSideDrawer(props) {
 						}
 					</p>
 
-					<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickForward(currentDoc === 'Introduction' ? 'Quick Start'
-						: currentDoc === 'Quick Start' ? 'Downloading'
-							: currentDoc === 'Downloading' ? 'Synthesia'
-								: currentDoc === 'Synthesia' ? 'Tutorials'
-									: null)}>
+					<p
+						style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }}
+						onClick={() => handleClickForward(currentDoc === 'Introduction' ? 'Quick Start'
+							: currentDoc === 'Quick Start' ? 'Downloading'
+								: currentDoc === 'Downloading' ? 'Synthesia'
+									: currentDoc === 'Synthesia' ? null
+										: null)}>
 						{
 							currentDoc === 'Introduction' ? 'Quick Start ->'
 								: currentDoc === 'Quick Start' ? 'Downloading ->'
 									: currentDoc === 'Downloading' ? 'Synthesia ->'
-										: currentDoc === 'Synthesia' ? 'Tutorials ->'
+										: currentDoc === 'Synthesia' ? <a style={{ textDecoration: 'none', color: 'rgb(33, 150, 243)' }} href={tutorialRoute()}>Tutorials -></a>
 											: null
 						}
 					</p>
