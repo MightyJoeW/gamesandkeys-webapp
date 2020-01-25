@@ -8,7 +8,7 @@ import BlogCard from './blog-card';
 
 const useStyles = makeStyles(theme => ({
 	pageTitle: {
-		width: '65vw',
+		width: '50vw',
 		margin: '45px auto',
 		[theme.breakpoints.down('sm')]: {
 			width: '90vw'
@@ -20,14 +20,15 @@ export const blogPosts = () => (
 	<Fragment>
 		<BlogCard
 			title="Launch of the New Site"
-			preview="Welcome to the new GamesAndKeys website! GamesAndKeys was not a planned resource, but developed organically overtime. It all began when I entered Naughty Dog's Firefly Pendant Contest back in 2013..."
-			date="January 12th, 2020"
+			preview="Welcome to the new GamesAndKeys website! GamesAndKeys was not a planned resource, but developed organically overtime. It all began when..."
+			date="January 25th, 2020"
 			route="/launch-of-the-new-site"
 		/>
 		<BlogCard
 			title="New GameAndKeys YouTube Channel"
-			preview="I have created a new channel that is dedicated 100% to videogame piano tutorials..."
-			date="January 10th, 2020"
+			preview="I have created a new channel that is dedicated 100% to videogame piano tutorials here.
+			This channel is dedicated solely to..."
+			date="January 25th, 2020"
 			route="/new-youtube-channel"
 		/>
 	</Fragment>

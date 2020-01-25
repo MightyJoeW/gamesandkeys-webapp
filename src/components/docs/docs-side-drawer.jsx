@@ -9,6 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import { navigate } from '@reach/router';
+import ReactGA from 'react-ga';
 
 import { Introduction, QuickStart, Synthesia, Downloading } from './docs-config';
 
@@ -64,21 +65,40 @@ function DocsSideDrawer(props) {
 		setMobileOpen(!mobileOpen);
 	};
 
-	const handleClickDocTitle = doc => {
+	const handleClickForward = doc => {
 		if (currentDoc !== 'Synthesia') {
+			ReactGA.event({
+				category: 'Docs',
+				action: `Clicked ${doc} link`,
+				label: `${doc} link`
+			});
 			return setCurrentDoc(doc);
 		} else if (currentDoc === 'Synthesia') {
+			ReactGA.event({
+				category: 'Docs',
+				action: `Clicked Tutorials link from docs`,
+				label: `${doc} link`
+			});
 			return navigate('/tutorials');
 		} else {
 			return null;
 		}
 	};
 
+	const handleClickBack = doc => {
+		ReactGA.event({
+			category: 'Docs',
+			action: `Clicked ${doc} link`,
+			label: `${doc} link`
+		});
+		return setCurrentDoc(doc);
+	};
+
 	const drawer = (
 		<div>
 			<List>
 				{['Introduction', 'Quick Start', 'Downloading', 'Synthesia'].map(text => (
-					<ListItem button key={text} onClick={() => handleClickDocTitle(text)}>
+					<ListItem button key={text} onClick={() => handleClickForward(text)}>
 						<ListItemText primary={text} />
 					</ListItem>
 				))}
@@ -133,20 +153,36 @@ function DocsSideDrawer(props) {
 									: null
 					}
 				</Typography>
+				<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+					<p style={{ textAlign: 'left', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickBack(currentDoc === 'Introduction' ? null
+						: currentDoc === 'Quick Start' ? 'Introduction'
+							: currentDoc === 'Downloading' ? 'Quick Start'
+								: currentDoc === 'Synthesia' ? 'Downloading'
+									: null)}>
+						{
+							currentDoc === 'Introduction' ? null
+								: currentDoc === 'Quick Start' ? '<- Introduction'
+									: currentDoc === 'Downloading' ? '<- Quick Start'
+										: currentDoc === 'Synthesia' ? '<- Downloading'
+											: null
+						}
+					</p>
 
-				<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickDocTitle(currentDoc === 'Introduction' ? 'Quick Start'
-					: currentDoc === 'Quick Start' ? 'Downloading'
-						: currentDoc === 'Downloading' ? 'Synthesia'
-							: currentDoc === 'Synthesia' ? 'Tutorials'
-								: null)}>
-					{
-						currentDoc === 'Introduction' ? 'Quick Start ->'
-							: currentDoc === 'Quick Start' ? 'Downloading ->'
-								: currentDoc === 'Downloading' ? 'Synthesia ->'
-									: currentDoc === 'Synthesia' ? 'Tutorials ->'
-										: null
-					}
-				</p>
+					<p style={{ textAlign: 'right', fontWeight: 700, color: '#2196f3', cursor: 'pointer' }} onClick={() => handleClickForward(currentDoc === 'Introduction' ? 'Quick Start'
+						: currentDoc === 'Quick Start' ? 'Downloading'
+							: currentDoc === 'Downloading' ? 'Synthesia'
+								: currentDoc === 'Synthesia' ? 'Tutorials'
+									: null)}>
+						{
+							currentDoc === 'Introduction' ? 'Quick Start ->'
+								: currentDoc === 'Quick Start' ? 'Downloading ->'
+									: currentDoc === 'Downloading' ? 'Synthesia ->'
+										: currentDoc === 'Synthesia' ? 'Tutorials ->'
+											: null
+						}
+					</p>
+				</div>
+
 			</main>
 		</div>
 	);
