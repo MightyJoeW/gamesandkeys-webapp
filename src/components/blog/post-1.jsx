@@ -24,11 +24,12 @@ const Post1 = () => {
 			Firefly Pendant Contest back in 2013. The content was to create a The Last of Us themed video for a chance to get your name
 			in the game. For my entry, I dressed up as one of theh characters from the trailer and played the main theme on the piano.
 			</p>
-			<iframe title="The Last of Us Piano Performance" style={{ margin: '0 auto', maxWidth: 500, width: '100%' }} width="560" height="315" src="https://www.youtube.com/embed/0eacOSCYwnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe title="The Last of Us Piano Performance" style={{ margin: '0 auto', width: '100%' }} width="560" height="315" src="https://www.youtube.com/embed/0eacOSCYwnc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 			<p>I was named one of the winners, so my name was added to the game! This was an incredible honor as The Last of Us is
 			one of my favorite games of all times. Now, you can find my name on a pendant after defeating one of the bloaters.
 			After the video started getting attention on YouTube, I had a few people asking how to play the song. This led me to creating
 			a synthesia video showing the notes that I played in my entry.</p>
+			<img src="static/blog-1-images/tlou-synthesia.png" alt="The Last of Us Main Theme, Piano Tutorial YouTube Thumbnail" height="auto" width="100%" />
 			<p>This video led to requests for more songs. I started doing more and more tutorials, and the videos were becoming
 			quite popular.</p>
 			<p>At this point, I was starting to get requests for sheet music and midi files. This added many extra steps to the process,
@@ -40,6 +41,7 @@ const Post1 = () => {
 			This clearly wasn't a viable long-term option. Fast-forward a 4 years and I stubmbled upon a new passion for coding.
 			I went all in and actually made a career transition into software development which brought me back to GamesAndKeys.
 			I had picked up many skills that would allow me to build out a new site from scratch to offer these resources.</p>
+			<img src="static/blog-1-images/tlou-downloads.png" alt="The Last of Us Main Theme downloads" height="auto" width="100%" />
 			<p>The site is still a work in progress, but the most important part of the site is available, and that's the downloadable
 			sheet music and midi files.</p>
 			<p>I hope the content is helpful, and I look forward to making improvements to continue facilitating the learning of video game

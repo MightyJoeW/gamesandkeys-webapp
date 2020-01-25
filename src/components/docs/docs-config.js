@@ -5,15 +5,25 @@ export const Introduction = () => (
 	<Fragment>
 		<Typography paragraph>
 			GamesAndKeys is a learning platform with the primary goal of teaching musicians how to
-			play video game songs on the piano. The video content uses Synthesia, piano keyboard trainer.
+			play video game songs on the piano. The video content uses <a style={{ color: '#b17acc', textDecoration: 'none' }} href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer"><em>Synthesia Game</em></a>, piano keyboard trainer.
 			Synthesia includes many useful features such as notes that light up and tempo adjustments.
 		</Typography>
+
+		<figure>
+			<img src="static/docs/synthesia.png" alt="Synthesia User Interface" height="auto" width="100%" />
+			<figcaption>Fig.1 - Synthesia Game Songs Screen</figcaption>
+
+		</figure>
 
 		<Typography paragraph>
 			In addition to the Synthesia videos, you can also download sheet music and midi files for each
 			song. Each sheet is a pdf that can be saved or printed. Each midi file can also be downloaded
 			and opened up in any digital audio workstation (music software).
 		</Typography>
+		<figure>
+			<img src="static/docs/tlou-gb.png" alt="Synthesia User Interface" height="auto" width="100%" caption="GB" />
+			<figcaption>Fig.2 - Midi File in Garage Band</figcaption>
+		</figure>
 
 	</Fragment>
 );
@@ -22,7 +32,7 @@ export const QuickStart = () => (
 	<Fragment>
 		<Typography paragraph>
 			To begin learning, use the Search bar to search for your tutorial. To see a full list of
-			available tutorials, click the Tutorials link. Click the game title followed by the song title
+			available tutorials, click the <em>Tutorials</em> link. Click the game title followed by the song title
 			to navigate to its downloads page.
 		</Typography>
 		<Typography paragraph>
@@ -47,7 +57,7 @@ export const Synthesia = () => (
 	<Fragment>
 		<Typography paragraph>
 			Synthesia utilizes midi files to create visual tutorials. If you download the Synthesia
-         software from <a href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer">https://synthesiagame.com/</a>, you can open the midi file and utilize features such as slowing down
+         software from <a style={{ color: '#b17acc', textDecoration: 'none' }} href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer"><em>Synthesia Game</em></a>, you can open the midi file and utilize features such as slowing down
 the tempo for easier learning.
 		</Typography>
 		<Typography paragraph>

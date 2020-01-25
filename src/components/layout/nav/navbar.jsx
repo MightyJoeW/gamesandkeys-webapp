@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import MusicIcon from '@material-ui/icons/LibraryMusic';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import Brightness3Icon from '@material-ui/icons/Brightness3';
+import IconButton from '@material-ui/core/IconButton';
 import ComboBox from './autocomplete';
 import { navigate } from '@reach/router';
+
+const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
 	menuButton: {
@@ -65,44 +68,67 @@ const useStyles = makeStyles(theme => ({
 			},
 		},
 	},
+	root: {
+		display: 'flex',
+	},
+	appBar: {
+		zIndex: theme.zIndex.drawer + 1
+	},
+	drawer: {
+		width: drawerWidth,
+		flexShrink: 0,
+	},
+	drawerPaper: {
+		width: drawerWidth,
+	},
+	content: {
+		flexGrow: 1,
+		padding: theme.spacing(3),
+	},
+	toolbar: theme.mixins.toolbar,
 }));
 
 export default function Navbar(props) {
 	const classes = useStyles();
 	const siteTitle = 'Games and Keys';
-	const [newRender, triggerNewRender] = useState(false);
+	const [appbarPosition, setAppbarPosition] = useState('relative');
 
-	const handleClick = (route) => {
-		triggerNewRender(!newRender); // creates a render to toggle the fixed navbar
+	useEffect(() => {
+		// console.log(window.location.pathname);
+
+		window.location.pathname === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative')
+	}, [])
+
+	const handleNavigate = route => {
+		route === '/docs' ? setAppbarPosition('fixed') : setAppbarPosition('relative')
 		navigate(route);
-	};
+	}
+
+	// console.log(window.location.pathname)
 
 	return (
-		// setting navbar to fixed when using side drawer to eliminate gap on mobile horizontal
-		<div className={window.location.pathname === '/docs'
-			? props.navbarFixed
-			: props.navbar
-		}>
-			<AppBar position="static">
+		<div className={classes.root}>
+			<CssBaseline />
+			<AppBar position={appbarPosition} className={classes.appBar}>
 				<Toolbar>
 					<IconButton
 						aria-label="Logo"
 						className={classes.logo}
 						color="inherit"
-						onClick={() => handleClick('/')}
+						onClick={() => handleNavigate('/')}
 					>
 						<MusicIcon />
 					</IconButton>
-					<Typography className={classes.title} variant="h6" noWrap onClick={() => handleClick('/')}>
+					<Typography className={classes.title} variant="h6" noWrap onClick={() => handleNavigate('/')}>
 						{siteTitle}
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/docs')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleNavigate('/docs')}>
 						Docs
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/tutorials')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleNavigate('/tutorials')}>
 						Tutorials
 					</Typography>
-					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleClick('/blog')}>
+					<Typography className={classes.link} variant="h6" noWrap onClick={() => handleNavigate('/blog')}>
 						Blog
 					</Typography>
 					<div className={classes.search}>
@@ -118,6 +144,7 @@ export default function Navbar(props) {
 					</IconButton>
 				</Toolbar>
 			</AppBar>
+
 		</div>
 	);
 }

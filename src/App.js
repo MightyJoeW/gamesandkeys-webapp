@@ -20,15 +20,7 @@ const useStyles = makeStyles({
 		display: 'block',
 		position: 'relative',
 		paddingBottom: 56 // height of the footer
-	},
-	navbar: {
-		flexGrow: 1
-	},
-	navbarFixed: {
-		flexGrow: 1,
-		position: 'fixed',
-		width: '100vw'
-	},
+	}
 });
 
 
@@ -70,8 +62,6 @@ const App = () => {
 				<Navbar
 					mode={mode}
 					toggleMode={toggleMode}
-					navbar={classes.navbar}
-					navbarFixed={classes.navbarFixed}
 				/>
 				{routes}
 				<BottomNav />
