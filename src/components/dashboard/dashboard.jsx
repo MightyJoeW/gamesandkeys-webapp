@@ -1,7 +1,6 @@
 // EXTERNAL DEPENDENCIES
 import React, { useEffect } from 'react';
 import Button from '@material-ui/core/Button';
-import { navigate } from '@reach/router';
 import ReactGA from 'react-ga';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -17,9 +16,10 @@ const Dashboard = () => {
 	const useStyles = makeStyles(theme => ({
 		gif: {
 			margin: '10px auto',
+			width: '40vw',
+
 			[theme.breakpoints.up('sm')]: {
-				height: '50%',
-				width: '40vw'
+				height: '40vh',
 			},
 		}
 	}));
@@ -41,12 +41,15 @@ const Dashboard = () => {
 		});
 	};
 
-	const handleClick = route => {
-		trackEvent(route);
-		navigate(`/${route}`);
-	};
-
 	const title = 'Play your favorite video game songs on the piano';
+
+	const docsRoute = () => {
+		if (process.env.NODE_ENV === 'development') {
+			return 'http://localhost:3000/docs';
+		} else {
+			return 'https://www.gamesandkeys.com/docs';
+		}
+	};
 
 	return (
 		<div className="dashboard-container">
@@ -54,8 +57,10 @@ const Dashboard = () => {
 			<p className="dashboard-subtitle">
 				GamesAndKeys is a free learning resource that teaches pianists how to play songs from video games and tv shows via <strong>videos</strong>, <strong>sheet music</strong>, and <strong>midi files</strong>.
 			</p>
-			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" height="150" width="250" />
-			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={() => handleClick('docs')}>
+			<img className={classes.gif} src="static/gifs/synthesia-example.gif" alt="Synthesia Piano Tutorial" />
+			<Button className="dashboard-get-started-button" variant="contained" color="primary" onClick={trackEvent()} component='a' href={docsRoute()}>
+				{/* Using href instead of navigate to trigger a rerender so the navbar will switch to fixed */}
+				{/* Otherwise, the sidedocs will have a gap after going through the docs links, home, Get Started again */}
 				Get Started
 			</Button>
 			<Footer />

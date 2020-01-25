@@ -76,7 +76,7 @@ function DocsSideDrawer(props) {
 		} else if (currentDoc === 'Synthesia') {
 			ReactGA.event({
 				category: 'Docs',
-				action: `Clicked Tutorials link from docs`,
+				action: 'Clicked Tutorials link from docs',
 				label: `${doc} link`
 			});
 			return navigate('/tutorials');
