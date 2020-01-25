@@ -1,6 +1,7 @@
 // EXTERNAL DEPENDENCIES
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import { navigate } from '@reach/router';
 
 // MATERIAL-UI DEPENDENCIES
 import List from '@material-ui/core/List';
@@ -8,13 +9,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 // INTERNAL DEPENDENCIES
+import { trackingId } from '../../keys';
 // import songTitleFormatter from '../../utils/formatting';
 
 // COMPONENT DEFINITION
 const LibrarySongTitles = props => {
 
-	// Google Analytics
-	const trackingId = '43084370';
 	useEffect(() => {
 		ReactGA.initialize(`UA-${trackingId}-01`, {
 			debug: false // set to true to log pageview to console
@@ -22,12 +22,13 @@ const LibrarySongTitles = props => {
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 
-	const trackEvent = (title) => {
+	const handleClick = (route, title) => {
 		ReactGA.event({
 			category: 'Navigation',
 			action: 'Selected a Game Tutorial',
 			label: title
 		});
+		navigate(`/${title}`);
 	};
 
 	return (
@@ -44,7 +45,7 @@ const LibrarySongTitles = props => {
 
 				return (
 					<List component="nav" key={key}>
-						<ListItem button divider component="a" href={song[0]} onClick={() => trackEvent(title)}>
+						<ListItem button divider onClick={() => handleClick(title, song[0])}>
 							<ListItemText primary={title} style={{ textAlign: 'center' }} />
 						</ListItem>
 					</List>

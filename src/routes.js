@@ -3,8 +3,16 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 //Main Routes
-import Library from './components/library/library';
+import Dashboard from './components/dashboard/dashboard';
+import Docs from './components/docs/docs';
+import Tutorials from './components/library/library';
+import { Blog } from './components/blog/blog';
+import Bio from './components/bio/bio';
 import ErrorPage from './components/error-page/error-page';
+
+// Blog Posts
+import Post0 from './components/blog/post-0';
+import Post1 from './components/blog/post-1';
 
 // Tutorial Main Pages
 import Spikes from './components/library/tutorials-info/1001Spikes';
@@ -75,7 +83,15 @@ import SmallBeginnings from './components/library/tutorials-info/Uncharted/small
 export default (
 	<Router>
 		{/* Pages */}
-		<Library path='/' />
+		<Dashboard path='/' />
+		<Docs path='/docs' />
+		<Tutorials path='/tutorials' />
+		<Blog path='/blog' />
+		<Bio path='/joe-warren' />
+
+		{/* Blog Posts */}
+		<Post0 path="/new-youtube-channel" />
+		<Post1 path="/launch-of-the-new-site" />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />

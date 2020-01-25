@@ -3,9 +3,24 @@
 .dashboard-container {
   display: flex;
   flex-direction: column;
+  margin: 0 15px;
+  height: 100vh;
   
   .dashboard-title {
     font-weight: $bold;
-    margin-top: $spacing-x3;
+    font-size: 1.7rem;
+    margin-top: 80;
+    text-align: center;
+  }
+
+  .dashboard-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .dashboard-get-started-button {
+    width: 150px;
+    margin: 30px auto;
+    height: 50px;
   }
 }

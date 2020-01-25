@@ -20,6 +20,9 @@
   }
   .error-page__link {
     text-decoration: none;
+    a:visited {
+      text-decoration: none;
+    }
   }
 }
 
