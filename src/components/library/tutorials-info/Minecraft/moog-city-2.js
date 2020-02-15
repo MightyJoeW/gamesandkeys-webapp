@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/ESPJGXs_tDU';
 const MoogCity2 = () => (
 	<TutorialWrapper
 		midiRoute="Minecraft/moog-city-2.mid"
-		sheetRoute="Minecraft/moog-city-2.png"
+		sheetRoute="Minecraft/moog-city-2.pdf"
 		title="Moog City 2"
 		videoUrl={videoUrl}
 	/>
