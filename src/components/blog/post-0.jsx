@@ -25,7 +25,7 @@ const Post0 = () => {
 
 			<p>Previously, I utilized my <a className={classes.link} href="https://www.youtube.com/mightyjoew" target="_blank" rel="noopener noreferrer"><em>mightyjoew</em></a> channel to upload the tutorials, but I also uploaded lots of other content including remixes, performances, songs, skits, podcasts, reviews, and tech talks.</p>
 
-			<p>I did find that fans of certain types of content enjoyed my other content, but creating a channel specficially for the video game piano tutorials will make it a faster, cleaner process for those only interested in that content.</p>
+			<p>I did find that fans of certain types of content enjoyed my other content, but creating a channel specifically for the video game piano tutorials will make it a faster, cleaner process for those only interested in that content.</p>
 
 			<p>As of this post, I have reuploaded everything existing tutorial to this channel. When I create new video game piano tutorials, it will be uploaded to the <a className={classes.link} href="https://www.youtube.com/channel/UC4bMF2-gYaHNfVg0BIRlmtQ" target="_blank" rel="noopener noreferrer"><em>GamesAnyKeys YouTube channel</em></a>.</p>
 
