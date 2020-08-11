@@ -1,5 +1,5 @@
 // EXTERNAL DEPENDENCIES
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ReactGA from 'react-ga';
 
@@ -27,7 +27,14 @@ const useStyles = makeStyles({
 // COMPONENT DEFINITION
 const App = () => {
 	const classes = useStyles();
-	const [mode, setMode] = useState('light');
+	const [mode, setMode] = useState(
+		localStorage.getItem('cachedMode') || ''
+	);
+
+	useEffect(() => {
+		localStorage.setItem('cachedMode', mode)
+		// console.log(mode)
+	}, [mode])
 
 	const toggleMode = () => {
 		if (mode === 'light') {

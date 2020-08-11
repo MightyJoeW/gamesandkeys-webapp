@@ -20,9 +20,9 @@ const Post1 = () => {
 		<div className={classes.container}>
 			<h1> Launch of the new Site </h1>
 			<p className={classes.sectionHeader}>Welcome to the new GamesAndKeys website!  </p>
-			<p>GamesAndKeys was not a planned resource, but developed organically overtime. It all began when I entered Naughty Dog's
+			<p>GamesAndKeys was not a planned resource, but developed organically over time. It all began when I entered Naughty Dog's
 			Firefly Pendant Contest back in 2013. The content was to create a The Last of Us themed video for a chance to get your name
-			in the game. For my entry, I dressed up as one of theh characters from the trailer and played the main theme on the piano.
+			in the game. For my entry, I dressed up as one of the characters from the trailer and played the main theme on the piano.
 			</p>
 			<iframe title="The Last of Us Piano Performance" style={{ margin: '0 auto', width: '100%' }} width="560" height="315" src="https://www.youtube.com/embed/0eacOSCYwnc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 			<p>I was named one of the winners, so my name was added to the game! This was an incredible honor as The Last of Us is
@@ -38,7 +38,7 @@ const Post1 = () => {
 			to create pages for each tutorial with links to a Google Drive folder that had all of the downloadable content.
 			</p>
 			<p>This worked well until I hit the limit. So I created a second folder which worked well until it also hit its limit.
-			This clearly wasn't a viable long-term option. Fast-forward a 4 years and I stubmbled upon a new passion for coding.
+			This clearly wasn't a viable long-term option. Fast-forward 4 years and I stumbled upon a new passion for coding.
 			I went all in and actually made a career transition into software development which brought me back to GamesAndKeys.
 			I had picked up many skills that would allow me to build out a new site from scratch to offer these resources.</p>
 			<img src="static/blog-1-images/tlou-downloads.png" alt="The Last of Us Main Theme downloads" height="auto" width="100%" />
