@@ -23,22 +23,18 @@ const useStyles = makeStyles({
 	}
 });
 
-// Dark Mode Session Storage Hook
-const useStateWithLocalStorage = cachedMode => {
-	const [mode, setMode] = useState(
-		localStorage.getItem(cachedMode) || ''
-	);
-	useEffect(() => {
-		localStorage.setItem('cachedMode', mode)
-	}, [mode]);
-	return [mode, setMode];
-};
-
 
 // COMPONENT DEFINITION
 const App = () => {
 	const classes = useStyles();
-	const [mode, setMode] = useStateWithLocalStorage('cachedMode');
+	const [mode, setMode] = useState(
+		localStorage.getItem('cachedMode') || ''
+	);
+
+	useEffect(() => {
+		localStorage.setItem('cachedMode', mode)
+		// console.log(mode)
+	}, [mode])
 
 	const toggleMode = () => {
 		if (mode === 'light') {
