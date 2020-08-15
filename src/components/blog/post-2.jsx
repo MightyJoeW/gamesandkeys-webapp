@@ -30,7 +30,7 @@ const Post2 = () => {
       <p>With the fix, you can now scroll the pdf files as you would a normal file or webpage.</p>
 
 
-      <p>If you have any continued issues with vieweing or downloading the sheet music files, contact me at themightyjoew!gmail.com or create an issue on <a className={classes.link} href="https://github.com/MightyJoeW/gamesandkeys-webapp/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      <p>If you have any continued issues with viewing or downloading the sheet music files, contact me at themightyjoew@gmail.com or create an issue on <a className={classes.link} href="https://github.com/MightyJoeW/gamesandkeys-webapp/issues" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
     </div>
   );
 };
