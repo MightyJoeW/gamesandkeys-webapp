@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/Xoaor-shCps';
 const DeadVoxel = () => (
 	<TutorialWrapper
 		midiRoute="Minecraft/dead-voxel.mid"
-		sheetRoute="Minecraft/dead-voxel.png"
+		sheetRoute="Minecraft/dead-voxel.pdf"
 		title="Dead Voxel"
 		videoUrl={videoUrl}
 	/>

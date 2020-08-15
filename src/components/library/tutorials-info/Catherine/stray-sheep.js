@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/zfYB0tzjOyk';
 const StraySheep = () => (
 	<TutorialWrapper
 		midiRoute="Catherine/stray-sheep.mid"
-		sheetRoute="Catherine/stray-sheep.png"
+		sheetRoute="Catherine/stray-sheep.pdf"
 		title="Stray Sheep"
 		videoUrl={videoUrl} />
 );

@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/S1Hzdm8Uvbc';
 const MenuTheme = () => (
 	<TutorialWrapper
 		midiRoute="ResidentEvil/menu-theme.mid"
-		sheetRoute="ResidentEvil/menu-theme.png"
+		sheetRoute="ResidentEvil/menu-theme.pdf"
 		title="Menu Theme"
 		videoUrl={videoUrl}
 	/>

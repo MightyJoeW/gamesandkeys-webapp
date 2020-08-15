@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/B_jnltymaTg';
 const Beyond = () => (
 	<TutorialWrapper
 		midiRoute='BeyondTwoSouls/beyond-two-souls-main-theme.mid'
-		sheetRoute="BeyondTwoSouls/beyond-two-souls.png"
+		sheetRoute="BeyondTwoSouls/beyond-two-souls.pdf"
 		title='Beyond Two Souls: Main Theme'
 		videoUrl={videoUrl}
 	/>

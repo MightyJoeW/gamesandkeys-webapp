@@ -12,7 +12,7 @@ const TheLastOfUncharted = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute="Mashups/the-last-of-uncharted-piano-mashup.mid"
-			sheetRoute="Mashups/the-last-of-uncharted-piano-mashup.png"
+			sheetRoute="Mashups/the-last-of-uncharted-piano-mashup.pdf"
 			title='The Last of Uncharted'
 			videoUrl={videoUrl}
 		/>

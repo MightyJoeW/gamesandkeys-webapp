@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/Ll8wJKBpZ8o';
 const BeyondTrailer = () => (
 	<TutorialWrapper
 		midiRoute="BeyondTwoSouls/E3-ending-heme.mid"
-		sheetRoute="BeyondTwoSouls/beyond-two-souls.png"
+		sheetRoute="BeyondTwoSouls/beyond-two-souls-trailer.pdf"
 		title='E3 Trailer (End Piano Theme)'
 		videoUrl={videoUrl}
 	/>

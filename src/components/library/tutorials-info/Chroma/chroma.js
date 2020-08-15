@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/HnAu8DBAZmk';
 const Chroma = () => (
 	<TutorialWrapper
 		midiRoute="Chroma/chroma-announce-trailer.mid"
-		sheetRoute="Chroma/chroma-announce-trailer.png"
+		sheetRoute="Chroma/chroma-announce-trailer.pdf"
 		title="Chroma - announce trailer theme"
 		videoUrl={videoUrl} />
 );

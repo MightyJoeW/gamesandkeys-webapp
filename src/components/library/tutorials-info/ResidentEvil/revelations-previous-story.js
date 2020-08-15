@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/ivzd0KwpOMU';
 const PreviousStory = () => (
 	<TutorialWrapper
 		midiRoute="ResidentEvil/previous-story.mid"
-		sheetRoute="ResidentEvil/previous-story.png"
+		sheetRoute="ResidentEvil/previous-story.pdf"
 		title="Previous Story"
 		videoUrl={videoUrl}
 	/>
