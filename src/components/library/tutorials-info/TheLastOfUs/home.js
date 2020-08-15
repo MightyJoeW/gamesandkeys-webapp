@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/DCiy7CiR8UU';
 const Home = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/home.mid"
-		sheetRoute="TheLastOfUs/home.png"
+		sheetRoute="TheLastOfUs/home.pdf"
 		title="Home"
 		videoUrl={videoUrl}
 	/>

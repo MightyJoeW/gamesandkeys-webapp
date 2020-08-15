@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/Vn7H0lGonDw';
 const BeyondFriend = () => (
 	<TutorialWrapper
 		midiRoute="BeyondTwoSouls/my-imaginary-friend.mid"
-		sheetRoute="BeyondTwoSouls/my-imaginary-friend.png"
+		sheetRoute="BeyondTwoSouls/my-imaginary-friend.pdf"
 		title="My Imaginary Friend"
 		videoUrl={videoUrl}
 	/>

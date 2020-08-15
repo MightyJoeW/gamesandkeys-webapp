@@ -12,7 +12,7 @@ const LeftBehindTogether = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute="TheLastOfUs/left-behind-together.mid"
-			sheetRoute="TheLastOfUs/left-behind-together.png"
+			sheetRoute="TheLastOfUs/left-behind-together.pdf"
 			title="Left Behind (Together)"
 			videoUrl={videoUrl}
 		/>

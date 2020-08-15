@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/xDAtuAotJuo';
 const GrandTheftAuto = () => (
 	<TutorialWrapper
 		midiRoute="GrandTheftAuto/gtav-trailer-theme.mid"
-		sheetRoute="GrandTheftAuto/gtav-trailer-theme.png"
+		sheetRoute="GrandTheftAuto/gtav-trailer-theme.pdf"
 		title="Trailer Theme (Ogdens Nut Gone Flake)"
 		videoUrl={videoUrl} />
 );

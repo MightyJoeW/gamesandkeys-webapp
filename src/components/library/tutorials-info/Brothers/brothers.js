@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/VzKSLGtN09I';
 const Brothers = () => (
 	<TutorialWrapper
 		midiRoute="Brothers/winged-hope.mid"
-		sheetRoute="Brothers/winged-hope.png"
+		sheetRoute="Brothers/winged-hope.pdf"
 		title="Winged Hope"
 		videoUrl={videoUrl}
 	/>

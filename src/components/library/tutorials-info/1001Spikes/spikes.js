@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/hX0L_VG9K68';
 const Spikes = () => (
 	<TutorialWrapper
 		midiRoute='1001Spikes/1001-spikes.mid'
-		sheetRoute="1001Spikes/1001-spikes.png"
+		sheetRoute="1001Spikes/1001-spikes.pdf"
 		title='1001 Spikes Main Theme'
 		videoUrl={videoUrl}
 	/>

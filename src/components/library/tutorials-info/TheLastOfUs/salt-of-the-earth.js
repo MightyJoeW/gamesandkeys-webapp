@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/C_14Ill5-k8';
 const SaltOfTheEarth = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/salt-of-the-earth.mid"
-		sheetRoute="TheLastOfUs/salt-of-the-earth.png"
+		sheetRoute="TheLastOfUs/salt-of-the-earth.pdf"
 		title="Salt Of The Earth"
 		videoUrl={videoUrl}
 	/>

@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/HsMitMHRHos';
 const Infamous = () => (
 	<TutorialWrapper
 		midiRoute="Infamous/inFAMOUS-second-son-E3-trailer-theme.mid"
-		sheetRoute="Infamous/inFAMOUS-second-son-E3-trailer-theme.png"
+		sheetRoute="Infamous/inFAMOUS-second-son-E3-trailer-theme.pdf"
 		title="Second Son"
 		videoUrl={videoUrl}
 	/>

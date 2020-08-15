@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/LJvCmaAHKcE';
 const PokemonLeague = () => (
 	<TutorialWrapper
 		midiRoute="Pokemon/pokemon-league-xy.mid"
-		sheetRoute="Pokemon/pokemon-league-xy.png"
+		sheetRoute="Pokemon/pokemon-league-xy.pdf"
 		title="Pokemon League"
 		videoUrl={videoUrl}
 	/>

@@ -12,7 +12,7 @@ const MuseumBust = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute='Uncharted/museum-bust.mid'
-			sheetRoute="Uncharted/museum-bust.png"
+			sheetRoute="Uncharted/museum-bust.pdf"
 			title='Museum Bust'
 			videoUrl={videoUrl}
 		/>

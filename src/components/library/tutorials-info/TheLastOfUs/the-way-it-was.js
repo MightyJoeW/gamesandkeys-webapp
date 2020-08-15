@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/ByfsRJbAVWs';
 const TheWayItWas = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/the-way-it-was.mid"
-		sheetRoute="TheLastOfUs/the-way-it-was.png"
+		sheetRoute="TheLastOfUs/the-way-it-was.pdf"
 		title="The Way It Was"
 		videoUrl={videoUrl}
 	/>

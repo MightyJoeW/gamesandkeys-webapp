@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/-86VZNyIY1s';
 const BeyondChildhood = () => (
 	<TutorialWrapper
 		midiRoute="BeyondTwoSouls/childhood-memories.mid"
-		sheetRoute="BeyondTwoSouls/childhood-memories.png"
+		sheetRoute="BeyondTwoSouls/childhood-memories.pdf"
 		title='Childhood Memories'
 		videoUrl={videoUrl}
 	/>

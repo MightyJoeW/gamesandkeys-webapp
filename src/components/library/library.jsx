@@ -104,7 +104,7 @@ const Library = (props) => {
 				<ListItem button divider onClick={() => handleClick(('the-walking-dead-game'))}>
 					<ListItemText style={listItemStyles} primary="The Walking Dead Game" />
 				</ListItem>
-				<ListItem button divider onClick={() => handleClick(('chrothomas-was-alonema'))}>
+				<ListItem button divider onClick={() => handleClick(('thomas-was-alone'))}>
 					<ListItemText style={listItemStyles} primary="Thomas Was Alone" />
 				</ListItem>
 				<ListItem button divider onClick={() => handleClick(('transistor'))}>

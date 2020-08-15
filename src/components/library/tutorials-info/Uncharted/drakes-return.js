@@ -12,7 +12,7 @@ const DrakesReturn = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute='Uncharted/drakes-return.mid'
-			sheetRoute="Uncharted/drakes-return.png"
+			sheetRoute="Uncharted/drakes-return.pdf"
 			title="Drake's Return"
 			videoUrl={videoUrl}
 		/>

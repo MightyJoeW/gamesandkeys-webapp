@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/V3ddk5KEWeQ';
 const AllGoneNoEscape = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/all-gone-no-escape.mid"
-		sheetRoute="TheLastOfUs/all-gone-no-escape.png"
+		sheetRoute="TheLastOfUs/all-gone-no-escape.pdf"
 		title="All Gone (No Escape)"
 		videoUrl={videoUrl}
 	/>

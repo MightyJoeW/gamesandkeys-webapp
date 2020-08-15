@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/Zmp64q2Rk9o';
 const LeftBehind = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/left-behind.mid"
-		sheetRoute="TheLastOfUs/left-behind.png"
+		sheetRoute="TheLastOfUs/left-behind.pdf"
 		title="Left Behind"
 		videoUrl={videoUrl}
 	/>

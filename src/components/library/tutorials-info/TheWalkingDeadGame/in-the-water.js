@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/tRM6Wvf6HTw';
 const InTheWater = () => (
 	<TutorialWrapper
 		midiRoute="TheWalkingDeadGame/in-the-water-clementine-remix.mid"
-		sheetRoute="TheWalkingDeadGame/in-the-water-clementine-remix.png"
+		sheetRoute="TheWalkingDeadGame/in-the-water-clementine-remix.pdf"
 		title='The Walking Dead Season 2 - reveal trailer theme (In The Water by Anadel)'
 		videoUrl={videoUrl}
 	/>

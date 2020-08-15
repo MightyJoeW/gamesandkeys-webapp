@@ -10,7 +10,7 @@ const videoUrl = 'https://www.youtube.com/embed/nwcKv152tfs';
 const VanishingGraceInnocence = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/vanishing-grace-Innocence.mid"
-		sheetRoute="TheLastOfUs/vanishing-grace-innocence.png"
+		sheetRoute="TheLastOfUs/vanishing-grace-innocence.pdf"
 		title="Vanishing Grace (Innocence)"
 		videoUrl={videoUrl}
 	/>
