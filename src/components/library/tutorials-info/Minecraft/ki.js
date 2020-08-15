@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/T92IROWXd4w';
 const Ki = () => (
 	<TutorialWrapper
 		midiRoute="Minecraft/ki.mid"
-		sheetRoute="Minecraft/ki.png"
+		sheetRoute="Minecraft/ki.pdf"
 		title="Ki"
 		videoUrl={videoUrl}
 	/>

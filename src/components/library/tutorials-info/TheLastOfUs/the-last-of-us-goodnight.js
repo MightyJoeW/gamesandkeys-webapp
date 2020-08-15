@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/1bCWBUcuek0';
 const Goodnight = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/goodnight.mid"
-		sheetRoute="TheLastOfUs/goodnight.png"
+		sheetRoute="TheLastOfUs/goodnight.pdf"
 		title="The Last of Us (Goodnight)"
 		videoUrl={videoUrl}
 	/>

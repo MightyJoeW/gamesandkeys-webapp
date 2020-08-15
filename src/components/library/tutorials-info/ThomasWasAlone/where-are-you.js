@@ -12,7 +12,7 @@ const WhereAreYou = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute='ThomasWasAlone/where-are-you.mid'
-			sheetRoute="ThomasWasAlone/where-are-you.png"
+			sheetRoute="ThomasWasAlone/where-are-you.pdf"
 			title='Where Are You'
 			videoUrl={videoUrl}
 		/>

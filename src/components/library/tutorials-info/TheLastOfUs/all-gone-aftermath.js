@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/JnzjGqG0WQ4';
 const AllGoneAftermath = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/all-gone-aftermath.mid"
-		sheetRoute="TheLastOfUs/all-gone-aftermath.png"
+		sheetRoute="TheLastOfUs/all-gone-aftermath.pdf"
 		title="All Gone (Aftermath)"
 		videoUrl={videoUrl}
 	/>

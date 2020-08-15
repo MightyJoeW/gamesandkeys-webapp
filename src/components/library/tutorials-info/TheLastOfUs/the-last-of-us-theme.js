@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/sb2ZC5WjjrA';
 const TheLastOfUsTheme = () => (
 	<TutorialWrapper
 		midiRoute="TheLastOfUs/main-theme.mid"
-		sheetRoute="TheLastOfUs/main-theme.png"
+		sheetRoute="TheLastOfUs/main-theme.pdf"
 		title="The Last of Us"
 		videoUrl={videoUrl}
 	/>

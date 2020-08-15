@@ -12,7 +12,7 @@ const OldFriends = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute='Transistor/old-friend.mid'
-			sheetRoute="Transistor/old-friend.png"
+			sheetRoute="Transistor/old-friend.pdf"
 			title='Old Friends'
 			videoUrl={videoUrl}
 		/>

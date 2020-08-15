@@ -11,7 +11,7 @@ const videoUrl = 'https://www.youtube.com/embed/ModmUekQRvg';
 const RideWitMe = () => (
 	<TutorialWrapper
 		midiRoute="NbaStreet/ride-wit-me.mid"
-		sheetRoute="NbaStreet/ride-wit-me.png"
+		sheetRoute="NbaStreet/ride-wit-me.pdf"
 		title="Ride Wit Me"
 		videoUrl={videoUrl}
 	/>

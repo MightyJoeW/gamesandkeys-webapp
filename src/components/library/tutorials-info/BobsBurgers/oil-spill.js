@@ -11,8 +11,8 @@ const videoUrl = 'https://www.youtube.com/embed/0bNEkJ5JBvc';
 const OilSpill = () => (
 	<TutorialWrapper
 		midiRoute="BobsBurgers/oil-spill.mid"
-		sheetRoute="BobsBurgers/oil-spill-piano.png"
-		sheetRoute2="BobsBurgers/oil-spill-pizz.png"
+		sheetRoute="BobsBurgers/oil-spill-piano.pdf"
+		sheetRoute2="BobsBurgers/oil-spill-pizz.pdf"
 		sheetRoute2Title="pizz"
 		title="Oil Spill"
 		videoUrl={videoUrl} />

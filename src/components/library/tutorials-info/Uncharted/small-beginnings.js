@@ -12,7 +12,7 @@ const SmallBeginnings = () => (
 	<div>
 		<TutorialWrapper
 			midiRoute='Uncharted/small-beginnings.mid'
-			sheetRoute="Uncharted/small-beginnings.png"
+			sheetRoute="Uncharted/small-beginnings.pdf"
 			title='Small Beginnings'
 			videoUrl={videoUrl}
 		/>
