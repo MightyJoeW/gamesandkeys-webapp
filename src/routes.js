@@ -13,6 +13,7 @@ import ErrorPage from './components/error-page/error-page';
 // Blog Posts
 import Post0 from './components/blog/post-0';
 import Post1 from './components/blog/post-1';
+import Post2 from './components/blog/post-2';
 
 // Tutorial Main Pages
 import Spikes from './components/library/tutorials-info/1001Spikes';
@@ -92,6 +93,7 @@ export default (
 		{/* Blog Posts */}
 		<Post0 path="/new-youtube-channel" />
 		<Post1 path="/launch-of-the-new-site" />
+		<Post2 path="/sheet-music-mobile-issue-fixed" />
 
 		{/* 1001 Spikes */}
 		<Spikes path='/1001-spikes' />
