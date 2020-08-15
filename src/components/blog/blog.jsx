@@ -19,6 +19,12 @@ const useStyles = makeStyles(theme => ({
 export const blogPosts = () => (
 	<Fragment>
 		<BlogCard
+			title="Sheet Music Issue Fixed for Mobile Devices"
+			preview="The long-time issue of attempting to view and download sheet music files on mobile devices has finally been resolved. The simple change..."
+			date="August 15th, 2020"
+			route="/sheet-music-mobile-issue-fixed"
+		/>
+		<BlogCard
 			title="Launch of the New Site"
 			preview="Welcome to the new GamesAndKeys website! GamesAndKeys was not a planned resource, but developed organically overtime. It all began when..."
 			date="January 25th, 2020"
