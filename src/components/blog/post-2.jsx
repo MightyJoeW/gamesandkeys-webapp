@@ -34,7 +34,7 @@ const Post2 = props => {
   return (
     <div className={classes.container}>
       <h1> {title} </h1>
-      <p>January 25, 2020</p>
+      <p>August 15, 2020</p>
 
       <div className={classes.text}>
         <img src="static/blog-2-images/the-choice.png" alt="The Last of Us Main Theme, Piano Tutorial YouTube Thumbnail" height="auto" width="100%" />
