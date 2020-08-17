@@ -51,7 +51,7 @@ export const Downloading = () => (
 			page to save the file on your computer.
 		</Typography>
 		<Typography paragraph>
-			On mobile devices, click on Sheet Music and long press to bring up the option to Save the pdfs. For midi files, click on the Midi File button to bring up the save option.
+			On mobile devices, click on Sheet Music button and use any method to save (take a screenshot, save to files, share to a device, etc.). For midi files, click on the Midi File button to bring up the save option.
 		</Typography>
 	</Fragment>
 );
@@ -65,7 +65,7 @@ export const Synthesia = () => (
 the tempo for easier learning.
 		</Typography>
 		<Typography paragraph>
-			You can also open the midi file in any other music program such as Garage Band or FL Studio. Doing
+			You can also open the midi file in any other music program such as Garage Band, Logic Pro, Pro Tools, FL Studio, etc. Doing
 			so allows you to have complete control over the midi file. You can move notes around, add notes,
 			use the chords to create other music, etc.
 		</Typography>
