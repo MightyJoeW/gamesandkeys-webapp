@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { DiscussionEmbed } from "disqus-react"
 
-const Post1 = () => {
+const Post1 = props => {
 	const useStyles = makeStyles(theme => ({
 		container: {
 			width: '40vw',
@@ -20,9 +21,18 @@ const Post1 = () => {
 		},
 	}));
 	const classes = useStyles();
+	const title = "Launch of the New Site";
+	const disqusConfig = {
+		shortname: 'gamesandkeys',
+		config: {
+			url: `https://www.gamesandkeys.com${props.uri}`,
+			identifier: props.location.key,
+			title
+		},
+	}
 	return (
 		<div className={classes.container}>
-			<h1> Launch of the new Site </h1>
+			<h1> {title} </h1>
 			<p>January 25, 2020</p>
 			<div className={classes.text}>
 				<iframe title="The Last of Us Piano Performance" style={{ margin: '0 auto', width: '100%' }} width="560" height="315" src="https://www.youtube.com/embed/0eacOSCYwnc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -52,7 +62,10 @@ const Post1 = () => {
 			sheet music and midi files.</p>
 				<p>I hope the content is helpful, and I look forward to making improvements to continue facilitating the learning of video game
 			music!</p>
+				<em>Leave a comment below if you have any thoughts, comments or questions.</em>
+				<hr />
 			</div>
+			<DiscussionEmbed {...disqusConfig} />
 		</div>
 	);
 };

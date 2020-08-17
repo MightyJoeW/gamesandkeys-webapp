@@ -1,7 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { DiscussionEmbed } from "disqus-react"
 
-const Post0 = () => {
+const Post0 = props => {
+	console.log('props:', props)
 	const useStyles = makeStyles(theme => ({
 		container: {
 			width: '40vw',
@@ -21,9 +23,18 @@ const Post0 = () => {
 		}
 	}));
 	const classes = useStyles();
+	const title = "New GameAndKeys YouTube Channel";
+	const disqusConfig = {
+		shortname: 'gamesandkeys',
+		config: {
+			url: `https://www.gamesandkeys.com${props.uri}`,
+			identifier: props.location.key,
+			title
+		},
+	}
 	return (
 		<div className={classes.container}>
-			<h1> New GameAndKeys YouTube Channel </h1>
+			<h1> {title} </h1>
 			<p>January 25, 2020</p>
 			<div className={classes.text}>
 				<img src="static/blog-0-images/2020-01-12-gak-yt.png" alt="GamesAndKeys YouTube Channel" height="auto" width="100%" />
@@ -36,7 +47,11 @@ const Post0 = () => {
 				<p>As of this post, I have reuploaded everything existing tutorial to this channel. When I create new video game piano tutorials, it will be uploaded to the <a className={classes.link} href="https://www.youtube.com/channel/UC4bMF2-gYaHNfVg0BIRlmtQ" target="_blank" rel="noopener noreferrer"><em>GamesAnyKeys YouTube channel</em></a>.</p>
 
 				<p>I will check comments from GamesAndKeys and MightyJoeW, so I'll still see your feedback if you happen to comment on the old channel.</p>
+
+				<em>Leave a comment below if you have any thoughts, comments or questions.</em>
+				<hr />
 			</div >
+			<DiscussionEmbed {...disqusConfig} />
 		</div>
 	);
 };

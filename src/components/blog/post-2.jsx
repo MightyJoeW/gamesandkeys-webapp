@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { DiscussionEmbed } from "disqus-react"
 
-const Post2 = () => {
+const Post2 = props => {
   const useStyles = makeStyles(theme => ({
     container: {
       width: '40vw',
@@ -21,9 +22,18 @@ const Post2 = () => {
     }
   }));
   const classes = useStyles();
+  const title = "Sheet Music Issue Fixed for Mobile Devices";
+  const disqusConfig = {
+    shortname: 'gamesandkeys',
+    config: {
+      url: `https://www.gamesandkeys.com${props.uri}`,
+      identifier: props.location.key,
+      title
+    },
+  }
   return (
     <div className={classes.container}>
-      <h1> Sheet Music Issue Fixed for Mobile Devices </h1>
+      <h1> {title} </h1>
       <p>January 25, 2020</p>
 
       <div className={classes.text}>
@@ -38,7 +48,10 @@ const Post2 = () => {
 
 
         <p>If you have any continued issues with viewing or downloading the sheet music files, contact me at themightyjoew@gmail.com or create an issue on <a className={classes.link} href="https://github.com/MightyJoeW/gamesandkeys-webapp/issues" target="_blank" rel="noopener noreferrer"><em>GitHub</em></a>.</p>
+        <em>Leave a comment below if you have any thoughts, comments or questions.</em>
+        <hr />
       </div>
+      <DiscussionEmbed {...disqusConfig} />
     </div>
   );
 };
