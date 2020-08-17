@@ -9,6 +9,7 @@
     "@material-ui/lab": "^4.0.0-alpha.38",
     "@reach/router": "^1.2.0",
     "core-js": "^3.6.1",
+    "disqus-react": "^1.0.9",
     "mdi-material-ui": "^6.10.0",
     "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",

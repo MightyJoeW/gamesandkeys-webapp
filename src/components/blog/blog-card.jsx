@@ -9,7 +9,7 @@ import { navigate } from '@reach/router';
 
 const useStyles = makeStyles(theme => ({
 	card: {
-		width: '50vw',
+		width: '40vw',
 		margin: '0 auto 45px auto',
 		padding: 15,
 		cursor: 'pointer',
