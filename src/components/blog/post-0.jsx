@@ -24,6 +24,7 @@ const Post0 = () => {
 	return (
 		<div className={classes.container}>
 			<h1> New GameAndKeys YouTube Channel </h1>
+			<p>January 25, 2020</p>
 			<div className={classes.text}>
 				<img src="static/blog-0-images/2020-01-12-gak-yt.png" alt="GamesAndKeys YouTube Channel" height="auto" width="100%" />
 				<p>I have created a new channel that is dedicated 100% to videogame piano tutorials <a className={classes.link} href="https://www.youtube.com/channel/UC4bMF2-gYaHNfVg0BIRlmtQ" target="_blank" rel="noopener noreferrer"><em>here</em></a>. This channel is dedicated solely to video game piano tutorials.</p>
