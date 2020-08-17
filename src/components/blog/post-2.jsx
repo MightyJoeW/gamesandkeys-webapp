@@ -46,8 +46,6 @@ const Post2 = props => {
 
         <p>With the fix, you can now scroll the pdf files as you would a normal file or webpage.</p>
 
-
-        <p>If you have any continued issues with viewing or downloading the sheet music files, contact me at themightyjoew@gmail.com or create an issue on <a className={classes.link} href="https://github.com/MightyJoeW/gamesandkeys-webapp/issues" target="_blank" rel="noopener noreferrer"><em>GitHub</em></a>.</p>
         <em>Leave a comment below if you have any thoughts, comments or questions.</em>
         <hr />
       </div>
