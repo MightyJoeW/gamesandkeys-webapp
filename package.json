@@ -8,6 +8,7 @@
     "@material-ui/icons": "^4.5.1",
     "@material-ui/lab": "^4.0.0-alpha.38",
     "@reach/router": "^1.2.0",
+    "babel-loader": "^8.1.0",
     "core-js": "^3.6.1",
     "disqus-react": "^1.0.9",
     "mdi-material-ui": "^6.10.0",
@@ -17,7 +18,7 @@
     "react-adsense": "^0.1.0",
     "react-dom": "^16.12.0",
     "react-ga": "^2.7.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,13 +37,39 @@
     "@babel/preset-env": "^7.7.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "babel-loader": "8.0.6",
+    "babel-plugin-css-modules-transform": "^1.6.2",
     "dotenv": "^8.2.0",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^16.12.0"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   },
   "browserslist": [
     ">0.2%",
