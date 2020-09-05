@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 
 export const Introduction = () => (
 	<Fragment>
-		<Typography style={{ fontSize: '3rem' }} variant="h1" gutterBottom>Introduction</Typography>
+		<Typography style={{ fontSize: '3rem' }} variant="p" gutterBottom>Introduction</Typography>
 		<Typography paragraph>
 			GamesAndKeys is a learning platform with the primary goal of teaching musicians how to
 			play video game songs on the piano. The video content uses <a style={{ color: '#b17acc', textDecoration: 'none' }} href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer"><em>Synthesia Game</em></a>, piano keyboard trainer.
@@ -22,7 +22,7 @@ export const Introduction = () => (
 			and opened up in any digital audio workstation (music software).
 		</Typography>
 		<figure>
-			<img src="static/docs/tlou-gb.png" alt="Synthesia User Interface" height="auto" width="100%" caption="GB" />
+			<img src="static/docs/tlou-gb.png" alt="Garage Band User Interface" height="auto" width="100%" caption="GB" />
 			<figcaption>Fig.2 - Midi File in Garage Band</figcaption>
 		</figure>
 
@@ -31,7 +31,7 @@ export const Introduction = () => (
 
 export const QuickStart = () => (
 	<Fragment>
-		<Typography style={{ fontSize: '3rem' }} variant="h1" gutterBottom>Quick Start</Typography>
+		<Typography style={{ fontSize: '3rem' }} variant="p" gutterBottom>Quick Start</Typography>
 		<Typography paragraph>
 			To begin learning, use the Search bar to search for your tutorial. To see a full list of
 			available tutorials, click the <em>Tutorials</em> link. Click the game title followed by the song title
@@ -45,7 +45,7 @@ export const QuickStart = () => (
 
 export const Downloading = () => (
 	<Fragment>
-		<Typography style={{ fontSize: '3rem' }} variant="h1" gutterBottom>Downloading</Typography>
+		<Typography style={{ fontSize: '3rem' }} variant="p" gutterBottom>Downloading</Typography>
 		<Typography paragraph>
 			On desktop, simply click on the Sheet Music button or the Midi File button on the download
 			page to save the file on your computer.
@@ -58,7 +58,7 @@ export const Downloading = () => (
 
 export const Synthesia = () => (
 	<Fragment>
-		<Typography style={{ fontSize: '3rem' }} variant="h1" gutterBottom>Synthesia</Typography>
+		<Typography style={{ fontSize: '3rem' }} variant="p" gutterBottom>Synthesia</Typography>
 		<Typography paragraph>
 			Synthesia utilizes midi files to create visual tutorials. If you download the Synthesia
          software from <a style={{ color: '#b17acc', textDecoration: 'none' }} href="https://synthesiagame.com/" target="_blank" rel="noopener noreferrer"><em>Synthesia Game</em></a>, you can open the midi file and utilize features such as slowing down

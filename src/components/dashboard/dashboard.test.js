@@ -6,7 +6,7 @@ import Dashboard from './dashboard';
 describe('Dashboard', () => {
 	it('should render the Dashboard without crashing', () => {
 		render(<Dashboard />)
-		screen.debug();
+		// screen.debug();
 	});
 
 	it('should render the correct dashboard text', () => {
