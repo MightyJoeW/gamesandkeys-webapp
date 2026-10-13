@@ -27,7 +27,7 @@ const Post0 = props => {
 	const disqusConfig = {
 		shortname: 'gamesandkeys',
 		config: {
-			url: `https://www.gamesandkeys.com${props.uri}`,
+			url: `https://gamesandkeys.netlify.app${props.uri}`,
 			identifier: props.location.key,
 			title
 		},

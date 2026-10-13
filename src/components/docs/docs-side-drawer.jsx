@@ -96,7 +96,7 @@ function DocsSideDrawer(props) {
 		if (process.env.NODE_ENV === 'development') {
 			return 'http://localhost:3000/tutorials';
 		} else {
-			return 'https://www.gamesandkeys.com/tutorials';
+			return 'https://gamesandkeys.netlify.app/tutorials';
 		}
 	};
 

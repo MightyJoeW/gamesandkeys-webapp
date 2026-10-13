@@ -47,7 +47,7 @@ const Dashboard = () => {
 		if (process.env.NODE_ENV === 'development') {
 			return 'http://localhost:3000/docs';
 		} else {
-			return 'https://www.gamesandkeys.com/docs';
+			return 'https://gamesandkeys.netlify.app/docs';
 		}
 	};
 

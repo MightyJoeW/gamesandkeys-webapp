@@ -26,7 +26,7 @@ const Footer = () => {
 		<Fragment>
 			<div className={classes.root}>
 				<Divider />
-				<div className={classes.footerText}>© Copyright {year} | GamesAndKeys.com </div>
+				<div className={classes.footerText}>© Copyright {year} | GamesAndKeys </div>
 				{/* <div onClick={() => navigate('/')}>Privacy · </div> */}
 				{/* <div onClick={() => navigate('/')}>Terms · </div> */}
 				{/* <div className={classes.backToTop} onClick={() => navigate('/')}>Back to top</div> */}
